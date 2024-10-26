@@ -1,0 +1,10 @@
+D:\Đồ án 2\InternshipsManageApp\bin\Debug\InternshipsManageApp.exe.config
+D:\Đồ án 2\InternshipsManageApp\bin\Debug\InternshipsManageApp.exe
+D:\Đồ án 2\InternshipsManageApp\bin\Debug\InternshipsManageApp.pdb
+D:\Đồ án 2\InternshipsManageApp\obj\Debug\InternshipsManageApp.csproj.AssemblyReference.cache
+D:\Đồ án 2\InternshipsManageApp\obj\Debug\InternshipsManageApp.Form1.resources
+D:\Đồ án 2\InternshipsManageApp\obj\Debug\InternshipsManageApp.Properties.Resources.resources
+D:\Đồ án 2\InternshipsManageApp\obj\Debug\InternshipsManageApp.csproj.GenerateResource.cache
+D:\Đồ án 2\InternshipsManageApp\obj\Debug\InternshipsManageApp.csproj.CoreCompileInputs.cache
+D:\Đồ án 2\InternshipsManageApp\obj\Debug\InternshipsManageApp.exe
+D:\Đồ án 2\InternshipsManageApp\obj\Debug\InternshipsManageApp.pdb
