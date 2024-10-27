@@ -41,5 +41,22 @@ namespace InternshipsManageApp
         {
             Application.Exit();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if(txtMK.Text=="" || txtTK.Text == "")
+            {
+                MessageBox.Show("mời nhập dữ liệu");
+            }
+            else
+            {
+                MessageBox.Show("đăng nhập thành công");
+            }
+        }
     }
 }

@@ -8,3 +8,13 @@ D:\Đồ án 2\InternshipsManageApp\obj\Debug\InternshipsManageApp.csproj.Genera
 D:\Đồ án 2\InternshipsManageApp\obj\Debug\InternshipsManageApp.csproj.CoreCompileInputs.cache
 D:\Đồ án 2\InternshipsManageApp\obj\Debug\InternshipsManageApp.exe
 D:\Đồ án 2\InternshipsManageApp\obj\Debug\InternshipsManageApp.pdb
+D:\Doanc#\InternshipsManageApp\bin\Debug\InternshipsManageApp.exe.config
+D:\Doanc#\InternshipsManageApp\bin\Debug\InternshipsManageApp.exe
+D:\Doanc#\InternshipsManageApp\bin\Debug\InternshipsManageApp.pdb
+D:\Doanc#\InternshipsManageApp\obj\Debug\InternshipsManageApp.csproj.AssemblyReference.cache
+D:\Doanc#\InternshipsManageApp\obj\Debug\InternshipsManageApp.Form1.resources
+D:\Doanc#\InternshipsManageApp\obj\Debug\InternshipsManageApp.Properties.Resources.resources
+D:\Doanc#\InternshipsManageApp\obj\Debug\InternshipsManageApp.csproj.GenerateResource.cache
+D:\Doanc#\InternshipsManageApp\obj\Debug\InternshipsManageApp.csproj.CoreCompileInputs.cache
+D:\Doanc#\InternshipsManageApp\obj\Debug\InternshipsManageApp.exe
+D:\Doanc#\InternshipsManageApp\obj\Debug\InternshipsManageApp.pdb
