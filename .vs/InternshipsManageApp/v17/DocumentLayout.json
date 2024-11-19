@@ -1,14 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\\u0110\u1ED3 \u00E1n 2\\InternshipsManageApp\\",
+  "WorkspaceRootPath": "D:\\InternshipsManageApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|d:\\\u0111\u1ED3 \u00E1n 2\\internshipsmanageapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|d:\\internshipsmanageapp\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|d:\\\u0111\u1ED3 \u00E1n 2\\internshipsmanageapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|d:\\internshipsmanageapp\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|d:\\internshipsmanageapp\\forms\\formcompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:forms\\formcompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|d:\\internshipsmanageapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,27 +42,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n 2\\InternshipsManageApp\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n 2\\InternshipsManageApp\\Form1.cs*",
-              "RelativeToolTip": "Form1.cs*",
-              "ViewState": "AQIAAB0AAAAAAAAAAAA3wC0AAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "Form3.cs",
+              "DocumentMoniker": "D:\\InternshipsManageApp\\Form3.cs",
+              "RelativeDocumentMoniker": "Form3.cs",
+              "ToolTip": "D:\\InternshipsManageApp\\Form3.cs",
+              "RelativeToolTip": "Form3.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAcwB0AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T07:43:09.197Z",
+              "WhenOpened": "2024-11-19T02:42:06.043Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\\u0110\u1ED3 \u00E1n 2\\InternshipsManageApp\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\\u0110\u1ED3 \u00E1n 2\\InternshipsManageApp\\Form1.cs [Design]*",
-              "RelativeToolTip": "Form1.cs [Design]*",
+              "DocumentIndex": 1,
+              "Title": "Form3.cs [Design]",
+              "DocumentMoniker": "D:\\InternshipsManageApp\\Form3.cs",
+              "RelativeDocumentMoniker": "Form3.cs",
+              "ToolTip": "D:\\InternshipsManageApp\\Form3.cs [Design]",
+              "RelativeToolTip": "Form3.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T07:28:11.769Z",
+              "WhenOpened": "2024-11-19T02:42:01.528Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormCompany.cs [Design]",
+              "DocumentMoniker": "D:\\InternshipsManageApp\\Forms\\FormCompany.cs",
+              "RelativeDocumentMoniker": "Forms\\FormCompany.cs",
+              "ToolTip": "D:\\InternshipsManageApp\\Forms\\FormCompany.cs [Design]",
+              "RelativeToolTip": "Forms\\FormCompany.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T02:41:24.623Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\InternshipsManageApp\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\InternshipsManageApp\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T02:41:09.186Z",
               "EditorCaption": " [Design]"
             }
           ]
