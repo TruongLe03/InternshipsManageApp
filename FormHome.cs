@@ -111,7 +111,6 @@ namespace InternshipsManageApp
             if (button == btnCompany) return new Forms.FormCompany();
             if (button == btnInternship) return new Forms.FormInternship();
             if (button == btnTeacher) return new Forms.FormTeacher();
-            if (button == btnReport) return new Forms.FormReport();
             if (button == btnDg_Kq) return new Forms.FormResult_evaluation();
 
             return null;

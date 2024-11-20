@@ -12,7 +12,6 @@ D:\InternshipsManageApp\bin\Debug\InternshipsManageApp.exe.config
 D:\InternshipsManageApp\bin\Debug\InternshipsManageApp.exe
 D:\InternshipsManageApp\bin\Debug\InternshipsManageApp.pdb
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.csproj.AssemblyReference.cache
-D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Form1.resources
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Properties.Resources.resources
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.csproj.GenerateResource.cache
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.csproj.CoreCompileInputs.cache
@@ -22,6 +21,6 @@ D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.FormDashboard.resources
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormStudent.resources
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormCompany.resources
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormInternship.resources
-D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormReport.resources
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormResult_evaluation.resources
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormTeacher.resources
+D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.FormLogin.resources
