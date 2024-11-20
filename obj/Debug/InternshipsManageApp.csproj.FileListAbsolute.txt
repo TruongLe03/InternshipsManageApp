@@ -12,7 +12,6 @@ D:\InternshipsManageApp\bin\Debug\InternshipsManageApp.exe.config
 D:\InternshipsManageApp\bin\Debug\InternshipsManageApp.exe
 D:\InternshipsManageApp\bin\Debug\InternshipsManageApp.pdb
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.csproj.AssemblyReference.cache
-D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Form1.resources
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Properties.Resources.resources
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.csproj.GenerateResource.cache
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.csproj.CoreCompileInputs.cache
@@ -27,3 +26,6 @@ D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormInternship.reso
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormReport.resources
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormResult_evaluation.resources
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormTeacher.resources
+D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.FormLogin.resources
+D:\InternshipsManageApp\bin\Debug\Newtonsoft.Json.dll
+D:\InternshipsManageApp\bin\Debug\Newtonsoft.Json.xml

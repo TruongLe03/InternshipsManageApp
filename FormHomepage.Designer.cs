@@ -104,7 +104,7 @@
             this.btnDg_Kq.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDg_Kq.FlatAppearance.BorderSize = 0;
             this.btnDg_Kq.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDg_Kq.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDg_Kq.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDg_Kq.ForeColor = System.Drawing.Color.White;
             this.btnDg_Kq.Location = new System.Drawing.Point(0, 430);
             this.btnDg_Kq.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -119,7 +119,7 @@
             this.btnReport.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnReport.FlatAppearance.BorderSize = 0;
             this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReport.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReport.ForeColor = System.Drawing.Color.White;
             this.btnReport.Location = new System.Drawing.Point(0, 370);
             this.btnReport.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -134,7 +134,7 @@
             this.btnTeacher.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnTeacher.FlatAppearance.BorderSize = 0;
             this.btnTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTeacher.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTeacher.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTeacher.ForeColor = System.Drawing.Color.White;
             this.btnTeacher.Location = new System.Drawing.Point(0, 310);
             this.btnTeacher.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -149,7 +149,7 @@
             this.btnInternship.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnInternship.FlatAppearance.BorderSize = 0;
             this.btnInternship.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInternship.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInternship.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInternship.ForeColor = System.Drawing.Color.White;
             this.btnInternship.Location = new System.Drawing.Point(0, 250);
             this.btnInternship.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -164,7 +164,7 @@
             this.btnCompany.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCompany.FlatAppearance.BorderSize = 0;
             this.btnCompany.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCompany.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCompany.ForeColor = System.Drawing.Color.White;
             this.btnCompany.Location = new System.Drawing.Point(0, 190);
             this.btnCompany.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -179,7 +179,7 @@
             this.btnStudent.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnStudent.FlatAppearance.BorderSize = 0;
             this.btnStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStudent.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStudent.ForeColor = System.Drawing.Color.White;
             this.btnStudent.Location = new System.Drawing.Point(0, 130);
             this.btnStudent.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -194,7 +194,7 @@
             this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.Location = new System.Drawing.Point(0, 70);
             this.btnHome.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
@@ -230,7 +230,7 @@
             this.panel1.Location = new System.Drawing.Point(200, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(934, 70);
+            this.panel1.Size = new System.Drawing.Size(977, 70);
             this.panel1.TabIndex = 1;
             // 
             // button1
@@ -257,7 +257,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(799, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 19);
+            this.label2.Size = new System.Drawing.Size(119, 29);
             this.label2.TabIndex = 5;
             this.label2.Text = "Truongle";
             // 
@@ -313,7 +313,7 @@
             this.lbSelected.Location = new System.Drawing.Point(378, 39);
             this.lbSelected.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbSelected.Name = "lbSelected";
-            this.lbSelected.Size = new System.Drawing.Size(81, 19);
+            this.lbSelected.Size = new System.Drawing.Size(130, 29);
             this.lbSelected.TabIndex = 0;
             this.lbSelected.Text = "Trang chủ";
             this.lbSelected.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -329,7 +329,7 @@
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(200, 70);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(934, 581);
+            this.panelDesktop.Size = new System.Drawing.Size(977, 581);
             this.panelDesktop.TabIndex = 2;
             this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
@@ -399,7 +399,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(17, 59);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(27, 19);
+            this.label7.Size = new System.Drawing.Size(41, 29);
             this.label7.TabIndex = 2;
             this.label7.Text = "15";
             // 
@@ -408,7 +408,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(17, 15);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(195, 19);
+            this.label4.Size = new System.Drawing.Size(309, 29);
             this.label4.TabIndex = 1;
             this.label4.Text = "Tổng các công ty thực tập\r\n";
             // 
@@ -427,7 +427,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(20, 59);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(27, 19);
+            this.label6.Size = new System.Drawing.Size(41, 29);
             this.label6.TabIndex = 2;
             this.label6.Text = "20";
             // 
@@ -436,7 +436,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(20, 15);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(159, 19);
+            this.label3.Size = new System.Drawing.Size(251, 29);
             this.label3.TabIndex = 0;
             this.label3.Text = "Tổng số đợt thực tập";
             // 
@@ -455,7 +455,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(16, 59);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 19);
+            this.label5.Size = new System.Drawing.Size(83, 29);
             this.label5.TabIndex = 1;
             this.label5.Text = "10000";
             // 
@@ -464,19 +464,19 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(16, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 19);
+            this.label1.Size = new System.Drawing.Size(226, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tổng số sinh viên ";
             // 
             // FormDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1134, 651);
+            this.ClientSize = new System.Drawing.Size(1177, 651);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelMenu);
-            this.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
