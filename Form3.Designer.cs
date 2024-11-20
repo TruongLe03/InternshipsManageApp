@@ -39,7 +39,6 @@
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnDg_Kq = new System.Windows.Forms.Button();
-            this.btnReport = new System.Windows.Forms.Button();
             this.btnTeacher = new System.Windows.Forms.Button();
             this.btnInternship = new System.Windows.Forms.Button();
             this.btnCompany = new System.Windows.Forms.Button();
@@ -85,7 +84,6 @@
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panelMenu.Controls.Add(this.btnDg_Kq);
-            this.panelMenu.Controls.Add(this.btnReport);
             this.panelMenu.Controls.Add(this.btnTeacher);
             this.panelMenu.Controls.Add(this.btnInternship);
             this.panelMenu.Controls.Add(this.btnCompany);
@@ -106,28 +104,13 @@
             this.btnDg_Kq.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDg_Kq.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDg_Kq.ForeColor = System.Drawing.Color.White;
-            this.btnDg_Kq.Location = new System.Drawing.Point(0, 430);
+            this.btnDg_Kq.Location = new System.Drawing.Point(0, 370);
             this.btnDg_Kq.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnDg_Kq.Name = "btnDg_Kq";
             this.btnDg_Kq.Size = new System.Drawing.Size(200, 60);
             this.btnDg_Kq.TabIndex = 8;
             this.btnDg_Kq.Text = "Đánh giá và kết quả";
             this.btnDg_Kq.UseVisualStyleBackColor = true;
-            // 
-            // btnReport
-            // 
-            this.btnReport.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnReport.FlatAppearance.BorderSize = 0;
-            this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReport.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReport.ForeColor = System.Drawing.Color.White;
-            this.btnReport.Location = new System.Drawing.Point(0, 370);
-            this.btnReport.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(200, 60);
-            this.btnReport.TabIndex = 7;
-            this.btnReport.Text = "Phản hồi";
-            this.btnReport.UseVisualStyleBackColor = true;
             // 
             // btnTeacher
             // 
@@ -203,6 +186,7 @@
             this.btnHome.TabIndex = 1;
             this.btnHome.Text = "Trang chủ";
             this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // panelLogo
             // 
@@ -532,7 +516,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnReport;
         private System.Windows.Forms.Button btnDg_Kq;
     }
 }

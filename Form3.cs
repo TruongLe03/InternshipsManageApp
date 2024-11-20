@@ -27,7 +27,7 @@ namespace InternshipsManageApp
             btnCompany.Click += Button_Click;
             btnInternship.Click += Button_Click;
             btnTeacher.Click += Button_Click;
-            btnReport.Click += Button_Click;
+           
             btnDg_Kq.Click += Button_Click;
 
             // Thiết lập trạng thái mặc định
@@ -111,7 +111,7 @@ namespace InternshipsManageApp
             if (button == btnCompany) return new Forms.FormCompany();
             if (button == btnInternship) return new Forms.FormInternship();
             if (button == btnTeacher) return new Forms.FormTeacher();
-            if (button == btnReport) return new Forms.FormReport();
+            
             if (button == btnDg_Kq) return new Forms.FormResult_evaluation();
 
             return null;
@@ -149,6 +149,11 @@ namespace InternshipsManageApp
         }
 
         private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
         {
 
         }

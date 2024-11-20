@@ -75,12 +75,6 @@
     <Compile Include="Forms\FormInternship.Designer.cs">
       <DependentUpon>FormInternship.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormReport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormReport.Designer.cs">
-      <DependentUpon>FormReport.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FormResult_evaluation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,9 +106,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormInternship.resx">
       <DependentUpon>FormInternship.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormReport.resx">
-      <DependentUpon>FormReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormResult_evaluation.resx">
       <DependentUpon>FormResult_evaluation.cs</DependentUpon>
