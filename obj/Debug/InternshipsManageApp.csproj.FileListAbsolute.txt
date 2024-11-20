@@ -19,8 +19,6 @@ D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.csproj.CoreCompileInputs.
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.exe
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.pdb
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.FormDashboard.resources
-D:\InternshipsManageApp\bin\Debug\FontAwesome.Sharp.dll
-D:\InternshipsManageApp\obj\Debug\Internsh.6553B8B9.Up2Date
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormStudent.resources
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormCompany.resources
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormInternship.resources
