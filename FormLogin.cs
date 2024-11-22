@@ -153,11 +153,6 @@ namespace InternshipsManageApp
             }
         }
 
-
-
-
-
-
         private void closebtn_MouseHover(object sender, EventArgs e)
         {
             closebtn.BackColor = Color.Red;
