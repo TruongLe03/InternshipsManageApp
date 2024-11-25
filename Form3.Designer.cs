@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -37,16 +40,13 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnDg_Kq = new System.Windows.Forms.Button();
-            this.btnTeacher = new System.Windows.Forms.Button();
-            this.btnInternship = new System.Windows.Forms.Button();
-            this.btnCompany = new System.Windows.Forms.Button();
-            this.btnStudent = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
+            this.btnFormDg_Kq = new System.Windows.Forms.Button();
+            this.btnFormTeacher = new System.Windows.Forms.Button();
+            this.btnFormInternship = new System.Windows.Forms.Button();
+            this.btnFormCompany = new System.Windows.Forms.Button();
+            this.btnFormStudent = new System.Windows.Forms.Button();
+            this.btnFormHome = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -58,6 +58,10 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.lbSelected = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.chart4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -70,34 +74,30 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.chart4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelDesktop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart4)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart4)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panelMenu.Controls.Add(this.btnDg_Kq);
-            this.panelMenu.Controls.Add(this.btnTeacher);
-            this.panelMenu.Controls.Add(this.btnInternship);
-            this.panelMenu.Controls.Add(this.btnCompany);
-            this.panelMenu.Controls.Add(this.btnStudent);
-            this.panelMenu.Controls.Add(this.btnHome);
+            this.panelMenu.Controls.Add(this.btnFormDg_Kq);
+            this.panelMenu.Controls.Add(this.btnFormTeacher);
+            this.panelMenu.Controls.Add(this.btnFormInternship);
+            this.panelMenu.Controls.Add(this.btnFormCompany);
+            this.panelMenu.Controls.Add(this.btnFormStudent);
+            this.panelMenu.Controls.Add(this.btnFormHome);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
@@ -106,96 +106,97 @@
             this.panelMenu.Size = new System.Drawing.Size(200, 651);
             this.panelMenu.TabIndex = 0;
             // 
-            // btnDg_Kq
+            // btnFormDg_Kq
             // 
-            this.btnDg_Kq.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDg_Kq.FlatAppearance.BorderSize = 0;
-            this.btnDg_Kq.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDg_Kq.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDg_Kq.ForeColor = System.Drawing.Color.White;
-            this.btnDg_Kq.Location = new System.Drawing.Point(0, 370);
-            this.btnDg_Kq.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btnDg_Kq.Name = "btnDg_Kq";
-            this.btnDg_Kq.Size = new System.Drawing.Size(200, 60);
-            this.btnDg_Kq.TabIndex = 8;
-            this.btnDg_Kq.Text = "Đánh giá và kết quả";
-            this.btnDg_Kq.UseVisualStyleBackColor = true;
+            this.btnFormDg_Kq.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFormDg_Kq.FlatAppearance.BorderSize = 0;
+            this.btnFormDg_Kq.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormDg_Kq.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFormDg_Kq.ForeColor = System.Drawing.Color.White;
+            this.btnFormDg_Kq.Location = new System.Drawing.Point(0, 370);
+            this.btnFormDg_Kq.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnFormDg_Kq.Name = "btnFormDg_Kq";
+            this.btnFormDg_Kq.Size = new System.Drawing.Size(200, 60);
+            this.btnFormDg_Kq.TabIndex = 8;
+            this.btnFormDg_Kq.Text = "Đánh giá và kết quả";
+            this.btnFormDg_Kq.UseVisualStyleBackColor = true;
             // 
-            // btnTeacher
+            // btnFormTeacher
             // 
-            this.btnTeacher.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTeacher.FlatAppearance.BorderSize = 0;
-            this.btnTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTeacher.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTeacher.ForeColor = System.Drawing.Color.White;
-            this.btnTeacher.Location = new System.Drawing.Point(0, 310);
-            this.btnTeacher.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btnTeacher.Name = "btnTeacher";
-            this.btnTeacher.Size = new System.Drawing.Size(200, 60);
-            this.btnTeacher.TabIndex = 5;
-            this.btnTeacher.Text = "Giảng viên hướng dẫn";
-            this.btnTeacher.UseVisualStyleBackColor = true;
+            this.btnFormTeacher.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFormTeacher.FlatAppearance.BorderSize = 0;
+            this.btnFormTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormTeacher.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFormTeacher.ForeColor = System.Drawing.Color.White;
+            this.btnFormTeacher.Location = new System.Drawing.Point(0, 310);
+            this.btnFormTeacher.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnFormTeacher.Name = "btnFormTeacher";
+            this.btnFormTeacher.Size = new System.Drawing.Size(200, 60);
+            this.btnFormTeacher.TabIndex = 5;
+            this.btnFormTeacher.Text = "Giảng viên hướng dẫn";
+            this.btnFormTeacher.UseVisualStyleBackColor = true;
             // 
-            // btnInternship
+            // btnFormInternship
             // 
-            this.btnInternship.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInternship.FlatAppearance.BorderSize = 0;
-            this.btnInternship.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInternship.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInternship.ForeColor = System.Drawing.Color.White;
-            this.btnInternship.Location = new System.Drawing.Point(0, 250);
-            this.btnInternship.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btnInternship.Name = "btnInternship";
-            this.btnInternship.Size = new System.Drawing.Size(200, 60);
-            this.btnInternship.TabIndex = 4;
-            this.btnInternship.Text = "Đợt thực tập";
-            this.btnInternship.UseVisualStyleBackColor = true;
+            this.btnFormInternship.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFormInternship.FlatAppearance.BorderSize = 0;
+            this.btnFormInternship.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormInternship.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFormInternship.ForeColor = System.Drawing.Color.White;
+            this.btnFormInternship.Location = new System.Drawing.Point(0, 250);
+            this.btnFormInternship.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnFormInternship.Name = "btnFormInternship";
+            this.btnFormInternship.Size = new System.Drawing.Size(200, 60);
+            this.btnFormInternship.TabIndex = 4;
+            this.btnFormInternship.Text = "Đợt thực tập";
+            this.btnFormInternship.UseVisualStyleBackColor = true;
             // 
-            // btnCompany
+            // btnFormCompany
             // 
-            this.btnCompany.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCompany.FlatAppearance.BorderSize = 0;
-            this.btnCompany.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCompany.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCompany.ForeColor = System.Drawing.Color.White;
-            this.btnCompany.Location = new System.Drawing.Point(0, 190);
-            this.btnCompany.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btnCompany.Name = "btnCompany";
-            this.btnCompany.Size = new System.Drawing.Size(200, 60);
-            this.btnCompany.TabIndex = 3;
-            this.btnCompany.Text = "Công ty";
-            this.btnCompany.UseVisualStyleBackColor = true;
+            this.btnFormCompany.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFormCompany.FlatAppearance.BorderSize = 0;
+            this.btnFormCompany.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormCompany.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFormCompany.ForeColor = System.Drawing.Color.White;
+            this.btnFormCompany.Location = new System.Drawing.Point(0, 190);
+            this.btnFormCompany.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnFormCompany.Name = "btnFormCompany";
+            this.btnFormCompany.Size = new System.Drawing.Size(200, 60);
+            this.btnFormCompany.TabIndex = 3;
+            this.btnFormCompany.Text = "Công ty";
+            this.btnFormCompany.UseVisualStyleBackColor = true;
             // 
-            // btnStudent
+            // btnFormStudent
             // 
-            this.btnStudent.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnStudent.FlatAppearance.BorderSize = 0;
-            this.btnStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStudent.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStudent.ForeColor = System.Drawing.Color.White;
-            this.btnStudent.Location = new System.Drawing.Point(0, 130);
-            this.btnStudent.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btnStudent.Name = "btnStudent";
-            this.btnStudent.Size = new System.Drawing.Size(200, 60);
-            this.btnStudent.TabIndex = 2;
-            this.btnStudent.Text = "Sinh viên";
-            this.btnStudent.UseVisualStyleBackColor = true;
+            this.btnFormStudent.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFormStudent.FlatAppearance.BorderSize = 0;
+            this.btnFormStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormStudent.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFormStudent.ForeColor = System.Drawing.Color.White;
+            this.btnFormStudent.Location = new System.Drawing.Point(0, 130);
+            this.btnFormStudent.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnFormStudent.Name = "btnFormStudent";
+            this.btnFormStudent.Size = new System.Drawing.Size(200, 60);
+            this.btnFormStudent.TabIndex = 2;
+            this.btnFormStudent.Text = "Sinh viên";
+            this.btnFormStudent.UseVisualStyleBackColor = true;
+          
             // 
-            // btnHome
+            // btnFormHome
             // 
-            this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Location = new System.Drawing.Point(0, 70);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(200, 60);
-            this.btnHome.TabIndex = 1;
-            this.btnHome.Text = "Trang chủ";
-            this.btnHome.UseVisualStyleBackColor = true;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            this.btnFormHome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFormHome.FlatAppearance.BorderSize = 0;
+            this.btnFormHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFormHome.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFormHome.ForeColor = System.Drawing.Color.White;
+            this.btnFormHome.Location = new System.Drawing.Point(0, 70);
+            this.btnFormHome.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnFormHome.Name = "btnFormHome";
+            this.btnFormHome.Size = new System.Drawing.Size(200, 60);
+            this.btnFormHome.TabIndex = 1;
+            this.btnFormHome.Text = "Trang chủ";
+            this.btnFormHome.UseVisualStyleBackColor = true;
+            
             // 
             // panelLogo
             // 
@@ -326,7 +327,53 @@
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(934, 581);
             this.panelDesktop.TabIndex = 2;
-            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
+           
+            // 
+            // chart4
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart4.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart4.Legends.Add(legend1);
+            this.chart4.Location = new System.Drawing.Point(434, 345);
+            this.chart4.Name = "chart4";
+            this.chart4.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart4.Series.Add(series1);
+            this.chart4.Size = new System.Drawing.Size(474, 200);
+            this.chart4.TabIndex = 6;
+            this.chart4.Text = "chart4";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Location = new System.Drawing.Point(248, 31);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 80);
+            this.panel2.TabIndex = 5;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(17, 50);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(27, 19);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "15";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(17, 15);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(158, 19);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Giảng viên phụ trách";
             // 
             // chart3
             // 
@@ -463,52 +510,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Số lượng sinh viên ";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Location = new System.Drawing.Point(248, 31);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 80);
-            this.panel2.TabIndex = 5;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(17, 50);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(27, 19);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "15";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(17, 15);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(158, 19);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Giảng viên phụ trách";
-            // 
-            // chart4
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chart4.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart4.Legends.Add(legend1);
-            this.chart4.Location = new System.Drawing.Point(434, 345);
-            this.chart4.Name = "chart4";
-            this.chart4.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart4.Series.Add(series1);
-            this.chart4.Size = new System.Drawing.Size(474, 200);
-            this.chart4.TabIndex = 6;
-            this.chart4.Text = "chart4";
-            // 
             // FormDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -529,6 +530,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelDesktop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart4)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
@@ -538,9 +542,6 @@
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -549,11 +550,11 @@
 
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Button btnTeacher;
-        private System.Windows.Forms.Button btnInternship;
-        private System.Windows.Forms.Button btnCompany;
-        private System.Windows.Forms.Button btnStudent;
-        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Button btnFormTeacher;
+        private System.Windows.Forms.Button btnFormInternship;
+        private System.Windows.Forms.Button btnFormCompany;
+        private System.Windows.Forms.Button btnFormStudent;
+        private System.Windows.Forms.Button btnFormHome;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbSelected;
         private System.Windows.Forms.Button btnZoom;
@@ -576,7 +577,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnDg_Kq;
+        private System.Windows.Forms.Button btnFormDg_Kq;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label8;

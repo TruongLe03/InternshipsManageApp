@@ -22,13 +22,13 @@ namespace InternshipsManageApp
             InitializeComponent();
 
             // Gắn sự kiện Click cho các nút điều hướng
-            btnHome.Click += Button_Click;
-            btnStudent.Click += Button_Click;
-            btnCompany.Click += Button_Click;
-            btnInternship.Click += Button_Click;
-            btnTeacher.Click += Button_Click;
+            btnFormHome.Click += Button_Click;
+            btnFormStudent.Click += Button_Click;
+            btnFormCompany.Click += Button_Click;
+            btnFormInternship.Click += Button_Click;
+            btnFormTeacher.Click += Button_Click;
            
-            btnDg_Kq.Click += Button_Click;
+            btnFormDg_Kq.Click += Button_Click;
 
             // Thiết lập trạng thái mặc định
             InitializeDefaultState();
@@ -38,7 +38,7 @@ namespace InternshipsManageApp
         private void InitializeDefaultState()
         {
             // Thiết lập Home là nút active mặc định
-            activeButton = btnHome;
+            activeButton = btnFormHome;
             SetActiveButtonStyle(activeButton);
 
             // Hiển thị nội dung của Home
@@ -63,7 +63,7 @@ namespace InternshipsManageApp
             SetActiveButtonStyle(activeButton);
 
             // Kiểm tra nếu là Home, không mở form mới
-            if (activeButton == btnHome)
+            if (activeButton == btnFormHome)
             {
                 if (activeForm != null)
                 {
@@ -107,12 +107,12 @@ namespace InternshipsManageApp
         // Phương thức trả về form con tương ứng với từng nút
         private Form GetChildFormByButton(Button button)
         {
-            if (button == btnStudent) return new Forms.FormStudent();
-            if (button == btnCompany) return new Forms.FormCompany();
-            if (button == btnInternship) return new Forms.FormInternship();
-            if (button == btnTeacher) return new Forms.FormTeacher();
+            if (button == btnFormStudent) return new Forms.FormStudent();
+            if (button == btnFormCompany) return new Forms.FormCompany();
+            if (button == btnFormInternship) return new Forms.FormInternship();
+            if (button == btnFormTeacher) return new Forms.FormTeacher();
             
-            if (button == btnDg_Kq) return new Forms.FormResult_evaluation();
+            if (button == btnFormDg_Kq) return new Forms.FormResult_evaluation();
 
             return null;
         }
@@ -148,14 +148,5 @@ namespace InternshipsManageApp
             
         }
 
-        private void panelDesktop_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
