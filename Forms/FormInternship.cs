@@ -16,5 +16,10 @@ namespace InternshipsManageApp.Forms
         {
             InitializeComponent();
         }
+
+        private void FormInternship_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

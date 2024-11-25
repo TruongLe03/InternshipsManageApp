@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Net.Http;
 using Newtonsoft.Json;
+using InternshipsManageApp.Forms;
 
 
 namespace InternshipsManageApp
@@ -129,14 +130,16 @@ namespace InternshipsManageApp
                     string role = jsonResponse.data.role;
                     if (role == "admin")
                     {
-                        FormDashboard formdashboard = new FormDashboard();
-
-                        // Hiển thị FormDashboard
+                        FormDashboard formdashboard = new FormDashboard();            
                         formdashboard.Show();
-
-                        // Ẩn FormLogin nếu không cần nữa
                         this.Hide();
 
+                    }
+                    else if (role == "lecturer")
+                    {
+                        FormTeacher formteacher = new FormTeacher();
+                        formteacher.Show();
+                        this.Hide();
                     }
 
                 }
