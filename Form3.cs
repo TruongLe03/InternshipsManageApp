@@ -1,9 +1,11 @@
-﻿using System;
+﻿using InternshipsManageApp.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,68 +16,59 @@ namespace InternshipsManageApp
 {
     public partial class FormDashboard : Form
     {
-        private Button activeButton; // Lưu trữ nút hiện tại đang được chọn
-        private Form activeForm; // Lưu trữ form con đang mở
+        private Button activeButton;
+        private Form activeForm;
+
+        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+        private static extern bool ReleaseCapture();
+
+        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+        private static extern IntPtr SendMessage(IntPtr hWnd, int msg, int wParam, int lParam);
+
+        private const int WM_NCLBUTTONDOWN = 0xA1;
+        private const int HTCAPTION = 0x2;
+
 
         public FormDashboard()
         {
             InitializeComponent();
-
-            // Gắn sự kiện Click cho các nút điều hướng
-            btnFormHome.Click += Button_Click;
-            btnFormStudent.Click += Button_Click;
-            btnFormCompany.Click += Button_Click;
-            btnFormInternship.Click += Button_Click;
-            btnFormTeacher.Click += Button_Click;
-           
-            btnFormDg_Kq.Click += Button_Click;
-
-            // Thiết lập trạng thái mặc định
             InitializeDefaultState();
+            this.ControlBox = false;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
-        // Phương thức khởi tạo mặc định (mặc định ở Home)
+        // Phương thức khởi tạo mặc định
         private void InitializeDefaultState()
         {
-            // Thiết lập Home là nút active mặc định
+            // Đặt nút "Home" là active mặc định
             activeButton = btnFormHome;
             SetActiveButtonStyle(activeButton);
 
-            // Hiển thị nội dung của Home
-            lbSelected.Text = "Home"; // Cập nhật tiêu đề
-            if (activeForm != null)
-            {
-                activeForm.Close();
-            }
+            // Mở FormHome mặc định khi khởi động
+            OpenChildForm(new FormHome(), btnFormHome);
         }
 
-        // Phương thức xử lý khi nút điều hướng được nhấn
+        // Sự kiện khi một nút điều hướng được nhấn
         private void Button_Click(object sender, EventArgs e)
         {
-            // Đặt lại giao diện nút trước đó (nếu có)
+            
             if (activeButton != null)
             {
-                ResetButtonStyle(activeButton); // Đặt lại giao diện của nút trước đó
+                ResetButtonStyle(activeButton);
             }
 
-            // Cập nhật giao diện cho nút hiện tại
             activeButton = sender as Button;
             SetActiveButtonStyle(activeButton);
 
-            // Kiểm tra nếu là Home, không mở form mới
             if (activeButton == btnFormHome)
             {
                 if (activeForm != null)
                 {
-                    activeForm.Close(); // Đóng form con đang hiển thị
+                    activeForm.Close();
                     activeForm = null;
                 }
-                lbSelected.Text = "Home"; // Cập nhật tiêu đề
-            }
-            else
-            {
-                // Mở form con tương ứng
-                OpenChildForm(GetChildFormByButton(activeButton), activeButton);
+                lbSelected.Text = "Trang chủ";
+                return;
             }
         }
 
@@ -84,7 +77,7 @@ namespace InternshipsManageApp
         {
             if (activeForm != null)
             {
-                activeForm.Close(); // Đóng form con trước đó
+                activeForm.Close();
             }
 
             activeForm = childForm;
@@ -92,61 +85,105 @@ namespace InternshipsManageApp
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
 
-            // Thêm form con vào giao diện Dashboard
-            this.panelDesktop.Controls.Add(childForm);
-            this.panelDesktop.Tag = childForm;
-
-            // Đưa form con ra phía trước và hiển thị
+            panelForm.Controls.Add(childForm);
+            panelForm.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
 
-            // Cập nhật nhãn tiêu đề
             lbSelected.Text = childForm.Text;
         }
 
-        // Phương thức trả về form con tương ứng với từng nút
-        private Form GetChildFormByButton(Button button)
-        {
-            if (button == btnFormStudent) return new Forms.FormStudent();
-            if (button == btnFormCompany) return new Forms.FormCompany();
-            if (button == btnFormInternship) return new Forms.FormInternship();
-            if (button == btnFormTeacher) return new Forms.FormTeacher();
-            
-            if (button == btnFormDg_Kq) return new Forms.FormResult_evaluation();
-
-            return null;
-        }
-
-        // Đặt giao diện cho nút active
+        // Thiết lập giao diện cho nút đang active
         private void SetActiveButtonStyle(Button button)
         {
-            button.FlatAppearance.BorderSize = 2; // Viền nổi bật
-            button.FlatAppearance.BorderColor = Color.FromArgb(52, 152, 219); // Viền màu xanh
-            button.ForeColor = Color.FromArgb(52, 152, 219); // Màu chữ nổi bật
+            button.FlatAppearance.BorderSize = 2;
+            button.FlatAppearance.BorderColor = Color.FromArgb(52, 152, 219);
+            button.ForeColor = Color.FromArgb(52, 152, 219);
         }
 
-        // Đặt lại giao diện nút không còn active
+        // Đặt lại giao diện cho nút không còn active
         private void ResetButtonStyle(Button button)
         {
-            button.FlatAppearance.BorderSize = 0; // Loại bỏ viền
-            button.ForeColor = Color.White; // Đặt lại màu chữ mặc định
+            button.FlatAppearance.BorderSize = 0;
+            button.ForeColor = Color.White;
         }
 
-        // Sự kiện đóng ứng dụng
+        // SK nhấn logo
+        private void panelLogo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        // Sự kiện khi nút "Home" được nhấn
+        private void btnFormHome_Click(object sender, EventArgs e)
+        {
+            Button_Click(sender, e);
+            OpenChildForm(new FormHome(), sender);
+        }
+
+        // Sự kiện khi nút "Student" được nhấn
+        private void btnFormStudent_Click(object sender, EventArgs e)
+        {
+            Button_Click(sender, e); 
+            OpenChildForm(new FormStudent(), sender);
+        }
+
+        // Sự kiện khi nút "Company" được nhấn
+        private void btnFormCompany_Click(object sender, EventArgs e)
+        {
+            Button_Click(sender, e); 
+            OpenChildForm(new FormCompany(), sender);
+        }
+
+        // Sự kiện khi nút "Internship" được nhấn
+        private void btnFormInternship_Click(object sender, EventArgs e)
+        {
+            Button_Click(sender, e); 
+            OpenChildForm(new FormInternship(), sender);
+        }
+
+        // Sự kiện khi nút "Evaluation" được nhấn
+        private void btnFormDg_Kq_Click(object sender, EventArgs e)
+        {
+            Button_Click(sender, e); 
+            OpenChildForm(new FormResult_evaluation(), sender);
+        }
+
+        // Sự kiện khi nút "Teacher" được nhấn
+        private void btnFormTeacher_Click(object sender, EventArgs e)
+        {
+            Button_Click(sender, e); 
+            OpenChildForm(new FormTeacher(), sender);
+        }
+
+        // Sự kiện khi đóng ứng dụng
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        // Sự kiện phóng to cửa sổ
         private void btnZoom_Click(object sender, EventArgs e)
         {
-            
+            if (WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
+            else
+                this.WindowState = FormWindowState.Normal;
         }
 
+        // Sự kiện ẩn cửa sổ
         private void btnHidden_Click(object sender, EventArgs e)
         {
-            
+            this.WindowState = FormWindowState.Minimized;
         }
 
+        private void panelTop_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(this.Handle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
+            }
+        }
     }
 }
+
