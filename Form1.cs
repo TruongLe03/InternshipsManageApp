@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Net.Http;
+using Newtonsoft.Json;
+using InternshipsManageApp.Forms;
+
 
 namespace InternshipsManageApp
 {
@@ -18,7 +22,7 @@ namespace InternshipsManageApp
             InitializeComponent();
         }
 
-        // Khởi tạo placeholder khi form được tải
+       
         private void Form1_Load(object sender, EventArgs e)
         {
             SetEmailPlaceholder();
@@ -84,27 +88,62 @@ namespace InternshipsManageApp
                 SetPasswordPlaceholder();
             }
         }
-
-
-
         private void closebtn_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void btnSubmit_Click(object sender, EventArgs e)
+        private static readonly HttpClient client = new HttpClient();
+        private async void btnSubmit_Click(object sender, EventArgs e)
         {
-            FormDashboard formdashboard = new FormDashboard();
+            // Tạo đối tượng payload để gửi đến API
+            var email = txtUsername.Text;
+            var password = txtPassword.Text;
+            var login = new
+            {
+                email = email,
+                password = password
+            };
+            var json = JsonConvert.SerializeObject(login);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            // Hiển thị FormDashboard
-            formdashboard.Show();
+            try
+            {
+                var res = await client.PostAsync("http://192.168.0.195:8001/api/auth/login", content);
+                var responseString = await res.Content.ReadAsStringAsync();
+                if (res.IsSuccessStatusCode)
+                {
+                    MessageBox.Show("Đăng nhập thành công!");
+                    var jsonResponse = JsonConvert.DeserializeObject<dynamic>(responseString);
+                    string username = jsonResponse.data.username;
+                    string userEmail = jsonResponse.data.email;
+                    string role = jsonResponse.data.role;
+                    if (role == "admin")
+                    {
+                        FormDashboard formdashboard = new FormDashboard();
+                        formdashboard.Show();
+                        this.Hide();
 
-            // Ẩn FormLogin nếu không cần nữa
-            this.Hide();
+                    }
+                    else if (role == "lecturer")
+                    {
+                        FormTeacher formteacher = new FormTeacher();
+                        formteacher.Show();
+                        this.Hide();
+                    }
 
-            // Đăng ký sự kiện FormClosed để đóng ứng dụng khi FormDashboard đóng lại
-            formdashboard.FormClosed += (s, args) => this.Close();
+                }
+                else
+                {
 
+                    MessageBox.Show("Đăng nhập thất bại: " + responseString);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối: " + ex.Message);
+                Console.WriteLine("Chi tiết lỗi: " + ex.StackTrace);
+            }
         }
 
         private void closebtn_MouseHover(object sender, EventArgs e)
@@ -120,6 +159,11 @@ namespace InternshipsManageApp
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
