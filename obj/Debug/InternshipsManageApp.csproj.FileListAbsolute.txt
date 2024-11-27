@@ -24,3 +24,4 @@ D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormCompany.resourc
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormInternship.resources
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormResult_evaluation.resources
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormTeacher.resources
+D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormHome.resources

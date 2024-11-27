@@ -21,5 +21,15 @@ namespace InternshipsManageApp.Forms
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtDiachi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

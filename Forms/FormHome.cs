@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace InternshipsManageApp.Forms
 {
-    public partial class FormResult_evaluation : Form
+    public partial class FormHome : Form
     {
-        public FormResult_evaluation()
+        public FormHome()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
