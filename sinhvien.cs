@@ -12,9 +12,10 @@ namespace InternshipsManageApp
         {
             public int id { get; set; }
             public string Name { get; set; }
-            public string MSV { get; set; }
+            public int MSV { get; set; }
             public string Lop { get; set; }
             public string Nganhhoc { get; set; }
         }
+
     }
 }

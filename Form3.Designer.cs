@@ -67,7 +67,7 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(200, 700);
+            this.panelMenu.Size = new System.Drawing.Size(277, 700);
             this.panelMenu.TabIndex = 0;
             // 
             // btnFormDg_Kq
@@ -75,12 +75,12 @@
             this.btnFormDg_Kq.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnFormDg_Kq.FlatAppearance.BorderSize = 0;
             this.btnFormDg_Kq.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFormDg_Kq.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFormDg_Kq.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFormDg_Kq.ForeColor = System.Drawing.Color.White;
             this.btnFormDg_Kq.Location = new System.Drawing.Point(0, 370);
             this.btnFormDg_Kq.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnFormDg_Kq.Name = "btnFormDg_Kq";
-            this.btnFormDg_Kq.Size = new System.Drawing.Size(200, 60);
+            this.btnFormDg_Kq.Size = new System.Drawing.Size(277, 60);
             this.btnFormDg_Kq.TabIndex = 8;
             this.btnFormDg_Kq.Text = "Đánh giá và kết quả";
             this.btnFormDg_Kq.UseVisualStyleBackColor = true;
@@ -91,12 +91,12 @@
             this.btnFormTeacher.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnFormTeacher.FlatAppearance.BorderSize = 0;
             this.btnFormTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFormTeacher.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFormTeacher.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFormTeacher.ForeColor = System.Drawing.Color.White;
             this.btnFormTeacher.Location = new System.Drawing.Point(0, 310);
             this.btnFormTeacher.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnFormTeacher.Name = "btnFormTeacher";
-            this.btnFormTeacher.Size = new System.Drawing.Size(200, 60);
+            this.btnFormTeacher.Size = new System.Drawing.Size(277, 60);
             this.btnFormTeacher.TabIndex = 5;
             this.btnFormTeacher.Text = "Giảng viên hướng dẫn";
             this.btnFormTeacher.UseVisualStyleBackColor = true;
@@ -107,12 +107,12 @@
             this.btnFormInternship.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnFormInternship.FlatAppearance.BorderSize = 0;
             this.btnFormInternship.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFormInternship.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFormInternship.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFormInternship.ForeColor = System.Drawing.Color.White;
             this.btnFormInternship.Location = new System.Drawing.Point(0, 250);
             this.btnFormInternship.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnFormInternship.Name = "btnFormInternship";
-            this.btnFormInternship.Size = new System.Drawing.Size(200, 60);
+            this.btnFormInternship.Size = new System.Drawing.Size(277, 60);
             this.btnFormInternship.TabIndex = 4;
             this.btnFormInternship.Text = "Đợt thực tập";
             this.btnFormInternship.UseVisualStyleBackColor = true;
@@ -123,12 +123,12 @@
             this.btnFormCompany.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnFormCompany.FlatAppearance.BorderSize = 0;
             this.btnFormCompany.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFormCompany.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFormCompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFormCompany.ForeColor = System.Drawing.Color.White;
             this.btnFormCompany.Location = new System.Drawing.Point(0, 190);
             this.btnFormCompany.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnFormCompany.Name = "btnFormCompany";
-            this.btnFormCompany.Size = new System.Drawing.Size(200, 60);
+            this.btnFormCompany.Size = new System.Drawing.Size(277, 60);
             this.btnFormCompany.TabIndex = 3;
             this.btnFormCompany.Text = "Công ty";
             this.btnFormCompany.UseVisualStyleBackColor = true;
@@ -139,12 +139,12 @@
             this.btnFormStudent.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnFormStudent.FlatAppearance.BorderSize = 0;
             this.btnFormStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFormStudent.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFormStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFormStudent.ForeColor = System.Drawing.Color.White;
             this.btnFormStudent.Location = new System.Drawing.Point(0, 130);
             this.btnFormStudent.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnFormStudent.Name = "btnFormStudent";
-            this.btnFormStudent.Size = new System.Drawing.Size(200, 60);
+            this.btnFormStudent.Size = new System.Drawing.Size(277, 60);
             this.btnFormStudent.TabIndex = 2;
             this.btnFormStudent.Text = "Sinh viên";
             this.btnFormStudent.UseVisualStyleBackColor = true;
@@ -155,12 +155,12 @@
             this.btnFormHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnFormHome.FlatAppearance.BorderSize = 0;
             this.btnFormHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFormHome.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFormHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFormHome.ForeColor = System.Drawing.Color.White;
             this.btnFormHome.Location = new System.Drawing.Point(0, 70);
             this.btnFormHome.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnFormHome.Name = "btnFormHome";
-            this.btnFormHome.Size = new System.Drawing.Size(200, 60);
+            this.btnFormHome.Size = new System.Drawing.Size(277, 60);
             this.btnFormHome.TabIndex = 1;
             this.btnFormHome.Text = "Trang chủ";
             this.btnFormHome.UseVisualStyleBackColor = true;
@@ -175,7 +175,7 @@
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(200, 70);
+            this.panelLogo.Size = new System.Drawing.Size(277, 70);
             this.panelLogo.TabIndex = 0;
             this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint);
             // 
@@ -192,16 +192,16 @@
             this.panelTop.Controls.Add(this.lbSelected);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.ForeColor = System.Drawing.Color.Transparent;
-            this.panelTop.Location = new System.Drawing.Point(200, 0);
+            this.panelTop.Location = new System.Drawing.Point(277, 0);
             this.panelTop.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(950, 70);
+            this.panelTop.Size = new System.Drawing.Size(1053, 70);
             this.panelTop.TabIndex = 1;
             this.panelTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseDown);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(753, 34);
+            this.button1.Location = new System.Drawing.Point(733, 37);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(30, 30);
             this.button1.TabIndex = 7;
@@ -211,7 +211,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::InternshipsManageApp.Properties.Resources.profile;
-            this.pictureBox2.Location = new System.Drawing.Point(916, 34);
+            this.pictureBox2.Location = new System.Drawing.Point(930, 34);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(30, 30);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -221,16 +221,16 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(823, 40);
+            this.label2.Location = new System.Drawing.Point(805, 36);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 19);
+            this.label2.Size = new System.Drawing.Size(119, 29);
             this.label2.TabIndex = 5;
             this.label2.Text = "Truongle";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::InternshipsManageApp.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(790, 34);
+            this.pictureBox1.Location = new System.Drawing.Point(769, 34);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(30, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -241,9 +241,9 @@
             // 
             this.btnZoom.FlatAppearance.BorderSize = 0;
             this.btnZoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnZoom.Location = new System.Drawing.Point(883, 3);
+            this.btnZoom.Location = new System.Drawing.Point(876, -9);
             this.btnZoom.Name = "btnZoom";
-            this.btnZoom.Size = new System.Drawing.Size(30, 30);
+            this.btnZoom.Size = new System.Drawing.Size(48, 49);
             this.btnZoom.TabIndex = 3;
             this.btnZoom.Text = "[]";
             this.btnZoom.UseVisualStyleBackColor = true;
@@ -253,9 +253,9 @@
             // 
             this.btnHidden.FlatAppearance.BorderSize = 0;
             this.btnHidden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHidden.Location = new System.Drawing.Point(848, 3);
+            this.btnHidden.Location = new System.Drawing.Point(825, 0);
             this.btnHidden.Name = "btnHidden";
-            this.btnHidden.Size = new System.Drawing.Size(30, 30);
+            this.btnHidden.Size = new System.Drawing.Size(36, 30);
             this.btnHidden.TabIndex = 2;
             this.btnHidden.Text = "-";
             this.btnHidden.UseVisualStyleBackColor = true;
@@ -265,7 +265,7 @@
             // 
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Location = new System.Drawing.Point(919, 3);
+            this.btnClose.Location = new System.Drawing.Point(930, 0);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(30, 30);
             this.btnClose.TabIndex = 1;
@@ -279,7 +279,7 @@
             this.lbSelected.Location = new System.Drawing.Point(338, 23);
             this.lbSelected.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbSelected.Name = "lbSelected";
-            this.lbSelected.Size = new System.Drawing.Size(81, 19);
+            this.lbSelected.Size = new System.Drawing.Size(130, 29);
             this.lbSelected.TabIndex = 0;
             this.lbSelected.Text = "Trang chủ";
             this.lbSelected.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -287,20 +287,20 @@
             // panelForm
             // 
             this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelForm.Location = new System.Drawing.Point(200, 70);
+            this.panelForm.Location = new System.Drawing.Point(277, 70);
             this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(950, 630);
+            this.panelForm.Size = new System.Drawing.Size(1053, 630);
             this.panelForm.TabIndex = 2;
             // 
             // FormDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1150, 700);
+            this.ClientSize = new System.Drawing.Size(1330, 700);
             this.Controls.Add(this.panelForm);
             this.Controls.Add(this.panelTop);
             this.Controls.Add(this.panelMenu);
-            this.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
