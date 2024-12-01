@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace InternshipsManageApp.Forms
 {
-    public partial class FormInternship : Form
+    public partial class FormInternship : BaseForm
     {
         public FormInternship()
         {
