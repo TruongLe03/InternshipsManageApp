@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace InternshipsManageApp.Forms
 {
@@ -19,6 +21,7 @@ namespace InternshipsManageApp.Forms
 
         private void FormStudent_Load(object sender, EventArgs e)
         {
+
 
         }
 
