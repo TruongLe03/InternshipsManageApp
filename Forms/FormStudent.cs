@@ -40,7 +40,7 @@ namespace InternshipsManageApp.Forms
             client.DefaultRequestHeaders.Clear();  // Đảm bảo xóa các header cũ nếu có
             client.DefaultRequestHeaders.Add("Authorization", "Bearer " + token);
 
-            var response = await client.GetAsync("http://192.168.0.196:8001/api/students");
+            var response = await client.GetAsync("http://nqbdev-30704.portmap.host:30704/api/students");
             var responseString = await response.Content.ReadAsStringAsync();
            
 
@@ -92,6 +92,16 @@ namespace InternshipsManageApp.Forms
         {
             // Gọi hàm hiển thị sinh viên khi form load
             DisplayStudents();
+        }
+
+        private void dataGridViewsinhvien_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

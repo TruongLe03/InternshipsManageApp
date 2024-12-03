@@ -177,7 +177,6 @@
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(282, 70);
             this.panelLogo.TabIndex = 0;
-            
             // 
             // panelTop
             // 
@@ -202,7 +201,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(795, 36);
+            this.button1.Location = new System.Drawing.Point(859, 40);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(30, 30);
             this.button1.TabIndex = 7;
@@ -212,7 +211,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::InternshipsManageApp.Properties.Resources.profile;
-            this.pictureBox2.Location = new System.Drawing.Point(992, 36);
+            this.pictureBox2.Location = new System.Drawing.Point(1016, 40);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(30, 30);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -221,18 +220,17 @@
             // 
             // lb2
             // 
-            this.lb2.AutoSize = true;
-            this.lb2.Location = new System.Drawing.Point(867, 35);
-            this.lb2.Name = "lb2";
-            this.lb2.Size = new System.Drawing.Size(119, 29);
-            this.lb2.TabIndex = 5;
-            this.lb2.Text = "Truongle";
-            this.lb2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(931, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 20);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Truongle";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::InternshipsManageApp.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(831, 33);
+            this.pictureBox1.Location = new System.Drawing.Point(895, 40);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(30, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -243,9 +241,9 @@
             // 
             this.btnZoom.FlatAppearance.BorderSize = 0;
             this.btnZoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnZoom.Location = new System.Drawing.Point(938, -10);
+            this.btnZoom.Location = new System.Drawing.Point(980, 3);
             this.btnZoom.Name = "btnZoom";
-            this.btnZoom.Size = new System.Drawing.Size(48, 49);
+            this.btnZoom.Size = new System.Drawing.Size(30, 30);
             this.btnZoom.TabIndex = 3;
             this.btnZoom.Text = "[]";
             this.btnZoom.UseVisualStyleBackColor = true;
@@ -255,9 +253,9 @@
             // 
             this.btnHidden.FlatAppearance.BorderSize = 0;
             this.btnHidden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHidden.Location = new System.Drawing.Point(907, -1);
+            this.btnHidden.Location = new System.Drawing.Point(940, 3);
             this.btnHidden.Name = "btnHidden";
-            this.btnHidden.Size = new System.Drawing.Size(36, 30);
+            this.btnHidden.Size = new System.Drawing.Size(30, 30);
             this.btnHidden.TabIndex = 2;
             this.btnHidden.Text = "-";
             this.btnHidden.UseVisualStyleBackColor = true;
@@ -267,7 +265,7 @@
             // 
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Location = new System.Drawing.Point(992, -1);
+            this.btnClose.Location = new System.Drawing.Point(1016, 3);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(30, 30);
             this.btnClose.TabIndex = 1;
@@ -278,10 +276,10 @@
             // lbSelected
             // 
             this.lbSelected.AutoSize = true;
-            this.lbSelected.Location = new System.Drawing.Point(338, 23);
+            this.lbSelected.Location = new System.Drawing.Point(388, 40);
             this.lbSelected.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbSelected.Name = "lbSelected";
-            this.lbSelected.Size = new System.Drawing.Size(130, 29);
+            this.lbSelected.Size = new System.Drawing.Size(89, 20);
             this.lbSelected.TabIndex = 0;
             this.lbSelected.Text = "Trang chủ";
             this.lbSelected.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -296,7 +294,7 @@
             // 
             // FormDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1330, 700);
             this.Controls.Add(this.panelForm);
