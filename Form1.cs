@@ -110,7 +110,7 @@ namespace InternshipsManageApp
 
             try
             {
-                var res = await client.PostAsync("http://192.168.0.196:8001/api/auth/login", content);
+                var res = await client.PostAsync("http://nqbdev-30704.portmap.host:30704/api/auth/login", content);
                 var responseString = await res.Content.ReadAsStringAsync();
                 if (res.IsSuccessStatusCode)
                 {
