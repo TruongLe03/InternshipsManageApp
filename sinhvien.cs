@@ -10,11 +10,12 @@ namespace InternshipsManageApp
     {
         public class Student
         {
-            public int id { get; set; }
-            public string Name { get; set; }
-            public int MSV { get; set; }
-            public string Lop { get; set; }
-            public string Nganhhoc { get; set; }
+            public string student_code { get; set; }
+            public string first_name { get; set; }
+            public string last_name { get; set; }
+           
+            //public string Class { get; set; }  
+            //public string Major { get; set; }  
         }
 
     }

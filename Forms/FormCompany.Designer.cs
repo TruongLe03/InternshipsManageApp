@@ -89,7 +89,7 @@
             // btnExit
             // 
             this.btnExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnExit.Location = new System.Drawing.Point(762, 540);
+            this.btnExit.Location = new System.Drawing.Point(709, 519);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 32);

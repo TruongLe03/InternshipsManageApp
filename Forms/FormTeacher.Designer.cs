@@ -89,7 +89,7 @@
             // btnSave
             // 
             this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(685, 510);
+            this.btnSave.Location = new System.Drawing.Point(625, 508);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(82, 35);
@@ -172,7 +172,7 @@
             // btnExit
             // 
             this.btnExit.ForeColor = System.Drawing.Color.Black;
-            this.btnExit.Location = new System.Drawing.Point(833, 597);
+            this.btnExit.Location = new System.Drawing.Point(782, 575);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(82, 35);
@@ -183,7 +183,7 @@
             // btnUpdateSv
             // 
             this.btnUpdateSv.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdateSv.Location = new System.Drawing.Point(429, 508);
+            this.btnUpdateSv.Location = new System.Drawing.Point(404, 508);
             this.btnUpdateSv.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpdateSv.Name = "btnUpdateSv";
             this.btnUpdateSv.Size = new System.Drawing.Size(82, 35);
@@ -194,7 +194,7 @@
             // btnDeleteSv
             // 
             this.btnDeleteSv.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteSv.Location = new System.Drawing.Point(553, 509);
+            this.btnDeleteSv.Location = new System.Drawing.Point(518, 508);
             this.btnDeleteSv.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDeleteSv.Name = "btnDeleteSv";
             this.btnDeleteSv.Size = new System.Drawing.Size(82, 35);
@@ -224,7 +224,7 @@
             this.lvStudents.ForeColor = System.Drawing.Color.Black;
             this.lvStudents.HideSelection = false;
             this.lvStudents.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lvStudents.Location = new System.Drawing.Point(404, 257);
+            this.lvStudents.Location = new System.Drawing.Point(404, 245);
             this.lvStudents.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lvStudents.Name = "lvStudents";
             this.lvStudents.Scrollable = false;
@@ -320,7 +320,7 @@
             this.colMonpt});
             this.listView1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(9, 354);
+            this.listView1.Location = new System.Drawing.Point(4, 348);
             this.listView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(383, 147);
@@ -504,7 +504,7 @@
             // button3
             // 
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(812, 511);
+            this.button3.Location = new System.Drawing.Point(736, 509);
             this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(87, 34);

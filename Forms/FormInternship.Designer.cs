@@ -58,7 +58,7 @@
             this.colStarttime,
             this.colEndtime});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(262, 117);
+            this.listView1.Location = new System.Drawing.Point(262, 118);
             this.listView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(674, 232);
@@ -88,7 +88,8 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(862, 566);
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnExit.Location = new System.Drawing.Point(724, 541);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 35);
@@ -99,7 +100,7 @@
             // btnSave
             // 
             this.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSave.Location = new System.Drawing.Point(657, 382);
+            this.btnSave.Location = new System.Drawing.Point(611, 382);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 35);
@@ -110,7 +111,7 @@
             // btnUpdate
             // 
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnUpdate.Location = new System.Drawing.Point(489, 382);
+            this.btnUpdate.Location = new System.Drawing.Point(460, 382);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 35);
@@ -121,7 +122,7 @@
             // btnDelete
             // 
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnDelete.Location = new System.Drawing.Point(340, 382);
+            this.btnDelete.Location = new System.Drawing.Point(313, 382);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 35);
