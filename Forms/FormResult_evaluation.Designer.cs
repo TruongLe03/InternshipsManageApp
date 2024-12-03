@@ -78,7 +78,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(256, 362);
+            this.label14.Location = new System.Drawing.Point(257, 348);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(408, 32);
@@ -97,11 +97,11 @@
             this.colCTy,
             this.colDiem,
             this.colHk});
-            this.dataGridView1.Location = new System.Drawing.Point(33, 398);
+            this.dataGridView1.Location = new System.Drawing.Point(28, 385);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(814, 231);
+            this.dataGridView1.Size = new System.Drawing.Size(772, 231);
             this.dataGridView1.TabIndex = 4;
             // 
             // colStt
@@ -156,7 +156,7 @@
             // btnLuu
             // 
             this.btnLuu.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnLuu.Location = new System.Drawing.Point(874, 454);
+            this.btnLuu.Location = new System.Drawing.Point(832, 440);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(86, 35);
@@ -167,10 +167,10 @@
             // btnThoat
             // 
             this.btnThoat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnThoat.Location = new System.Drawing.Point(874, 594);
+            this.btnThoat.Location = new System.Drawing.Point(832, 581);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(75, 35);
+            this.btnThoat.Size = new System.Drawing.Size(86, 35);
             this.btnThoat.TabIndex = 6;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -178,7 +178,7 @@
             // btnSua
             // 
             this.btnSua.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSua.Location = new System.Drawing.Point(874, 398);
+            this.btnSua.Location = new System.Drawing.Point(832, 385);
             this.btnSua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(86, 35);
@@ -197,7 +197,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(997, 343);
+            this.panel1.Size = new System.Drawing.Size(960, 343);
             this.panel1.TabIndex = 8;
             // 
             // button1
@@ -488,7 +488,7 @@
             // button2
             // 
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(874, 510);
+            this.button2.Location = new System.Drawing.Point(832, 508);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(86, 35);
@@ -500,7 +500,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(997, 669);
+            this.ClientSize = new System.Drawing.Size(960, 718);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSua);

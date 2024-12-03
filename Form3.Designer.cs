@@ -67,7 +67,7 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(277, 700);
+            this.panelMenu.Size = new System.Drawing.Size(282, 700);
             this.panelMenu.TabIndex = 0;
             // 
             // btnFormDg_Kq
@@ -80,7 +80,7 @@
             this.btnFormDg_Kq.Location = new System.Drawing.Point(0, 370);
             this.btnFormDg_Kq.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnFormDg_Kq.Name = "btnFormDg_Kq";
-            this.btnFormDg_Kq.Size = new System.Drawing.Size(277, 60);
+            this.btnFormDg_Kq.Size = new System.Drawing.Size(282, 60);
             this.btnFormDg_Kq.TabIndex = 8;
             this.btnFormDg_Kq.Text = "Đánh giá và kết quả";
             this.btnFormDg_Kq.UseVisualStyleBackColor = true;
@@ -96,7 +96,7 @@
             this.btnFormTeacher.Location = new System.Drawing.Point(0, 310);
             this.btnFormTeacher.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnFormTeacher.Name = "btnFormTeacher";
-            this.btnFormTeacher.Size = new System.Drawing.Size(277, 60);
+            this.btnFormTeacher.Size = new System.Drawing.Size(282, 60);
             this.btnFormTeacher.TabIndex = 5;
             this.btnFormTeacher.Text = "Giảng viên hướng dẫn";
             this.btnFormTeacher.UseVisualStyleBackColor = true;
@@ -112,7 +112,7 @@
             this.btnFormInternship.Location = new System.Drawing.Point(0, 250);
             this.btnFormInternship.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnFormInternship.Name = "btnFormInternship";
-            this.btnFormInternship.Size = new System.Drawing.Size(277, 60);
+            this.btnFormInternship.Size = new System.Drawing.Size(282, 60);
             this.btnFormInternship.TabIndex = 4;
             this.btnFormInternship.Text = "Đợt thực tập";
             this.btnFormInternship.UseVisualStyleBackColor = true;
@@ -128,7 +128,7 @@
             this.btnFormCompany.Location = new System.Drawing.Point(0, 190);
             this.btnFormCompany.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnFormCompany.Name = "btnFormCompany";
-            this.btnFormCompany.Size = new System.Drawing.Size(277, 60);
+            this.btnFormCompany.Size = new System.Drawing.Size(282, 60);
             this.btnFormCompany.TabIndex = 3;
             this.btnFormCompany.Text = "Công ty";
             this.btnFormCompany.UseVisualStyleBackColor = true;
@@ -144,7 +144,7 @@
             this.btnFormStudent.Location = new System.Drawing.Point(0, 130);
             this.btnFormStudent.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnFormStudent.Name = "btnFormStudent";
-            this.btnFormStudent.Size = new System.Drawing.Size(277, 60);
+            this.btnFormStudent.Size = new System.Drawing.Size(282, 60);
             this.btnFormStudent.TabIndex = 2;
             this.btnFormStudent.Text = "Sinh viên";
             this.btnFormStudent.UseVisualStyleBackColor = true;
@@ -160,7 +160,7 @@
             this.btnFormHome.Location = new System.Drawing.Point(0, 70);
             this.btnFormHome.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnFormHome.Name = "btnFormHome";
-            this.btnFormHome.Size = new System.Drawing.Size(277, 60);
+            this.btnFormHome.Size = new System.Drawing.Size(282, 60);
             this.btnFormHome.TabIndex = 1;
             this.btnFormHome.Text = "Trang chủ";
             this.btnFormHome.UseVisualStyleBackColor = true;
@@ -175,7 +175,7 @@
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(277, 70);
+            this.panelLogo.Size = new System.Drawing.Size(282, 70);
             this.panelLogo.TabIndex = 0;
             
             // 
@@ -192,16 +192,16 @@
             this.panelTop.Controls.Add(this.lbSelected);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.ForeColor = System.Drawing.Color.Transparent;
-            this.panelTop.Location = new System.Drawing.Point(277, 0);
+            this.panelTop.Location = new System.Drawing.Point(282, 0);
             this.panelTop.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1053, 70);
+            this.panelTop.Size = new System.Drawing.Size(1048, 70);
             this.panelTop.TabIndex = 1;
             this.panelTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseDown);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(733, 37);
+            this.button1.Location = new System.Drawing.Point(795, 36);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(30, 30);
             this.button1.TabIndex = 7;
@@ -211,7 +211,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::InternshipsManageApp.Properties.Resources.profile;
-            this.pictureBox2.Location = new System.Drawing.Point(930, 34);
+            this.pictureBox2.Location = new System.Drawing.Point(992, 36);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(30, 30);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -221,7 +221,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(805, 36);
+            this.label2.Location = new System.Drawing.Point(867, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 29);
             this.label2.TabIndex = 5;
@@ -230,7 +230,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::InternshipsManageApp.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(769, 34);
+            this.pictureBox1.Location = new System.Drawing.Point(831, 33);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(30, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -241,7 +241,7 @@
             // 
             this.btnZoom.FlatAppearance.BorderSize = 0;
             this.btnZoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnZoom.Location = new System.Drawing.Point(876, -9);
+            this.btnZoom.Location = new System.Drawing.Point(938, -10);
             this.btnZoom.Name = "btnZoom";
             this.btnZoom.Size = new System.Drawing.Size(48, 49);
             this.btnZoom.TabIndex = 3;
@@ -253,7 +253,7 @@
             // 
             this.btnHidden.FlatAppearance.BorderSize = 0;
             this.btnHidden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHidden.Location = new System.Drawing.Point(825, 0);
+            this.btnHidden.Location = new System.Drawing.Point(907, -1);
             this.btnHidden.Name = "btnHidden";
             this.btnHidden.Size = new System.Drawing.Size(36, 30);
             this.btnHidden.TabIndex = 2;
@@ -265,7 +265,7 @@
             // 
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Location = new System.Drawing.Point(930, 0);
+            this.btnClose.Location = new System.Drawing.Point(992, -1);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(30, 30);
             this.btnClose.TabIndex = 1;
@@ -286,10 +286,9 @@
             // 
             // panelForm
             // 
-            this.panelForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelForm.Location = new System.Drawing.Point(277, 70);
             this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(1053, 630);
+            this.panelForm.Size = new System.Drawing.Size(1050, 630);
             this.panelForm.TabIndex = 2;
             // 
             // FormDashboard
