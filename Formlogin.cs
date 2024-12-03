@@ -16,9 +16,10 @@ using Newtonsoft.Json.Linq;
 
 namespace InternshipsManageApp
 {
-    public partial class Form1 : Form
+    public partial class Formlogin : Form
     {
-        public Form1()
+       
+        public Formlogin()
         {
             InitializeComponent();
         }
@@ -110,7 +111,7 @@ namespace InternshipsManageApp
 
             try
             {
-                var res = await client.PostAsync("http://192.168.0.196:8001/api/auth/login", content);
+                var res = await client.PostAsync("http://nqbdev-30704.portmap.host:30704/api/auth/login", content);
                 var responseString = await res.Content.ReadAsStringAsync();
                 if (res.IsSuccessStatusCode)
                 {
@@ -131,14 +132,19 @@ namespace InternshipsManageApp
                     luutoken.Role = role;
 
                     if (role == "admin")
-                    {
+                    {   
+
                         FormDashboard formdashboard = new FormDashboard();
+                        formdashboard.UserRole = role; // Gán giá trị UserRole
+                        formdashboard.UpdateUserRole(); // Cập nhật Label lb2
                         formdashboard.Show();
                         this.Hide();
+                       
                     }
                     else if (role == "lecturer")
                     {
                         FormTeacher formteacher = new FormTeacher();
+                       
                         formteacher.Show();
                         this.Hide();
                     }

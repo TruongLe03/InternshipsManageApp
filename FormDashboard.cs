@@ -16,6 +16,7 @@ namespace InternshipsManageApp
 {
     public partial class FormDashboard : Form
     {
+        public string UserRole { get; set; }
         private Button activeButton;
         private Form activeForm;
 
@@ -35,6 +36,19 @@ namespace InternshipsManageApp
             InitializeDefaultState();
             this.ControlBox = false;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            if (!string.IsNullOrEmpty(UserRole))
+            {
+                lb2.Text = UserRole;
+            }
+        }
+
+
+        public void UpdateUserRole()
+        {
+            if (!string.IsNullOrEmpty(UserRole))
+            {
+                lb2.Text = UserRole;
+            }
         }
 
         // Phương thức khởi tạo mặc định
@@ -183,6 +197,22 @@ namespace InternshipsManageApp
                 ReleaseCapture();
                 SendMessage(this.Handle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelTop_Paint(object sender, PaintEventArgs e)
+        {
+          
+
         }
     }
 }

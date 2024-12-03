@@ -26,5 +26,5 @@ D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormTeacher.resourc
 D:\InternshipsManageApp\bin\Debug\Newtonsoft.Json.dll
 D:\InternshipsManageApp\bin\Debug\Newtonsoft.Json.xml
 D:\InternshipsManageApp\obj\Debug\Internsh.6553B8B9.Up2Date
-D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Form1.resources
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormHome.resources
+D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Formlogin.resources

@@ -39,7 +39,7 @@
             this.panelTop = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lb2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnZoom = new System.Windows.Forms.Button();
             this.btnHidden = new System.Windows.Forms.Button();
@@ -184,7 +184,7 @@
             this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.panelTop.Controls.Add(this.button1);
             this.panelTop.Controls.Add(this.pictureBox2);
-            this.panelTop.Controls.Add(this.label2);
+            this.panelTop.Controls.Add(this.lb2);
             this.panelTop.Controls.Add(this.pictureBox1);
             this.panelTop.Controls.Add(this.btnZoom);
             this.panelTop.Controls.Add(this.btnHidden);
@@ -197,6 +197,7 @@
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(1048, 70);
             this.panelTop.TabIndex = 1;
+            this.panelTop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTop_Paint);
             this.panelTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseDown);
             // 
             // button1
@@ -218,14 +219,15 @@
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
-            // label2
+            // lb2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(867, 35);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 29);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Truongle";
+            this.lb2.AutoSize = true;
+            this.lb2.Location = new System.Drawing.Point(867, 35);
+            this.lb2.Name = "lb2";
+            this.lb2.Size = new System.Drawing.Size(119, 29);
+            this.lb2.TabIndex = 5;
+            this.lb2.Text = "Truongle";
+            this.lb2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox1
             // 
@@ -288,8 +290,9 @@
             // 
             this.panelForm.Location = new System.Drawing.Point(277, 70);
             this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(1050, 630);
+            this.panelForm.Size = new System.Drawing.Size(1041, 630);
             this.panelForm.TabIndex = 2;
+            this.panelForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelForm_Paint);
             // 
             // FormDashboard
             // 
@@ -329,7 +332,7 @@
         private System.Windows.Forms.Button btnHidden;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Panel panelForm;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lb2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox2;
