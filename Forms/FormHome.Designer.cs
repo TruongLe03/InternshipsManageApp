@@ -254,6 +254,7 @@
             this.Controls.Add(this.panel3);
             this.Name = "FormHome";
             this.Text = "Trang chủ";
+            this.Load += new System.EventHandler(this.FormHome_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();

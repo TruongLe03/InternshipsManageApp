@@ -13,7 +13,7 @@ using System.Drawing;
 
 namespace InternshipsManageApp.Forms
 {
-    public partial class FormStudent : Form
+    public partial class FormStudent : BaseForm
     {
         // Khởi tạo HttpClient
         private static readonly HttpClient client = new HttpClient();
