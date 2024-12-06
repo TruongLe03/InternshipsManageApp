@@ -16,15 +16,10 @@ namespace InternshipsManageApp.Forms
         {
             InitializeComponent();
         }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void FormTeacher_Load(object sender, EventArgs e)
         {
 
         }
+ 
     }
 }

@@ -82,8 +82,9 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(264, 345);
+            this.panel1.Size = new System.Drawing.Size(194, 345);
             this.panel1.TabIndex = 37;
+            
             // 
             // btnAdd
             // 
@@ -199,7 +200,7 @@
             // button2
             // 
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(517, 48);
+            this.button2.Location = new System.Drawing.Point(490, 48);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(58, 20);
             this.button2.TabIndex = 42;
@@ -216,9 +217,9 @@
             this.colMonpt});
             this.listView1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(318, 144);
+            this.listView1.Location = new System.Drawing.Point(232, 113);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(257, 97);
+            this.listView1.Size = new System.Drawing.Size(367, 154);
             this.listView1.TabIndex = 41;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -255,7 +256,7 @@
             // btnDelete
             // 
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnDelete.Location = new System.Drawing.Point(384, 247);
+            this.btnDelete.Location = new System.Drawing.Point(291, 273);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(50, 20);
             this.btnDelete.TabIndex = 40;
@@ -265,7 +266,7 @@
             // btnUpdate
             // 
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnUpdate.Location = new System.Drawing.Point(318, 247);
+            this.btnUpdate.Location = new System.Drawing.Point(235, 273);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(50, 20);
             this.btnUpdate.TabIndex = 39;
@@ -277,7 +278,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(359, 105);
+            this.label6.Location = new System.Drawing.Point(327, 88);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(184, 22);
             this.label6.TabIndex = 45;
@@ -285,7 +286,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(318, 48);
+            this.textBox1.Location = new System.Drawing.Point(291, 48);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(193, 20);
             this.textBox1.TabIndex = 46;

@@ -35,18 +35,18 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lbTotalGv = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lbTotalCty = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbTotalDtt = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbTotalStudents = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -62,21 +62,21 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
-            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.lbTotalGv);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Location = new System.Drawing.Point(166, 18);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(150, 65);
             this.panel2.TabIndex = 13;
             // 
-            // label8
+            // lbTotalGv
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(17, 39);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(19, 13);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "15";
+            this.lbTotalGv.AutoSize = true;
+            this.lbTotalGv.Location = new System.Drawing.Point(17, 39);
+            this.lbTotalGv.Name = "lbTotalGv";
+            this.lbTotalGv.Size = new System.Drawing.Size(19, 13);
+            this.lbTotalGv.TabIndex = 2;
+            this.lbTotalGv.Text = "15";
             // 
             // label9
             // 
@@ -123,21 +123,21 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
-            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.lbTotalCty);
             this.panel5.Controls.Add(this.label4);
             this.panel5.Location = new System.Drawing.Point(478, 18);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(150, 65);
             this.panel5.TabIndex = 8;
             // 
-            // label7
+            // lbTotalCty
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(17, 39);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(19, 13);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "15";
+            this.lbTotalCty.AutoSize = true;
+            this.lbTotalCty.Location = new System.Drawing.Point(17, 39);
+            this.lbTotalCty.Name = "lbTotalCty";
+            this.lbTotalCty.Size = new System.Drawing.Size(19, 13);
+            this.lbTotalCty.TabIndex = 2;
+            this.lbTotalCty.Text = "15";
             // 
             // label4
             // 
@@ -151,21 +151,21 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(255)))), ((int)(((byte)(5)))));
-            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.lbTotalDtt);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Location = new System.Drawing.Point(322, 18);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(150, 65);
             this.panel4.TabIndex = 9;
             // 
-            // label6
+            // lbTotalDtt
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(20, 39);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(19, 13);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "20";
+            this.lbTotalDtt.AutoSize = true;
+            this.lbTotalDtt.Location = new System.Drawing.Point(20, 39);
+            this.lbTotalDtt.Name = "lbTotalDtt";
+            this.lbTotalDtt.Size = new System.Drawing.Size(19, 13);
+            this.lbTotalDtt.TabIndex = 2;
+            this.lbTotalDtt.Text = "20";
             // 
             // label3
             // 
@@ -179,21 +179,21 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(50)))));
-            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.lbTotalStudents);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(10, 18);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(150, 65);
             this.panel3.TabIndex = 7;
             // 
-            // label5
+            // lbTotalStudents
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 39);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 13);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "10000";
+            this.lbTotalStudents.AutoSize = true;
+            this.lbTotalStudents.Location = new System.Drawing.Point(16, 39);
+            this.lbTotalStudents.Name = "lbTotalStudents";
+            this.lbTotalStudents.Size = new System.Drawing.Size(37, 13);
+            this.lbTotalStudents.TabIndex = 1;
+            this.lbTotalStudents.Text = "10000";
             // 
             // label1
             // 
@@ -272,18 +272,18 @@
 
         #endregion
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lbTotalGv;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbTotalCty;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbTotalDtt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbTotalStudents;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label10;

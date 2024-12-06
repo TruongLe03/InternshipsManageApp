@@ -42,6 +42,7 @@ namespace InternshipsManageApp.Forms
 
             var response = await client.GetAsync("http://nqbdev-30704.portmap.host:30704/api/students");
             var responseString = await response.Content.ReadAsStringAsync();
+            
            
 
             if (response.IsSuccessStatusCode)
