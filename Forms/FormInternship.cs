@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace InternshipsManageApp.Forms
 {
-    public partial class FormInternship : Form
+    public partial class FormInternship : BaseForm
     {
         public FormInternship()
         {
@@ -23,6 +23,11 @@ namespace InternshipsManageApp.Forms
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnxoa_Click(object sender, EventArgs e)
         {
 
         }

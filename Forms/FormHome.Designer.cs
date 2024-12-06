@@ -116,7 +116,7 @@
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(200, 150);
+            this.chart1.Size = new System.Drawing.Size(190, 150);
             this.chart1.TabIndex = 10;
             this.chart1.Text = "chart1";
             // 
@@ -254,6 +254,7 @@
             this.Controls.Add(this.panel3);
             this.Name = "FormHome";
             this.Text = "Trang chủ";
+            this.Load += new System.EventHandler(this.FormHome_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();

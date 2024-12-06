@@ -11,6 +11,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Net.Http;
 using Newtonsoft.Json;
 using InternshipsManageApp.Forms;
+using Newtonsoft.Json.Linq;
 
 
 namespace InternshipsManageApp
@@ -109,8 +110,10 @@ namespace InternshipsManageApp
 
             try
             {
-                var res = await client.PostAsync("http://192.168.0.195:8001/api/auth/login", content);
+                var res = await client.PostAsync("http://sso.nqbdev.software/api/auth/login", content);
+              
                 var responseString = await res.Content.ReadAsStringAsync();
+                
                 if (res.IsSuccessStatusCode)
                 {
                     MessageBox.Show("Đăng nhập thành công!");
@@ -118,24 +121,36 @@ namespace InternshipsManageApp
                     string username = jsonResponse.data.username;
                     string userEmail = jsonResponse.data.email;
                     string role = jsonResponse.data.role;
+                    string token = jsonResponse.token;
+                   
+
+                    // Lưu token vào Settings
+                    Properties.Settings.Default.AuthToken = token;               
+                    Properties.Settings.Default.Save();
+
+                    // Cập nhật SessionManager
+                    luutoken.Username = username;
+                    luutoken.Role = role;
+
                     if (role == "admin")
                     {
                         FormDashboard formdashboard = new FormDashboard();
+                        formdashboard.UserRole = role; // Gán giá trị UserRole
+                        formdashboard.UpdateUserRole(); // Cập nhật Label lb2
                         formdashboard.Show();
                         this.Hide();
-
                     }
                     else if (role == "lecturer")
                     {
                         FormTeacher formteacher = new FormTeacher();
+                        //formteacher.UserRole = role;
+                        //formteacher.UpdateUserRole();
                         formteacher.Show();
                         this.Hide();
                     }
-
                 }
                 else
                 {
-
                     MessageBox.Show("Đăng nhập thất bại: " + responseString);
                 }
             }
@@ -145,6 +160,7 @@ namespace InternshipsManageApp
                 Console.WriteLine("Chi tiết lỗi: " + ex.StackTrace);
             }
         }
+
 
         private void closebtn_MouseHover(object sender, EventArgs e)
         {
@@ -164,6 +180,16 @@ namespace InternshipsManageApp
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }

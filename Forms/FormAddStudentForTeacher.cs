@@ -10,20 +10,19 @@ using System.Windows.Forms;
 
 namespace InternshipsManageApp.Forms
 {
-    public partial class FormTeacher : BaseForm
+    public partial class FormAddStudentForTeacher : Form
     {
-       
-        public FormTeacher()
+        public FormAddStudentForTeacher()
         {
             InitializeComponent();
         }
-        
-        private void panel2_Paint(object sender, PaintEventArgs e)
+
+        private void FormAddStudentForTeacher_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void FormTeacher_Load(object sender, EventArgs e)
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }
