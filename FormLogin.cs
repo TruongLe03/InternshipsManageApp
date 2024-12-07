@@ -159,7 +159,7 @@ namespace InternshipsManageApp
 
             try
             {
-                var res = await client.PostAsync("http://nqbdev-30704.portmap.host:30704/api/auth/login", content);
+                var res = await client.PostAsync("http://sso.nqbdev.software/api/auth/login", content);
                 var responseString = await res.Content.ReadAsStringAsync();
                 
                 if (res.IsSuccessStatusCode)
@@ -184,7 +184,7 @@ namespace InternshipsManageApp
                     {
                         FormDashboard formdashboard = new FormDashboard();
                         formdashboard.UserRole = role; // Gán giá trị UserRole
-                        formdashboard.UpdateUserRole(); // Cập nhật Label lb2
+                        
                         formdashboard.Show();
                         this.Hide();
                     }
@@ -228,5 +228,6 @@ namespace InternshipsManageApp
             closebtn.ForeColor = Color.White;
         }
 
+       
     }
 }

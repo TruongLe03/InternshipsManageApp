@@ -105,7 +105,6 @@
             this.txtUsername.Size = new System.Drawing.Size(337, 22);
             this.txtUsername.TabIndex = 13;
             this.txtUsername.Click += new System.EventHandler(this.txtUsername_Click);
-            
             // 
             // pictureBox3
             // 
@@ -132,6 +131,7 @@
             this.btnSubmit.TabIndex = 17;
             this.btnSubmit.Text = "Log in";
             this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // label1
             // 

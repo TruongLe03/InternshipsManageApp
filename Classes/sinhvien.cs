@@ -7,15 +7,24 @@ using System.Threading.Tasks;
 
 namespace InternshipsManageApp
 {
-    internal class sinhvien
+    public class sinhvien
     {
         public class Student
         {
             public string student_code { get; set; }
             public string first_name { get; set; }
             public string last_name { get; set; }
-            public string Class { get; set; }  
-            public string Major { get; set; }  
+
+
+            public StudentClass Class { get; set; }
+
+
+        }
+        public class StudentClass
+        {
+            public int Id { get; set; }
+            public string Name { get; set; }  // Tên lớp (ví dụ: CNTT1)
+            public Faculty Faculty { get; set; }  // Khoa của lớp
         }
         public class Faculty
         {

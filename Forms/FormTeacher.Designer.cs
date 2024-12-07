@@ -30,6 +30,8 @@
         {
             this.btnExit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBoxgiangvien = new System.Windows.Forms.ComboBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,8 +46,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridViewgiangvien = new System.Windows.Forms.DataGridView();
-            this.comboBoxgiangvien = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewgiangvien)).BeginInit();
             this.SuspendLayout();
@@ -53,10 +53,9 @@
             // btnExit
             // 
             this.btnExit.ForeColor = System.Drawing.Color.Black;
-            this.btnExit.Location = new System.Drawing.Point(860, 482);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnExit.Location = new System.Drawing.Point(573, 313);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(82, 35);
+            this.btnExit.Size = new System.Drawing.Size(55, 23);
             this.btnExit.TabIndex = 33;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -75,18 +74,36 @@
             this.panel1.Controls.Add(this.txtName);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(396, 531);
+            this.panel1.Size = new System.Drawing.Size(264, 345);
             this.panel1.TabIndex = 37;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(14, 200);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 15);
+            this.label1.TabIndex = 40;
+            this.label1.Text = "Số điện thoại";
+            // 
+            // comboBoxgiangvien
+            // 
+            this.comboBoxgiangvien.FormattingEnabled = true;
+            this.comboBoxgiangvien.Location = new System.Drawing.Point(17, 216);
+            this.comboBoxgiangvien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxgiangvien.Name = "comboBoxgiangvien";
+            this.comboBoxgiangvien.Size = new System.Drawing.Size(124, 21);
+            this.comboBoxgiangvien.TabIndex = 39;
             // 
             // btnAdd
             // 
             this.btnAdd.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAdd.Location = new System.Drawing.Point(75, 380);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAdd.Location = new System.Drawing.Point(50, 247);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 31);
+            this.btnAdd.Size = new System.Drawing.Size(50, 20);
             this.btnAdd.TabIndex = 38;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -97,10 +114,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(20, 222);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(13, 144);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 22);
+            this.label4.Size = new System.Drawing.Size(77, 15);
             this.label4.TabIndex = 36;
             this.label4.Text = "Số điện thoại";
             // 
@@ -109,10 +125,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(21, 162);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(14, 105);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 22);
+            this.label3.Size = new System.Drawing.Size(35, 15);
             this.label3.TabIndex = 35;
             this.label3.Text = "Email";
             // 
@@ -121,10 +136,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(20, 98);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(13, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 22);
+            this.label2.Size = new System.Drawing.Size(59, 15);
             this.label2.TabIndex = 34;
             this.label2.Text = "Họ và tên";
             // 
@@ -132,39 +146,35 @@
             // 
             this.txtSDT.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSDT.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtSDT.Location = new System.Drawing.Point(22, 245);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtSDT.Location = new System.Drawing.Point(15, 159);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(222, 30);
+            this.txtSDT.Size = new System.Drawing.Size(149, 22);
             this.txtSDT.TabIndex = 31;
             // 
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtEmail.Location = new System.Drawing.Point(22, 183);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtEmail.Location = new System.Drawing.Point(15, 119);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(222, 30);
+            this.txtEmail.Size = new System.Drawing.Size(149, 22);
             this.txtEmail.TabIndex = 30;
             // 
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtName.Location = new System.Drawing.Point(22, 120);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtName.Location = new System.Drawing.Point(15, 78);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(222, 30);
+            this.txtName.Size = new System.Drawing.Size(149, 22);
             this.txtName.TabIndex = 29;
             // 
             // button2
             // 
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(774, 56);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Location = new System.Drawing.Point(503, 38);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 31);
+            this.button2.Size = new System.Drawing.Size(39, 13);
             this.button2.TabIndex = 42;
             this.button2.Text = "Tìm kiếm";
             this.button2.UseVisualStyleBackColor = true;
@@ -172,10 +182,9 @@
             // btnDelete
             // 
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnDelete.Location = new System.Drawing.Point(644, 380);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnDelete.Location = new System.Drawing.Point(194, 177);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 31);
+            this.btnDelete.Size = new System.Drawing.Size(33, 13);
             this.btnDelete.TabIndex = 40;
             this.btnDelete.Text = "Xoá";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -184,10 +193,9 @@
             // btnUpdate
             // 
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnUpdate.Location = new System.Drawing.Point(477, 380);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnUpdate.Location = new System.Drawing.Point(157, 177);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 31);
+            this.btnUpdate.Size = new System.Drawing.Size(33, 13);
             this.btnUpdate.TabIndex = 39;
             this.btnUpdate.Text = "Sửa";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -197,147 +205,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(513, 120);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(275, 32);
-            this.label6.TabIndex = 45;
-            this.label6.Text = "Danh sách giảng viên\r\n";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(458, 58);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(288, 26);
-            this.textBox1.TabIndex = 46;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(454, 18);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(171, 22);
-            this.label7.TabIndex = 39;
-            this.label7.Text = "Tìm kiếm giảng viên";
-            // 
-            // dataGridViewgiangvien
-            // 
-            this.dataGridViewgiangvien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridViewgiangvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewgiangvien.Location = new System.Drawing.Point(416, 188);
-            this.dataGridViewgiangvien.Name = "dataGridViewgiangvien";
-            this.dataGridViewgiangvien.RowHeadersWidth = 62;
-            this.dataGridViewgiangvien.RowTemplate.Height = 28;
-            this.dataGridViewgiangvien.Size = new System.Drawing.Size(517, 150);
-            this.dataGridViewgiangvien.TabIndex = 47;
-            this.dataGridViewgiangvien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewgiangvien_CellContentClick);
-            // 
-            // comboBoxgiangvien
-            // 
-            this.comboBoxgiangvien.FormattingEnabled = true;
-            this.comboBoxgiangvien.Location = new System.Drawing.Point(25, 333);
-            this.comboBoxgiangvien.Name = "comboBoxgiangvien";
-            this.comboBoxgiangvien.Size = new System.Drawing.Size(184, 28);
-            this.comboBoxgiangvien.TabIndex = 39;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(21, 308);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 22);
-            this.label1.TabIndex = 40;
-            this.label1.Text = "Số điện thoại";
-            // 
-            // button2
-            // 
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(490, 48);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(58, 20);
-            this.button2.TabIndex = 42;
-            this.button2.Text = "Tìm kiếm";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.colStt,
-            this.colTenGv,
-            this.colSdtGv,
-            this.colEmailGv,
-            this.colMonpt});
-            this.listView1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(232, 113);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(367, 154);
-            this.listView1.TabIndex = 41;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // colStt
-            // 
-            this.colStt.Text = "STT";
-            this.colStt.Width = 49;
-            // 
-            // colTenGv
-            // 
-            this.colTenGv.Text = "Họ và tên";
-            this.colTenGv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colTenGv.Width = 100;
-            // 
-            // colSdtGv
-            // 
-            this.colSdtGv.Text = "Số điện thoại";
-            this.colSdtGv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colSdtGv.Width = 136;
-            // 
-            // colEmailGv
-            // 
-            this.colEmailGv.Text = "Email";
-            this.colEmailGv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colEmailGv.Width = 120;
-            // 
-            // colMonpt
-            // 
-            this.colMonpt.Text = "Môn phụ trách";
-            this.colMonpt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colMonpt.Width = 100;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnDelete.Location = new System.Drawing.Point(291, 273);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(50, 20);
-            this.btnDelete.TabIndex = 40;
-            this.btnDelete.Text = "Xoá";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnUpdate.Location = new System.Drawing.Point(235, 273);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(50, 20);
-            this.btnUpdate.TabIndex = 39;
-            this.btnUpdate.Text = "Sửa";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(327, 88);
+            this.label6.Location = new System.Drawing.Point(348, 98);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(184, 22);
             this.label6.TabIndex = 45;
@@ -345,16 +213,40 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(291, 48);
+            this.textBox1.Location = new System.Drawing.Point(367, 35);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(193, 20);
+            this.textBox1.Size = new System.Drawing.Size(130, 20);
             this.textBox1.TabIndex = 46;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label7.Location = new System.Drawing.Point(384, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(113, 15);
+            this.label7.TabIndex = 39;
+            this.label7.Text = "Tìm kiếm giảng viên";
+            // 
+            // dataGridViewgiangvien
+            // 
+            this.dataGridViewgiangvien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridViewgiangvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewgiangvien.Location = new System.Drawing.Point(277, 122);
+            this.dataGridViewgiangvien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewgiangvien.Name = "dataGridViewgiangvien";
+            this.dataGridViewgiangvien.RowHeadersWidth = 62;
+            this.dataGridViewgiangvien.RowTemplate.Height = 28;
+            this.dataGridViewgiangvien.Size = new System.Drawing.Size(345, 98);
+            this.dataGridViewgiangvien.TabIndex = 47;
+            this.dataGridViewgiangvien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewgiangvien_CellContentClick);
             // 
             // FormTeacher
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(960, 531);
+            this.ClientSize = new System.Drawing.Size(640, 345);
             this.Controls.Add(this.dataGridViewgiangvien);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox1);
@@ -365,7 +257,6 @@
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnExit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormTeacher";
             this.Text = "Giảng viên hướng dẫn";
             this.Load += new System.EventHandler(this.FormTeacher_Load);

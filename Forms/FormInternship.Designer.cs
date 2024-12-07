@@ -50,10 +50,9 @@
             // btnExit
             // 
             this.btnExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnExit.Location = new System.Drawing.Point(724, 541);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnExit.Location = new System.Drawing.Point(483, 352);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 35);
+            this.btnExit.Size = new System.Drawing.Size(50, 23);
             this.btnExit.TabIndex = 18;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -61,10 +60,9 @@
             // btnSave
             // 
             this.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSave.Location = new System.Drawing.Point(611, 382);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSave.Location = new System.Drawing.Point(407, 248);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 35);
+            this.btnSave.Size = new System.Drawing.Size(50, 23);
             this.btnSave.TabIndex = 17;
             this.btnSave.Text = "Lưu";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -72,10 +70,9 @@
             // btnUpdate
             // 
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnUpdate.Location = new System.Drawing.Point(460, 382);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnUpdate.Location = new System.Drawing.Point(307, 248);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 35);
+            this.btnUpdate.Size = new System.Drawing.Size(50, 23);
             this.btnUpdate.TabIndex = 16;
             this.btnUpdate.Text = "Sửa";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -83,10 +80,9 @@
             // btnxoa
             // 
             this.btnxoa.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnxoa.Location = new System.Drawing.Point(313, 382);
-            this.btnxoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnxoa.Location = new System.Drawing.Point(209, 248);
             this.btnxoa.Name = "btnxoa";
-            this.btnxoa.Size = new System.Drawing.Size(75, 35);
+            this.btnxoa.Size = new System.Drawing.Size(50, 23);
             this.btnxoa.TabIndex = 15;
             this.btnxoa.Text = "Xoá";
             this.btnxoa.UseVisualStyleBackColor = true;
@@ -97,10 +93,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(442, 55);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(295, 36);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(348, 32);
+            this.label4.Size = new System.Drawing.Size(233, 22);
             this.label4.TabIndex = 14;
             this.label4.Text = "Danh sách các đợt thực tập";
             // 
@@ -117,18 +112,16 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(254, 646);
+            this.panel1.Size = new System.Drawing.Size(169, 420);
             this.panel1.TabIndex = 20;
             // 
             // button1
             // 
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(116, 326);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(77, 212);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 35);
+            this.button1.Size = new System.Drawing.Size(57, 23);
             this.button1.TabIndex = 34;
             this.button1.Text = "Tìm kiếm";
             this.button1.UseVisualStyleBackColor = true;
@@ -136,10 +129,9 @@
             // btnAdđot
             // 
             this.btnAdđot.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAdđot.Location = new System.Drawing.Point(22, 326);
-            this.btnAdđot.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAdđot.Location = new System.Drawing.Point(15, 212);
             this.btnAdđot.Name = "btnAdđot";
-            this.btnAdđot.Size = new System.Drawing.Size(75, 35);
+            this.btnAdđot.Size = new System.Drawing.Size(50, 23);
             this.btnAdđot.TabIndex = 33;
             this.btnAdđot.Text = "Thêm";
             this.btnAdđot.UseVisualStyleBackColor = true;
@@ -148,10 +140,9 @@
             // 
             this.txtEndtime.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEndtime.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtEndtime.Location = new System.Drawing.Point(22, 271);
-            this.txtEndtime.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtEndtime.Location = new System.Drawing.Point(15, 176);
             this.txtEndtime.Name = "txtEndtime";
-            this.txtEndtime.Size = new System.Drawing.Size(200, 30);
+            this.txtEndtime.Size = new System.Drawing.Size(135, 22);
             this.txtEndtime.TabIndex = 32;
             // 
             // label3
@@ -159,10 +150,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(18, 245);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(12, 159);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(152, 22);
+            this.label3.Size = new System.Drawing.Size(104, 15);
             this.label3.TabIndex = 31;
             this.label3.Text = "Thời gian kết thúc";
             // 
@@ -170,10 +160,9 @@
             // 
             this.txtStarttime.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStarttime.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtStarttime.Location = new System.Drawing.Point(22, 206);
-            this.txtStarttime.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtStarttime.Location = new System.Drawing.Point(15, 134);
             this.txtStarttime.Name = "txtStarttime";
-            this.txtStarttime.Size = new System.Drawing.Size(200, 30);
+            this.txtStarttime.Size = new System.Drawing.Size(135, 22);
             this.txtStarttime.TabIndex = 30;
             // 
             // label2
@@ -181,10 +170,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(18, 183);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(12, 119);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 22);
+            this.label2.Size = new System.Drawing.Size(101, 15);
             this.label2.TabIndex = 29;
             this.label2.Text = "Thời gian bắt đầu";
             // 
@@ -192,10 +180,9 @@
             // 
             this.txtTendot.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTendot.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtTendot.Location = new System.Drawing.Point(22, 143);
-            this.txtTendot.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtTendot.Location = new System.Drawing.Point(15, 93);
             this.txtTendot.Name = "txtTendot";
-            this.txtTendot.Size = new System.Drawing.Size(200, 30);
+            this.txtTendot.Size = new System.Drawing.Size(135, 22);
             this.txtTendot.TabIndex = 28;
             // 
             // label1
@@ -203,10 +190,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(18, 118);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(12, 77);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 22);
+            this.label1.Size = new System.Drawing.Size(49, 15);
             this.label1.TabIndex = 27;
             this.label1.Text = "Tên đợt";
             // 
@@ -215,20 +201,21 @@
             this.dataGridViewthuctap.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewthuctap.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewthuctap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewthuctap.Location = new System.Drawing.Point(274, 153);
+            this.dataGridViewthuctap.Location = new System.Drawing.Point(209, 93);
+            this.dataGridViewthuctap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridViewthuctap.Name = "dataGridViewthuctap";
             this.dataGridViewthuctap.RowHeadersWidth = 62;
             this.dataGridViewthuctap.RowTemplate.Height = 28;
-            this.dataGridViewthuctap.Size = new System.Drawing.Size(674, 168);
+            this.dataGridViewthuctap.Size = new System.Drawing.Size(383, 109);
             this.dataGridViewthuctap.TabIndex = 21;
             this.dataGridViewthuctap.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewthuctap_CellContentClick);
             // 
             // FormInternship
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(960, 646);
+            this.ClientSize = new System.Drawing.Size(640, 420);
             this.Controls.Add(this.dataGridViewthuctap);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnExit);
@@ -237,7 +224,6 @@
             this.Controls.Add(this.btnxoa);
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormInternship";
             this.Text = "Đợt thực tập";
             this.Load += new System.EventHandler(this.FormInternship_Load);

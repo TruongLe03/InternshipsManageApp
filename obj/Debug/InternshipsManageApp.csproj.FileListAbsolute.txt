@@ -9,7 +9,6 @@ D:\Đồ án 2\InternshipsManageApp\obj\Debug\InternshipsManageApp.csproj.CoreCo
 D:\Đồ án 2\InternshipsManageApp\obj\Debug\InternshipsManageApp.exe
 D:\Đồ án 2\InternshipsManageApp\obj\Debug\InternshipsManageApp.pdb
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.csproj.AssemblyReference.cache
-D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Form1.resources
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.FormDashboard.resources
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormAddStudentForTeacher.resources
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormCompany.resources
@@ -27,7 +26,6 @@ D:\InternshipsManageApp\bin\Debug\InternshipsManageApp.pdb
 D:\InternshipsManageApp\bin\Debug\Newtonsoft.Json.dll
 D:\InternshipsManageApp\bin\Debug\Newtonsoft.Json.xml
 D:\InternshipsManageApp\obj\Debug\Internsh.6553B8B9.Up2Date
-D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormHome.resources
-D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.Forms.FormAddStudentForTeacher.resources
-D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.BaseForm.resources
+D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.exe
+D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.pdb
 D:\InternshipsManageApp\obj\Debug\InternshipsManageApp.FormLogin.resources

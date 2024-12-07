@@ -8,6 +8,13 @@ using Newtonsoft.Json;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using static InternshipsManageApp.sinhvien;
 using System.Drawing;
+using System.Linq;
+using System.Text;
+using static InternshipsManageApp.datacombobox;
+
+
+
+
 
 
 
@@ -72,8 +79,8 @@ namespace InternshipsManageApp.Forms
 
             var response = await client.GetAsync("http://sso.nqbdev.software/api/students");
             var responseString = await response.Content.ReadAsStringAsync();
-           
-           
+
+
 
             if (response.IsSuccessStatusCode)
             {
@@ -103,9 +110,9 @@ namespace InternshipsManageApp.Forms
             dt.Columns.Add("STT", typeof(int));
             dt.Columns.Add("Mã sinh viên", typeof(string));
             dt.Columns.Add("Họ tên", typeof(string));
-            dt.Columns.Add("Khoa" ,typeof(string));
+            dt.Columns.Add("Khoa", typeof(string));
             dt.Columns.Add("Lớp", typeof(string));
-            
+
 
             // Biến để tạo số thứ tự (STT)
             int stt = 1;
@@ -116,14 +123,14 @@ namespace InternshipsManageApp.Forms
                 string className = student.Class != null ? student.Class.Faculty.Name : "N/A"; // Kiểm tra null để tránh lỗi nếu dữ liệu không có lớp
                 string classs = student.Class != null ? student.Class.Name : "N/A";
                 // Thêm từng sinh viên vào DataTable
-                dt.Rows.Add(stt++, student.student_code, $"{student.first_name} {student.last_name}", className , classs);
+                dt.Rows.Add(stt++, student.student_code, $"{student.first_name} {student.last_name}", className, classs);
             }
             dataGridViewsinhvien.DefaultCellStyle.ForeColor = Color.Black;
 
             // Gán DataTable vào DataGridView
             dataGridViewsinhvien.DataSource = dt;
 
-            
+
 
         }
 
@@ -167,7 +174,7 @@ namespace InternshipsManageApp.Forms
             return code.All(char.IsDigit);  // Kiểm tra mã sinh viên chỉ chứa chữ số
         }
 
-        private  async void btnAddsv_Click(object sender, EventArgs e)
+        private async void btnAddsv_Click(object sender, EventArgs e)
         {
             var result = MessageBox.Show("Bạn có chắc chắn muốn thêm sinh viên này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
@@ -219,80 +226,162 @@ namespace InternshipsManageApp.Forms
                 var json = JsonConvert.SerializeObject(newStudent);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-        // Lấy dữ liệu sinh viên từ API
-        private async Task<List<Student>> GetStudents()
-        {
+                try
+                {
+                    // Gửi yêu cầu POST
+                    var response = await client.PostAsync(url, content);
 
-            // Lấy token từ Properties.Settings
-            string token = Properties.Settings.Default.AuthToken;
-
-            if (string.IsNullOrEmpty(token))
-            {
-                MessageBox.Show("Token không hợp lệ hoặc hết hạn. Vui lòng đăng nhập lại.");
-                return new List<Student>(); // Trả về danh sách rỗng nếu không có token
-            }
-
-            // Thêm token vào header của yêu cầu HTTP
-            client.DefaultRequestHeaders.Clear();  // Đảm bảo xóa các header cũ nếu có
-            client.DefaultRequestHeaders.Add("Authorization", "Bearer " + token);
-
-            var response = await client.GetAsync("http://nqbdev-30704.portmap.host:30704/api/students");
-            var responseString = await response.Content.ReadAsStringAsync();
-            
-           
-
-            if (response.IsSuccessStatusCode)
-            {
-                // Chuyển đổi JSON thành danh sách đối tượng Student
-                var students = JsonConvert.DeserializeObject<List<Student>>(responseString);
-                return students;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        MessageBox.Show("Sinh viên đã được thêm thành công!");
+                        DisplayStudents(); // Hiển thị lại danh sách sinh viên
+                    }
+                    else
+                    {
+                        // In ra mã lỗi và nội dung lỗi nếu có
+                        string errorResponse = await response.Content.ReadAsStringAsync();
+                        MessageBox.Show($"Lỗi khi thêm sinh viên: {response.StatusCode}, Nội dung lỗi: {errorResponse}");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}");
+                }
             }
             else
             {
-                MessageBox.Show("Lỗi khi lấy dữ liệu sinh viên.");
-                return new List<Student>();
+                MessageBox.Show("Bạn đã hủy ");
             }
         }
 
-        // Hàm để hiển thị dữ liệu sinh viên trong DataGridView
-        private async void DisplayStudents()
+        private async void btnxoa_Click(object sender, EventArgs e)
         {
-            // Giả sử GetStudents() trả về danh sách sinh viên
-            var students = await GetStudents();
-
-            // Tạo DataTable để lưu trữ thông tin sinh viên với các cột STT, Mã sinh viên, Họ tên
-            DataTable dt = new DataTable();
-
-            // Thêm cột STT, Mã sinh viên, Họ tên vào DataTable
-            dt.Columns.Add("STT", typeof(int));
-            dt.Columns.Add("Mã sinh viên", typeof(string));
-            dt.Columns.Add("Họ tên", typeof(string));
-
-            // Biến để tạo số thứ tự (STT)
-            int stt = 1;
-
-            foreach (var student in students)
+            if (dataGridViewsinhvien.SelectedRows.Count > 0)
             {
-                // Thêm từng sinh viên vào DataTable
-                dt.Rows.Add(stt++, student.student_code, $"{student.first_name} {student.last_name}");
+                var selectedRow = dataGridViewsinhvien.SelectedRows[0];
+                var studentCode = selectedRow.Cells["Mã sinh viên"].Value?.ToString();
+                //MessageBox.Show($"Mã sinh viên được chọn: {studentCode}");
+
+                if (!string.IsNullOrWhiteSpace(studentCode))
+                {
+                    var result = MessageBox.Show($"Bạn có chắc chắn muốn xóa sinh viên với mã {studentCode}?",
+                        "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        // Gửi yêu cầu xóa tới API
+                        string url = $"http://sso.nqbdev.software/api/student/{studentCode}";
+                        //MessageBox.Show($"URL gửi đến API: {url}");
+
+                        try
+                        {
+                            var response = await client.DeleteAsync(url);
+
+
+                            if (response.IsSuccessStatusCode)
+                            {
+                                // Xóa thành công, cập nhật danh sách
+                                MessageBox.Show("Sinh viên đã được xóa thành công!");
+
+                                // Loại bỏ sinh viên khỏi danh sách `studentList`
+                                studentList = studentList.Where(s => s.student_code != studentCode).ToList();
+
+                                // Cập nhật lại DataGridView
+                                DisplayStudents();
+                            }
+                            else
+                            {
+                                string errorResponse = await response.Content.ReadAsStringAsync();
+                                MessageBox.Show($"Lỗi khi xóa sinh viên: {response.StatusCode}, Nội dung lỗi: {errorResponse}");
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Hành động xóa sinh viên đã bị hủy.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Mã sinh viên không hợp lệ.");
+                }
             }
-            dataGridViewsinhvien.DefaultCellStyle.ForeColor = Color.Black;
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một sinh viên để xóa.");
+            }
+        }
 
-            // Gán DataTable vào DataGridView
-            dataGridViewsinhvien.DataSource = dt;
 
-            
+        private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
 
         }
 
-        private void FormStudent_Load(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
-            // Gọi hàm hiển thị sinh viên khi form load
-            DisplayStudents();
-        }
+            if (dataGridViewsinhvien.SelectedRows.Count > 0)
+            {
+                var selectedRow = dataGridViewsinhvien.SelectedRows[0];
 
-        private void dataGridViewsinhvien_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+                // Lấy dữ liệu từ TextBox và ComboBox
+                var studentCodemsv = selectedRow.Cells["Mã sinh viên"].Value?.ToString().Trim();
+                var studentCode = txtMSV.Text?.Trim(); // Lấy mã sinh viên từ ô nhập
+                var fullName = txtTenSv.Text?.Trim(); // Lấy tên đầy đủ từ ô nhập
+
+                // Kiểm tra nếu tên đầy đủ hợp lệ
+                if (string.IsNullOrEmpty(fullName))
+                {
+                    MessageBox.Show("Họ tên không được để trống.");
+                    return;
+                }
+
+                string firstName = string.Empty;
+                string lastName = string.Empty;
+
+                // Tách tên đầy đủ thành họ và tên
+                var nameParts = fullName.Split(' ');
+                if (nameParts.Length > 1)
+                {
+                    lastName = nameParts[0];
+                    firstName = string.Join(" ", nameParts.Skip(1));
+                }
+                else
+                {
+                    lastName = fullName; // Nếu chỉ có một tên, mặc định là họ
+                }
+
+                // Kiểm tra nếu có đầy đủ thông tin
+                if (string.IsNullOrEmpty(studentCode))
+                {
+                    MessageBox.Show("Mã sinh viên không được để trống.");
+                    return;
+                }
+
+                if (cbbLop.SelectedValue == null)
+                {
+                    MessageBox.Show("Vui lòng chọn lớp.");
+                    return;
+                }
+
+                // Lấy ID của lớp từ ComboBox (cbbLop.SelectedValue là Id lớp)
+                var selectedClassId = (int)cbbLop.SelectedValue; // ID của lớp
+
+                // Tạo đối tượng student để gửi lên server
+                var updatedStudent = new
+                {
+                    student_code = studentCode,
+                    full_name = $"{lastName} {firstName}", // Đảm bảo gửi họ tên đầy đủ
+                    class_id = selectedClassId // Gửi ID của lớp (class_id)
+                };
+
+                // Gửi yêu cầu PUT tới server
+                string url = $"http://sso.nqbdev.software/api/student/{studentCodemsv}";
+                MessageBox.Show($"URL: {url}"); // Hiển thị URL cho việc debug
 
                 try
                 {
@@ -306,9 +395,74 @@ namespace InternshipsManageApp.Forms
                             return;
                         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
+                        client.DefaultRequestHeaders.Authorization =
+                            new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+                        // Tuần tự hóa đối tượng thành chuỗi JSON
+                        var jsonContent = JsonConvert.SerializeObject(updatedStudent);
+
+                        // Tạo StringContent từ chuỗi JSON
+                        var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+                        // Gửi yêu cầu PUT với nội dung JSON
+                        var response = await client.PutAsync(url, content);
+                        //MessageBox.Show("Test Response: " + response.StatusCode); // Kiểm tra mã trạng thái
+
+                        var responseContent = await response.Content.ReadAsStringAsync();
+                        //MessageBox.Show($"Response Content: {responseContent}");  // Kiểm tra phản hồi trả về từ server
+
+                        if (response.IsSuccessStatusCode)
+                        {
+                            MessageBox.Show("Cập nhật sinh viên thành công!");
+
+                            // Cập nhật trực tiếp dữ liệu trong DataGridView thay vì gọi lại DisplayStudents()
+                            selectedRow.Cells["Mã sinh viên"].Value = studentCode;
+                            selectedRow.Cells["Họ tên"].Value = $"{lastName} {firstName}";
+                            selectedRow.Cells["Lớp"].Value = cbbLop.Text;
+                            DisplayStudents();
+                        }
+                        else
+                        {
+                            string errorResponse = await response.Content.ReadAsStringAsync();
+                            MessageBox.Show($"Lỗi khi cập nhật sinh viên: {response.StatusCode}, {errorResponse}");
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một sinh viên để sửa.");
+            }
+
+
 
         }
+
+        private void data(object sender, DataGridViewCellEventArgs e)
+        {
+            // Kiểm tra nếu người dùng không click vào header (chỉ click vào các dòng dữ liệu)
+            if (e.RowIndex >= 0)
+            {
+                // Lấy dòng được click
+                var selectedRow = dataGridViewsinhvien.Rows[e.RowIndex];
+
+                // Hiển thị thông tin từ các cột vào các TextBox
+                txtMSV.Text = selectedRow.Cells["Mã sinh viên"].Value?.ToString();
+                txtTenSv.Text = selectedRow.Cells["Họ tên"].Value?.ToString();
+
+                // Lấy thêm thông tin lớp và khoa từ các cột tương ứng
+                var className = selectedRow.Cells["Khoa"].Value?.ToString();
+                var classNameDetail = selectedRow.Cells["Lớp"].Value?.ToString();
+
+                // Hiển thị thông tin lớp trong ComboBox (hoặc TextBox)
+                cbbLop.Text = $"{className} - {classNameDetail}";
+            }
+        }
+
+       
     }
 }

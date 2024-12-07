@@ -3,76 +3,32 @@
   "WorkspaceRootPath": "D:\\InternshipsManageApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|D:\\InternshipsManageApp\\forms\\formteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:forms\\formteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|d:\\internshipsmanageapp\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|D:\\InternshipsManageApp\\forms\\formstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:forms\\formstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|d:\\internshipsmanageapp\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|D:\\InternshipsManageApp\\forms\\formteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|d:\\internshipsmanageapp\\forms\\formteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:forms\\formteacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|d:\\internshipsmanageapp\\forms\\forminternship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:forms\\forminternship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|d:\\internshipsmanageapp\\forms\\formstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:forms\\formstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|d:\\internshipsmanageapp\\forms\\formstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:forms\\formstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|d:\\internshipsmanageapp\\classes\\giangvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:classes\\giangvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|d:\\internshipsmanageapp\\classes\\congtythuctap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:classes\\congtythuctap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|d:\\internshipsmanageapp\\classes\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:classes\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|D:\\InternshipsManageApp\\datacombobox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:datacombobox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|D:\\InternshipsManageApp\\forms\\formcompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:forms\\formcompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|D:\\InternshipsManageApp\\classes\\thuctap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:classes\\thuctap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|D:\\InternshipsManageApp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|D:\\InternshipsManageApp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|D:\\InternshipsManageApp\\forms\\formstudent.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|d:\\internshipsmanageapp\\forms\\formstudent.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:forms\\formstudent.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|D:\\InternshipsManageApp\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|D:\\InternshipsManageApp\\forms\\formhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:forms\\formhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|D:\\InternshipsManageApp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|D:\\InternshipsManageApp\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|D:\\InternshipsManageApp\\baseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7746CE35-6BE0-4372-A1CF-E1948C0B5AF8}|InternshipsManageApp.csproj|solutionrelative:baseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,20 +54,32 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormStudent.cs",
-              "DocumentMoniker": "D:\\InternshipsManageApp\\Forms\\FormStudent.cs",
-              "RelativeDocumentMoniker": "Forms\\FormStudent.cs",
-              "ToolTip": "D:\\InternshipsManageApp\\Forms\\FormStudent.cs",
-              "RelativeToolTip": "Forms\\FormStudent.cs",
-              "ViewState": "AgIAABMBAAAAAAAAAAAMwKUAAAAJAAAAAAAAAA==",
+              "Title": "Form3.cs",
+              "DocumentMoniker": "D:\\InternshipsManageApp\\Form3.cs",
+              "RelativeDocumentMoniker": "Form3.cs",
+              "ToolTip": "D:\\InternshipsManageApp\\Form3.cs",
+              "RelativeToolTip": "Form3.cs",
+              "ViewState": "AQIAAJ0AAAAAAAAAAAArwKUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T17:39:09.04Z",
+              "WhenOpened": "2024-12-07T17:29:53.226Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form3.cs [Design]",
+              "DocumentMoniker": "D:\\InternshipsManageApp\\Form3.cs",
+              "RelativeDocumentMoniker": "Form3.cs",
+              "ToolTip": "D:\\InternshipsManageApp\\Form3.cs [Design]",
+              "RelativeToolTip": "Form3.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T17:28:59.757Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -122,205 +90,58 @@
               "ToolTip": "D:\\InternshipsManageApp\\Forms\\FormTeacher.cs [Design]",
               "RelativeToolTip": "Forms\\FormTeacher.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T17:26:43.13Z",
+              "WhenOpened": "2024-12-07T17:27:44.27Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormTeacher.cs",
-              "DocumentMoniker": "D:\\InternshipsManageApp\\Forms\\FormTeacher.cs",
-              "RelativeDocumentMoniker": "Forms\\FormTeacher.cs",
-              "ToolTip": "D:\\InternshipsManageApp\\Forms\\FormTeacher.cs",
-              "RelativeToolTip": "Forms\\FormTeacher.cs",
-              "ViewState": "AgIAAP8AAAAAAAAAAAAlwPsAAABIAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "FormInternship.cs [Design]",
+              "DocumentMoniker": "D:\\InternshipsManageApp\\Forms\\FormInternship.cs",
+              "RelativeDocumentMoniker": "Forms\\FormInternship.cs",
+              "ToolTip": "D:\\InternshipsManageApp\\Forms\\FormInternship.cs [Design]",
+              "RelativeToolTip": "Forms\\FormInternship.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T18:07:44.756Z",
+              "WhenOpened": "2024-12-07T17:27:31.293Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormStudent.Designer.cs",
+              "DocumentMoniker": "D:\\InternshipsManageApp\\Forms\\FormStudent.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\FormStudent.Designer.cs",
+              "ToolTip": "D:\\InternshipsManageApp\\Forms\\FormStudent.Designer.cs",
+              "RelativeToolTip": "Forms\\FormStudent.Designer.cs",
+              "ViewState": "AQIAAPwAAAAAAAAAAADgvwQBAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T17:18:34.58Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "FormStudent.cs",
+              "DocumentMoniker": "D:\\InternshipsManageApp\\Forms\\FormStudent.cs",
+              "RelativeDocumentMoniker": "Forms\\FormStudent.cs",
+              "ToolTip": "D:\\InternshipsManageApp\\Forms\\FormStudent.cs",
+              "RelativeToolTip": "Forms\\FormStudent.cs",
+              "ViewState": "AQIAAGwBAAAAAAAAAAAjwNEBAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T16:59:12.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "FormStudent.cs [Design]",
               "DocumentMoniker": "D:\\InternshipsManageApp\\Forms\\FormStudent.cs",
               "RelativeDocumentMoniker": "Forms\\FormStudent.cs",
               "ToolTip": "D:\\InternshipsManageApp\\Forms\\FormStudent.cs [Design]",
               "RelativeToolTip": "Forms\\FormStudent.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T13:32:03.511Z",
+              "WhenOpened": "2024-12-07T16:57:40.726Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Giangvien.cs",
-              "DocumentMoniker": "D:\\InternshipsManageApp\\Classes\\Giangvien.cs",
-              "RelativeDocumentMoniker": "Classes\\Giangvien.cs",
-              "ToolTip": "D:\\InternshipsManageApp\\Classes\\Giangvien.cs",
-              "RelativeToolTip": "Classes\\Giangvien.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAADwvwwAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T13:05:52.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "congtythuctap.cs",
-              "DocumentMoniker": "D:\\InternshipsManageApp\\Classes\\congtythuctap.cs",
-              "RelativeDocumentMoniker": "Classes\\congtythuctap.cs",
-              "ToolTip": "D:\\InternshipsManageApp\\Classes\\congtythuctap.cs",
-              "RelativeToolTip": "Classes\\congtythuctap.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T13:15:57.269Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "sinhvien.cs",
-              "DocumentMoniker": "D:\\InternshipsManageApp\\Classes\\sinhvien.cs",
-              "RelativeDocumentMoniker": "Classes\\sinhvien.cs",
-              "ToolTip": "D:\\InternshipsManageApp\\Classes\\sinhvien.cs",
-              "RelativeToolTip": "Classes\\sinhvien.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAkwBgAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T13:20:40.87Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "datacombobox.cs",
-              "DocumentMoniker": "D:\\InternshipsManageApp\\datacombobox.cs",
-              "RelativeDocumentMoniker": "datacombobox.cs",
-              "ToolTip": "D:\\InternshipsManageApp\\datacombobox.cs",
-              "RelativeToolTip": "datacombobox.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T15:28:59.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FormCompany.cs",
-              "DocumentMoniker": "D:\\InternshipsManageApp\\Forms\\FormCompany.cs",
-              "RelativeDocumentMoniker": "Forms\\FormCompany.cs",
-              "ToolTip": "D:\\InternshipsManageApp\\Forms\\FormCompany.cs",
-              "RelativeToolTip": "Forms\\FormCompany.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAawHAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T12:42:40.43Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Thuctap.cs",
-              "DocumentMoniker": "D:\\InternshipsManageApp\\Classes\\Thuctap.cs",
-              "RelativeDocumentMoniker": "Classes\\Thuctap.cs",
-              "ToolTip": "D:\\InternshipsManageApp\\Classes\\Thuctap.cs",
-              "RelativeToolTip": "Classes\\Thuctap.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAqwAwAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T13:55:21.827Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\InternshipsManageApp\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\InternshipsManageApp\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAApwB0AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T17:28:57.48Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\InternshipsManageApp\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\InternshipsManageApp\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T12:30:27.453Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FormStudent.Designer.cs",
-              "DocumentMoniker": "D:\\InternshipsManageApp\\Forms\\FormStudent.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\FormStudent.Designer.cs",
-              "ToolTip": "D:\\InternshipsManageApp\\Forms\\FormStudent.Designer.cs",
-              "RelativeToolTip": "Forms\\FormStudent.Designer.cs",
-              "ViewState": "AgIAAB4BAAAAAAAAAAAQwC0BAAB1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T16:01:32.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Form3.cs [Design]",
-              "DocumentMoniker": "D:\\InternshipsManageApp\\Form3.cs",
-              "RelativeDocumentMoniker": "Form3.cs",
-              "ToolTip": "D:\\InternshipsManageApp\\Form3.cs [Design]",
-              "RelativeToolTip": "Form3.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T17:31:40.378Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FormHome.cs [Design]",
-              "DocumentMoniker": "D:\\InternshipsManageApp\\Forms\\FormHome.cs",
-              "RelativeDocumentMoniker": "Forms\\FormHome.cs",
-              "ToolTip": "D:\\InternshipsManageApp\\Forms\\FormHome.cs [Design]",
-              "RelativeToolTip": "Forms\\FormHome.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T17:26:39.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "App.config",
-              "DocumentMoniker": "D:\\InternshipsManageApp\\App.config",
-              "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "D:\\InternshipsManageApp\\App.config",
-              "RelativeToolTip": "App.config",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-12-03T17:26:44.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Form3.cs",
-              "DocumentMoniker": "D:\\InternshipsManageApp\\Form3.cs",
-              "RelativeDocumentMoniker": "Form3.cs",
-              "ToolTip": "D:\\InternshipsManageApp\\Form3.cs",
-              "RelativeToolTip": "Form3.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwDAAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T17:31:43.649Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "BaseForm.cs [Design]",
-              "DocumentMoniker": "D:\\InternshipsManageApp\\BaseForm.cs",
-              "RelativeDocumentMoniker": "BaseForm.cs",
-              "ToolTip": "D:\\InternshipsManageApp\\BaseForm.cs [Design]",
-              "RelativeToolTip": "BaseForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T17:26:43.863Z"
             }
           ]
         }

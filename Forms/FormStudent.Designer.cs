@@ -45,7 +45,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridViewsinhvien = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnsua = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewsinhvien)).BeginInit();
             this.SuspendLayout();
@@ -82,7 +82,7 @@
             this.btnxoa.TabIndex = 22;
             this.btnxoa.Text = "Xoá";
             this.btnxoa.UseVisualStyleBackColor = true;
-            this.btnxoa.Click += new System.EventHandler(this.button2_Click);
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
             // 
             // label5
             // 
@@ -248,17 +248,17 @@
             this.dataGridViewsinhvien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewsinhvien_CellContentClick);
             this.dataGridViewsinhvien.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
             // 
-            // button1
+            // btnsua
             // 
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(351, 452);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 35);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Sửa";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnsua.ForeColor = System.Drawing.Color.Black;
+            this.btnsua.Location = new System.Drawing.Point(351, 452);
+            this.btnsua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnsua.Name = "btnsua";
+            this.btnsua.Size = new System.Drawing.Size(75, 35);
+            this.btnsua.TabIndex = 21;
+            this.btnsua.Text = "Sửa";
+            this.btnsua.UseVisualStyleBackColor = true;
+           
             // 
             // FormStudent
             // 
@@ -273,7 +273,7 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnxoa);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnsua);
             this.Controls.Add(this.label5);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormStudent";
@@ -304,6 +304,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dataGridViewsinhvien;
         private System.Windows.Forms.ComboBox cbbLop;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnsua;
     }
 }
