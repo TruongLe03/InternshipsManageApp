@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace InternshipsManageApp
 {
     internal class sinhvien
@@ -16,6 +17,12 @@ namespace InternshipsManageApp
             public string Class { get; set; }  
             public string Major { get; set; }  
         }
+        public class Faculty
+        {
+            public int Id { get; set; }  // ID của khoa
+            public string Name { get; set; }  // Tên khoa (ví dụ: CNTT)
+        }
+
 
     }
 }

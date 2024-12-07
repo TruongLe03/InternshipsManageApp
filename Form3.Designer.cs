@@ -194,7 +194,7 @@
             this.panelTop.Location = new System.Drawing.Point(282, 0);
             this.panelTop.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1048, 70);
+            this.panelTop.Size = new System.Drawing.Size(1090, 70);
             this.panelTop.TabIndex = 1;
             this.panelTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseDown);
             // 
@@ -210,7 +210,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::InternshipsManageApp.Properties.Resources.profile;
-            this.pictureBox2.Location = new System.Drawing.Point(1016, 40);
+            this.pictureBox2.Location = new System.Drawing.Point(1056, 40);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(30, 30);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -222,7 +222,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(931, 45);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 20);
+            this.label2.Size = new System.Drawing.Size(119, 29);
             this.label2.TabIndex = 5;
             this.label2.Text = "Truongle";
             // 
@@ -240,9 +240,9 @@
             // 
             this.btnZoom.FlatAppearance.BorderSize = 0;
             this.btnZoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnZoom.Location = new System.Drawing.Point(980, 3);
+            this.btnZoom.Location = new System.Drawing.Point(936, 3);
             this.btnZoom.Name = "btnZoom";
-            this.btnZoom.Size = new System.Drawing.Size(30, 30);
+            this.btnZoom.Size = new System.Drawing.Size(46, 39);
             this.btnZoom.TabIndex = 3;
             this.btnZoom.Text = "[]";
             this.btnZoom.UseVisualStyleBackColor = true;
@@ -252,7 +252,7 @@
             // 
             this.btnHidden.FlatAppearance.BorderSize = 0;
             this.btnHidden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHidden.Location = new System.Drawing.Point(940, 3);
+            this.btnHidden.Location = new System.Drawing.Point(895, 7);
             this.btnHidden.Name = "btnHidden";
             this.btnHidden.Size = new System.Drawing.Size(30, 30);
             this.btnHidden.TabIndex = 2;
@@ -264,7 +264,7 @@
             // 
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Location = new System.Drawing.Point(1016, 3);
+            this.btnClose.Location = new System.Drawing.Point(988, 12);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(30, 30);
             this.btnClose.TabIndex = 1;
@@ -278,7 +278,7 @@
             this.lbSelected.Location = new System.Drawing.Point(388, 40);
             this.lbSelected.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbSelected.Name = "lbSelected";
-            this.lbSelected.Size = new System.Drawing.Size(89, 20);
+            this.lbSelected.Size = new System.Drawing.Size(130, 29);
             this.lbSelected.TabIndex = 0;
             this.lbSelected.Text = "Trang chủ";
             this.lbSelected.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -287,14 +287,15 @@
             // 
             this.panelForm.Location = new System.Drawing.Point(277, 70);
             this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(1050, 630);
+            this.panelForm.Size = new System.Drawing.Size(1066, 630);
             this.panelForm.TabIndex = 2;
+            this.panelForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelForm_Paint);
             // 
             // FormDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1330, 700);
+            this.ClientSize = new System.Drawing.Size(1372, 700);
             this.Controls.Add(this.panelForm);
             this.Controls.Add(this.panelTop);
             this.Controls.Add(this.panelMenu);

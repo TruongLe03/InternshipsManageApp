@@ -30,6 +30,8 @@ namespace InternshipsManageApp
        
         private void FormLogin_Paint(object sender, EventArgs e)
         {
+            txtPassword.Text = "123456";
+            txtUsername.Text = "admin";
             SetEmailPlaceholder();
             SetPasswordPlaceholder();
         }
@@ -159,6 +161,7 @@ namespace InternshipsManageApp
             {
                 var res = await client.PostAsync("http://nqbdev-30704.portmap.host:30704/api/auth/login", content);
                 var responseString = await res.Content.ReadAsStringAsync();
+                
                 if (res.IsSuccessStatusCode)
                 {
                     MessageBox.Show("Đăng nhập thành công!");
@@ -180,12 +183,16 @@ namespace InternshipsManageApp
                     if (role == "admin")
                     {
                         FormDashboard formdashboard = new FormDashboard();
+                        formdashboard.UserRole = role; // Gán giá trị UserRole
+                        formdashboard.UpdateUserRole(); // Cập nhật Label lb2
                         formdashboard.Show();
                         this.Hide();
                     }
                     else if (role == "lecturer")
                     {
                         FormTeacher formteacher = new FormTeacher();
+                        //formteacher.UserRole = role;
+                        //formteacher.UpdateUserRole();
                         formteacher.Show();
                         this.Hide();
                     }

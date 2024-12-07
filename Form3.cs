@@ -16,6 +16,7 @@ namespace InternshipsManageApp
 {
     public partial class FormDashboard : BaseForm
     {
+        public string UserRole { get; set; }
         private Button activeButton;
         private Form activeForm;
 
@@ -185,6 +186,11 @@ namespace InternshipsManageApp
                 ReleaseCapture();
                 SendMessage(this.Handle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
             }
+        }
+
+        private void panelForm_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
