@@ -29,14 +29,16 @@ namespace InternshipsManageApp.Forms
         {
             InitializeComponent();
         }
-        private async Task<List<Class>> GetClasses()
+
+        // call api data combobox lớp
+        private async Task<List<StudentClass>> GetClasses()
         {
             string token = Properties.Settings.Default.AuthToken;
 
             if (string.IsNullOrEmpty(token))
             {
                 MessageBox.Show("Token không hợp lệ hoặc hết hạn. Vui lòng đăng nhập lại.");
-                return new List<Class>();
+                return new List<StudentClass>();
             }
 
             client.DefaultRequestHeaders.Clear();
@@ -47,13 +49,13 @@ namespace InternshipsManageApp.Forms
 
             if (response.IsSuccessStatusCode)
             {
-                var classes = JsonConvert.DeserializeObject<List<Class>>(responseString);
+                var classes = JsonConvert.DeserializeObject<List<StudentClass>>(responseString);
                 return classes;
             }
             else
             {
                 MessageBox.Show("Lỗi khi lấy dữ liệu lớp học.");
-                return new List<Class>();
+                return new List<StudentClass>();
             }
         }
 
@@ -77,6 +79,7 @@ namespace InternshipsManageApp.Forms
 
             var response = await client.GetAsync("http://sso.nqbdev.software/api/students");
             var responseString = await response.Content.ReadAsStringAsync();
+           
            
 
             if (response.IsSuccessStatusCode)

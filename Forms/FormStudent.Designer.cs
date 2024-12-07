@@ -33,10 +33,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.btnxoa = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.cbbDot = new System.Windows.Forms.ComboBox();
-            this.cbbChuyennganh = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cbbLop = new System.Windows.Forms.ComboBox();
             this.btnAddsv = new System.Windows.Forms.Button();
@@ -93,54 +89,12 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(494, 175);
+            this.label5.Location = new System.Drawing.Point(473, 151);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(258, 32);
             this.label5.TabIndex = 18;
             this.label5.Text = "Danh sách sinh viên";
-            // 
-            // cbbDot
-            // 
-            this.cbbDot.ForeColor = System.Drawing.Color.Black;
-            this.cbbDot.FormattingEnabled = true;
-            this.cbbDot.Location = new System.Drawing.Point(350, 111);
-            this.cbbDot.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cbbDot.Name = "cbbDot";
-            this.cbbDot.Size = new System.Drawing.Size(180, 28);
-            this.cbbDot.TabIndex = 26;
-            // 
-            // cbbChuyennganh
-            // 
-            this.cbbChuyennganh.ForeColor = System.Drawing.Color.Black;
-            this.cbbChuyennganh.FormattingEnabled = true;
-            this.cbbChuyennganh.Location = new System.Drawing.Point(609, 111);
-            this.cbbChuyennganh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cbbChuyennganh.Name = "cbbChuyennganh";
-            this.cbbChuyennganh.Size = new System.Drawing.Size(283, 28);
-            this.cbbChuyennganh.TabIndex = 27;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(346, 86);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 20);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "Đợt thực tập";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(604, 86);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(112, 20);
-            this.label7.TabIndex = 29;
-            this.label7.Text = "Chuyên ngành";
             // 
             // panel1
             // 
@@ -240,7 +194,7 @@
             // button5
             // 
             this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(804, 49);
+            this.button5.Location = new System.Drawing.Point(787, 92);
             this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(90, 34);
@@ -252,7 +206,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(346, 26);
+            this.label8.Location = new System.Drawing.Point(327, 60);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(136, 20);
@@ -262,7 +216,7 @@
             // textBox1
             // 
             this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(350, 49);
+            this.textBox1.Location = new System.Drawing.Point(331, 94);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(400, 26);
@@ -315,10 +269,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.cbbChuyennganh);
-            this.Controls.Add(this.cbbDot);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -342,10 +292,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnxoa;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cbbDot;
-        private System.Windows.Forms.ComboBox cbbChuyennganh;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnAddsv;
         private System.Windows.Forms.Label label3;

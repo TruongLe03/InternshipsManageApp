@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace InternshipsManageApp
 {
-    internal class Thuctap
+    public class Thuctap
     {
-        public class thuctap
+        public class internship
         {
+            public string id { get; set; }
             public string name { get; set; }
-            public DateTime thoigianbatdau { get; set; }
-            public DateTime thoigianketthuc { get; set; }
+            public string start_date { get; set; }
+            public string end_date { get; set;}
+
         }
     }
 }

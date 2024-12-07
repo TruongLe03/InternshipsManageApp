@@ -26,6 +26,8 @@ namespace InternshipsManageApp
        
         private void Form1_Load(object sender, EventArgs e)
         {
+            txtPassword.Text = "123456";
+            txtUsername.Text = "admin";
             SetEmailPlaceholder();
             SetPasswordPlaceholder();
         }

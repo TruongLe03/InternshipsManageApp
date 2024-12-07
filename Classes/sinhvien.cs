@@ -22,6 +22,7 @@ namespace InternshipsManageApp
         }
         public class StudentClass
         {
+            public int Id { get; set; }
             public string Name { get; set; }  // Tên lớp (ví dụ: CNTT1)
             public Faculty Faculty { get; set; }  // Khoa của lớp
         }

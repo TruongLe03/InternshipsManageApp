@@ -32,11 +32,6 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnUpdateCty = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.dataCty = new System.Windows.Forms.DataGridView();
-            this.NameCT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nganhnghe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lienhe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -49,8 +44,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtTencty = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataCty)).BeginInit();
+            this.dataGridViewcongty = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewcongty)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDeleteCty
@@ -96,49 +92,6 @@
             this.btnExit.TabIndex = 20;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
-            // 
-            // dataCty
-            // 
-            this.dataCty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataCty.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.NameCT,
-            this.DiaChi,
-            this.Nganhnghe,
-            this.Lienhe});
-            this.dataCty.Location = new System.Drawing.Point(264, 174);
-            this.dataCty.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dataCty.Name = "dataCty";
-            this.dataCty.RowHeadersWidth = 62;
-            this.dataCty.Size = new System.Drawing.Size(658, 231);
-            this.dataCty.TabIndex = 19;
-            // 
-            // NameCT
-            // 
-            this.NameCT.HeaderText = "Tên công ty";
-            this.NameCT.MinimumWidth = 8;
-            this.NameCT.Name = "NameCT";
-            this.NameCT.Width = 150;
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.HeaderText = "Địa chỉ";
-            this.DiaChi.MinimumWidth = 8;
-            this.DiaChi.Name = "DiaChi";
-            this.DiaChi.Width = 150;
-            // 
-            // Nganhnghe
-            // 
-            this.Nganhnghe.HeaderText = "Ngành nghề";
-            this.Nganhnghe.MinimumWidth = 8;
-            this.Nganhnghe.Name = "Nganhnghe";
-            this.Nganhnghe.Width = 150;
-            // 
-            // Lienhe
-            // 
-            this.Lienhe.HeaderText = "Liên hệ";
-            this.Lienhe.MinimumWidth = 8;
-            this.Lienhe.Name = "Lienhe";
-            this.Lienhe.Width = 150;
             // 
             // label5
             // 
@@ -284,26 +237,40 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Tên công ty";
             // 
+            // dataGridViewcongty
+            // 
+            this.dataGridViewcongty.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridViewcongty.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridViewcongty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewcongty.Location = new System.Drawing.Point(237, 218);
+            this.dataGridViewcongty.Name = "dataGridViewcongty";
+            this.dataGridViewcongty.RowHeadersWidth = 62;
+            this.dataGridViewcongty.RowTemplate.Height = 28;
+            this.dataGridViewcongty.Size = new System.Drawing.Size(679, 193);
+            this.dataGridViewcongty.TabIndex = 25;
+            this.dataGridViewcongty.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewcongty_CellContentClick);
+            // 
             // FormCompany
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(942, 602);
+            this.Controls.Add(this.dataGridViewcongty);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnDeleteCty);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnUpdateCty);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.dataCty);
             this.Controls.Add(this.label5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormCompany";
             this.Text = "Công ty thực tập";
-            ((System.ComponentModel.ISupportInitialize)(this.dataCty)).EndInit();
+            this.Load += new System.EventHandler(this.FormCompany_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewcongty)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -314,11 +281,6 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnUpdateCty;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.DataGridView dataCty;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NameCT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nganhnghe;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lienhe;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnAddCty;
@@ -331,5 +293,6 @@
         private System.Windows.Forms.TextBox txtTencty;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridViewcongty;
     }
 }
