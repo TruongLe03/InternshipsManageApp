@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Net.Http;
+using Newtonsoft.Json;
+using InternshipsManageApp.Forms;
+using Newtonsoft.Json.Linq;
+
 
 namespace InternshipsManageApp
 {
@@ -18,9 +23,11 @@ namespace InternshipsManageApp
             InitializeComponent();
         }
 
-        // Khởi tạo placeholder khi form được tải
+       
         private void Form1_Load(object sender, EventArgs e)
         {
+            txtPassword.Text = "123456";
+            txtUsername.Text = "admin";
             SetEmailPlaceholder();
             SetPasswordPlaceholder();
         }
@@ -84,28 +91,78 @@ namespace InternshipsManageApp
                 SetPasswordPlaceholder();
             }
         }
-
-
-
         private void closebtn_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void btnSubmit_Click(object sender, EventArgs e)
+        private static readonly HttpClient client = new HttpClient();
+        private async void btnSubmit_Click(object sender, EventArgs e)
         {
-            FormDashboard formdashboard = new FormDashboard();
+            // Tạo đối tượng payload để gửi đến API
+            var email = txtUsername.Text;
+            var password = txtPassword.Text;
+            var login = new
+            {
+                email = email,
+                password = password
+            };
+            var json = JsonConvert.SerializeObject(login);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            // Hiển thị FormDashboard
-            formdashboard.Show();
+            try
+            {
+                var res = await client.PostAsync("http://sso.nqbdev.software/api/auth/login", content);
+              
+                var responseString = await res.Content.ReadAsStringAsync();
+                
+                if (res.IsSuccessStatusCode)
+                {
+                    MessageBox.Show("Đăng nhập thành công!");
+                    var jsonResponse = JsonConvert.DeserializeObject<dynamic>(responseString);
+                    string username = jsonResponse.data.username;
+                    string userEmail = jsonResponse.data.email;
+                    string role = jsonResponse.data.role;
+                    string token = jsonResponse.token;
+                   
 
-            // Ẩn FormLogin nếu không cần nữa
-            this.Hide();
+                    // Lưu token vào Settings
+                    Properties.Settings.Default.AuthToken = token;               
+                    Properties.Settings.Default.Save();
 
-            // Đăng ký sự kiện FormClosed để đóng ứng dụng khi FormDashboard đóng lại
-            formdashboard.FormClosed += (s, args) => this.Close();
+                    // Cập nhật SessionManager
+                    luutoken.Username = username;
+                    luutoken.Role = role;
 
+                    if (role == "admin")
+                    {
+                        FormDashboard formdashboard = new FormDashboard();
+                        formdashboard.UserRole = role; // Gán giá trị UserRole
+                        formdashboard.UpdateUserRole(); // Cập nhật Label lb2
+                        formdashboard.Show();
+                        this.Hide();
+                    }
+                    else if (role == "lecturer")
+                    {
+                        FormTeacher formteacher = new FormTeacher();
+                        //formteacher.UserRole = role;
+                        //formteacher.UpdateUserRole();
+                        formteacher.Show();
+                        this.Hide();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Đăng nhập thất bại: " + responseString);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối: " + ex.Message);
+                Console.WriteLine("Chi tiết lỗi: " + ex.StackTrace);
+            }
         }
+
 
         private void closebtn_MouseHover(object sender, EventArgs e)
         {
@@ -120,6 +177,21 @@ namespace InternshipsManageApp
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }
