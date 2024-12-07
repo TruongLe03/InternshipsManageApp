@@ -70,6 +70,24 @@ namespace InternshipsManageApp
                 }
             }
         }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // BaseForm
+            // 
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Name = "BaseForm";
+            this.Load += new System.EventHandler(this.BaseForm_Load_1);
+            this.ResumeLayout(false);
+
+        }
+
+        private void BaseForm_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

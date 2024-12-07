@@ -14,6 +14,7 @@ namespace InternshipsManageApp.Forms
 {
     public partial class FormHome : BaseForm
     {
+        private static readonly HttpClient clientDashboard = new HttpClient();
         public FormHome()
         {
             InitializeComponent();
