@@ -12,24 +12,71 @@ using System.Net.Http;
 using Newtonsoft.Json;
 using InternshipsManageApp.Forms;
 using Newtonsoft.Json.Linq;
+using System.Drawing.Drawing2D;
+
 
 
 namespace InternshipsManageApp
 {
-    public partial class Form1 : Form
+    public partial class FormLogin : Form
     {
-        public Form1()
+        public FormLogin()
         {
             InitializeComponent();
+            closebtn.FlatAppearance.BorderSize = 0;
+            btnSubmit.FlatAppearance.BorderSize = 0;
         }
 
        
-        private void Form1_Load(object sender, EventArgs e)
+        private void FormLogin_Paint(object sender, EventArgs e)
         {
             txtPassword.Text = "123456";
             txtUsername.Text = "admin";
             SetEmailPlaceholder();
             SetPasswordPlaceholder();
+        }
+        private void FormLogin_Paint(object sender, PaintEventArgs e)
+        {
+            SetBackgroundGradient(sender, e);
+        }
+
+        //Tạo backgroundgradient cho formlogin
+        private void SetBackgroundGradient(Object sender, PaintEventArgs e)
+        {
+            Graphics graphics = e.Graphics;
+
+            
+            Rectangle gradient_rectangle = new Rectangle(0, 0, Width, Height);
+
+            
+            Brush b = new LinearGradientBrush(gradient_rectangle, Color.FromArgb(112, 40, 228), Color.FromArgb(229, 178, 202), 65f);
+
+                     
+            graphics.FillRectangle(b, gradient_rectangle);
+        }
+
+        //Tạo BoderRadius
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+
+            Graphics g = e.Graphics;
+            int radius = 30;  
+           
+            GraphicsPath path = new GraphicsPath();
+            path.AddArc(0, 0, radius, radius, 180, 90);  
+            path.AddArc(this.Width - radius - 1, 0, radius, radius, 270, 90);  
+            path.AddArc(this.Width - radius - 1, this.Height - radius - 1, radius, radius, 0, 90);  
+            path.AddArc(0, this.Height - radius - 1, radius, radius, 90, 90);  
+            path.CloseFigure();  
+            this.Region = new Region(path);
+        }
+
+        
+        protected override void OnResize(EventArgs e)
+        {
+            base.OnResize(e);
+            this.Invalidate(); 
         }
 
         // Hàm để đặt placeholder cho TextBox email
@@ -54,7 +101,7 @@ namespace InternshipsManageApp
         }
 
         // Sự kiện khi người dùng click vào TextBox email
-        private void txtUsername_Enter(object sender, EventArgs e)
+        private void txtUsername_Click(object sender, EventArgs e)
         {
             if (txtUsername.Text == "Enter the email...")
             {
@@ -62,6 +109,7 @@ namespace InternshipsManageApp
                 txtUsername.ForeColor = Color.Black;
             }
         }
+
 
         // Sự kiện khi người dùng rời khỏi TextBox email
         private void txtUsername_Leave(object sender, EventArgs e)
@@ -73,7 +121,8 @@ namespace InternshipsManageApp
         }
 
         // Sự kiện khi người dùng click vào TextBox mật khẩu
-        private void txtPassword_Enter(object sender, EventArgs e)
+
+        private void txtPassword_Click(object sender, EventArgs e)
         {
             if (txtPassword.Text == "Enter the password...")
             {
@@ -82,6 +131,7 @@ namespace InternshipsManageApp
                 txtPassword.UseSystemPasswordChar = true; // Bật password char để che ký tự khi nhập
             }
         }
+       
 
         // Sự kiện khi người dùng rời khỏi TextBox mật khẩu
         private void txtPassword_Leave(object sender, EventArgs e)
@@ -91,10 +141,7 @@ namespace InternshipsManageApp
                 SetPasswordPlaceholder();
             }
         }
-        private void closebtn_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        
 
         private static readonly HttpClient client = new HttpClient();
         private async void btnSubmit_Click(object sender, EventArgs e)
@@ -112,8 +159,7 @@ namespace InternshipsManageApp
 
             try
             {
-                var res = await client.PostAsync("http://sso.nqbdev.software/api/auth/login", content);
-              
+                var res = await client.PostAsync("http://nqbdev-30704.portmap.host:30704/api/auth/login", content);
                 var responseString = await res.Content.ReadAsStringAsync();
                 
                 if (res.IsSuccessStatusCode)
@@ -127,7 +173,7 @@ namespace InternshipsManageApp
                    
 
                     // Lưu token vào Settings
-                    Properties.Settings.Default.AuthToken = token;               
+                    Properties.Settings.Default.AuthToken = token;
                     Properties.Settings.Default.Save();
 
                     // Cập nhật SessionManager
@@ -164,36 +210,23 @@ namespace InternshipsManageApp
         }
 
 
+       
+
+        private void closebtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void closebtn_MouseHover(object sender, EventArgs e)
         {
-            closebtn.BackColor = Color.Red;
-            closebtn.ForeColor = Color.White;
+            closebtn.ForeColor = Color.Red;
+            closebtn.BackColor = Color.Transparent;
         }
 
         private void closebtn_MouseLeave(object sender, EventArgs e)
         {
-            closebtn.BackColor = Color.WhiteSmoke;
-            closebtn.ForeColor = Color.Black;
+            closebtn.ForeColor = Color.White;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void txtUsername_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

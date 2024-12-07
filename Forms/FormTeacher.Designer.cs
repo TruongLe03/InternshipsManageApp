@@ -256,6 +256,100 @@
             this.label1.TabIndex = 40;
             this.label1.Text = "Số điện thoại";
             // 
+            // button2
+            // 
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.Location = new System.Drawing.Point(490, 48);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(58, 20);
+            this.button2.TabIndex = 42;
+            this.button2.Text = "Tìm kiếm";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colStt,
+            this.colTenGv,
+            this.colSdtGv,
+            this.colEmailGv,
+            this.colMonpt});
+            this.listView1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(232, 113);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(367, 154);
+            this.listView1.TabIndex = 41;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // colStt
+            // 
+            this.colStt.Text = "STT";
+            this.colStt.Width = 49;
+            // 
+            // colTenGv
+            // 
+            this.colTenGv.Text = "Họ và tên";
+            this.colTenGv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.colTenGv.Width = 100;
+            // 
+            // colSdtGv
+            // 
+            this.colSdtGv.Text = "Số điện thoại";
+            this.colSdtGv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.colSdtGv.Width = 136;
+            // 
+            // colEmailGv
+            // 
+            this.colEmailGv.Text = "Email";
+            this.colEmailGv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.colEmailGv.Width = 120;
+            // 
+            // colMonpt
+            // 
+            this.colMonpt.Text = "Môn phụ trách";
+            this.colMonpt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.colMonpt.Width = 100;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnDelete.Location = new System.Drawing.Point(291, 273);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(50, 20);
+            this.btnDelete.TabIndex = 40;
+            this.btnDelete.Text = "Xoá";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnUpdate.Location = new System.Drawing.Point(235, 273);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(50, 20);
+            this.btnUpdate.TabIndex = 39;
+            this.btnUpdate.Text = "Sửa";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(327, 88);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(184, 22);
+            this.label6.TabIndex = 45;
+            this.label6.Text = "Danh sách giảng viên\r\n";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(291, 48);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(193, 20);
+            this.textBox1.TabIndex = 46;
+            // 
             // FormTeacher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
