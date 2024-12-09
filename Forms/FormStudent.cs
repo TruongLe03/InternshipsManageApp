@@ -480,8 +480,8 @@ namespace InternshipsManageApp.Forms
             // Duyệt qua các dòng trong DataGridView để tìm sinh viên
             foreach (DataGridViewRow row in dataGridViewsinhvien.Rows)
             {
-                if (row.Cells["Họ tên"].Value != null &&
-                    row.Cells["Họ tên"].Value.ToString().Equals(msvtk, StringComparison.OrdinalIgnoreCase))
+                if (row.Cells["Mã sinh viên"].Value != null &&
+                    row.Cells["Mã sinh viên"].Value.ToString().Equals(msvtk, StringComparison.OrdinalIgnoreCase))
                 {
                     // Nếu tìm thấy, thay đổi màu nền dòng
                     row.DefaultCellStyle.BackColor = Color.Yellow; // Màu nền vàng
@@ -504,6 +504,11 @@ namespace InternshipsManageApp.Forms
             {
                 MessageBox.Show("Không tìm thấy sinh viên có mã này.", "Kết quả tìm kiếm", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

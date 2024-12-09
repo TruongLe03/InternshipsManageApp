@@ -83,8 +83,8 @@ namespace InternshipsManageApp.Forms
 
             // Tạo DataTable để hiển thị dữ liệu
             DataTable ct = new DataTable();
-            ct.Columns.Add("STT", typeof(int));              // Cột số thứ tự
-            ct.Columns.Add("id",typeof(int));
+                         // Cột số thứ tự
+            ct.Columns.Add("STT",typeof(int));
             ct.Columns.Add("Tên đợt", typeof(string));   // Cột tên công ty
             ct.Columns.Add("Địa chỉ", typeof(string));       // Cột địa chỉ
             ct.Columns.Add("Ngành nghề", typeof(string));    // Cột ngành nghề
@@ -93,11 +93,12 @@ namespace InternshipsManageApp.Forms
             ct.Columns.Add("mô tả" , typeof(string));
 
 
-            var stt = 1;
+          
             foreach (var company in Companylist)
             {
                 // Thêm từng công ty vào DataTable
-                ct.Rows.Add (stt++,company.company_id, company.name, company.address, company.industry, company.email , company.phone , company.description);
+                ct.Rows.Add (company.id, company.name, company.address, company.industry, company.email , company.phone , company.description);
+               
             }
             dataGridViewcongty.DefaultCellStyle.ForeColor = Color.Black;
 
@@ -122,7 +123,7 @@ namespace InternshipsManageApp.Forms
 
         private async void btnAddCongty_Click(object sender, EventArgs e)
         {
-            var result = MessageBox.Show("Bạn có chắc chắn muốn thêm sinh viên này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            var result = MessageBox.Show("Bạn có chắc chắn muốn thêm công ty này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 string name = txtTencty.Text.Trim();
@@ -130,12 +131,12 @@ namespace InternshipsManageApp.Forms
                 string profes = txtNganhnghe.Text.Trim();
                 string contact = txtLienhe.Text.Trim();
                 string phone = txtphone.Text.Trim();
-                string description =txtmota.Text.Trim();    
+                string description =txtmota.Text.Trim();
                 // Tạo đối tượng sinh viên, đúng với định dạng yêu cầu từ API
                
                 var newStudent = new
                 {
-                    company_id =1 ,
+                    company_id = 1,
                     name = name,
                     address = address,
                     industry = profes,
@@ -152,18 +153,18 @@ namespace InternshipsManageApp.Forms
                 {
                     // Gửi yêu cầu POST
                     var response = await client.PostAsync(url, content);
-                    MessageBox.Show("kiểm tra respon"+response);
+                    //MessageBox.Show("kiểm tra respon"+response);
 
                     if (response.IsSuccessStatusCode)
                     {
-                        MessageBox.Show("Sinh viên đã được thêm thành công!");
+                        MessageBox.Show("công ty đã được thêm thành công!");
                         DisplayCompany();
                     }
                     else
                     {
                         // In ra mã lỗi và nội dung lỗi nếu có
                         string errorResponse = await response.Content.ReadAsStringAsync();
-                        MessageBox.Show($"Lỗi khi thêm sinh viên: {response.StatusCode}, Nội dung lỗi: {errorResponse}");
+                        MessageBox.Show($"Lỗi khi thêm công ty: {response.StatusCode}, Nội dung lỗi: {errorResponse}");
                     }
                 }
                 catch (Exception ex)
@@ -183,18 +184,19 @@ namespace InternshipsManageApp.Forms
             {
                 var selectedRow = dataGridViewcongty.SelectedRows[0];
                 var idcongty = selectedRow.Cells["STT"].Value?.ToString();
-                //MessageBox.Show($"Mã sinh viên được chọn: {studentCode}");
+                MessageBox.Show("idcongty" + idcongty);
+               
 
                 if (!string.IsNullOrWhiteSpace(idcongty))
                 {
-                    var result = MessageBox.Show($"Bạn có chắc chắn muốn xóa sinh viên với mã {idcongty}?",
+                    var result = MessageBox.Show($"Bạn có chắc chắn muốn xóa công ty với mã {idcongty}?",
                         "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
                     if (result == DialogResult.Yes)
                     {
                         // Gửi yêu cầu xóa tới API
                         string url = $"http://sso.nqbdev.software/api/company/{idcongty}";
-                        //MessageBox.Show($"URL gửi đến API: {url}");
+                        MessageBox.Show($"URL gửi đến API: {url}");
 
                         try
                         {
@@ -207,7 +209,7 @@ namespace InternshipsManageApp.Forms
                                 MessageBox.Show("Sinh viên đã được xóa thành công!");
 
                                 // Loại bỏ sinh viên khỏi danh sách `studentList`
-                                Companylist = Companylist.Where(s => s.company_id != idcongty).ToList();
+                                Companylist = Companylist.Where(s => s.id != idcongty).ToList();
 
                                 // Cập nhật lại DataGridView
                                 DisplayCompany();
