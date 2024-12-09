@@ -10,11 +10,13 @@ namespace InternshipsManageApp.Classes
     {
         public class company
         {
-            public string company_id{ get; set; }
+            public string id { get; set; }
             public string name { get; set; }
             public string address { get; set; }
             public string industry { get; set; }
             public string email { get; set; }
+            public string phone { get; set; }
+            public string description { get; set; }
 
         }
     }

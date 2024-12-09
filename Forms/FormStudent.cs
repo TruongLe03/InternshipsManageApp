@@ -24,6 +24,7 @@ namespace InternshipsManageApp.Forms
     {
         // Khởi tạo HttpClient
         private static readonly HttpClient client = new HttpClient();
+      
 
         public FormStudent()
         {
@@ -322,7 +323,7 @@ namespace InternshipsManageApp.Forms
 
         }
 
-        private async void button1_Click(object sender, EventArgs e)
+        private async void btnsua_Click(object sender, EventArgs e)
         {
             if (dataGridViewsinhvien.SelectedRows.Count > 0)
             {

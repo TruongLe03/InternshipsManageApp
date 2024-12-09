@@ -144,6 +144,7 @@ namespace InternshipsManageApp
         
 
         private static readonly HttpClient client = new HttpClient();
+
         private async void btnSubmit_Click(object sender, EventArgs e)
         {
             // Tạo đối tượng payload để gửi đến API
@@ -204,7 +205,7 @@ namespace InternshipsManageApp
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi kết nối: " + ex.Message);
+               
                 Console.WriteLine("Chi tiết lỗi: " + ex.StackTrace);
             }
         }

@@ -30,7 +30,6 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.btnxoa = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -41,9 +40,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtTenSv = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btntimkiem = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txttimkiem = new System.Windows.Forms.TextBox();
             this.dataGridViewsinhvien = new System.Windows.Forms.DataGridView();
             this.btnsua = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -53,29 +52,19 @@
             // button4
             // 
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(885, 511);
+            this.button4.Location = new System.Drawing.Point(623, 452);
             this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 35);
             this.button4.TabIndex = 24;
             this.button4.Text = "Thoát";
             this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(567, 452);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 35);
-            this.button3.TabIndex = 23;
-            this.button3.Text = "Lưu";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnxoa
             // 
             this.btnxoa.ForeColor = System.Drawing.Color.Black;
-            this.btnxoa.Location = new System.Drawing.Point(456, 452);
+            this.btnxoa.Location = new System.Drawing.Point(496, 452);
             this.btnxoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(75, 35);
@@ -89,7 +78,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(473, 151);
+            this.label5.Location = new System.Drawing.Point(472, 151);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(258, 32);
@@ -128,7 +117,7 @@
             // 
             this.btnAddsv.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddsv.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAddsv.Location = new System.Drawing.Point(55, 325);
+            this.btnAddsv.Location = new System.Drawing.Point(56, 325);
             this.btnAddsv.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAddsv.Name = "btnAddsv";
             this.btnAddsv.Size = new System.Drawing.Size(75, 35);
@@ -191,16 +180,17 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Họ và tên";
             // 
-            // button5
+            // btntimkiem
             // 
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(787, 92);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(90, 34);
-            this.button5.TabIndex = 30;
-            this.button5.Text = "Tìm kiếm";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btntimkiem.ForeColor = System.Drawing.Color.Black;
+            this.btntimkiem.Location = new System.Drawing.Point(788, 92);
+            this.btntimkiem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btntimkiem.Name = "btntimkiem";
+            this.btntimkiem.Size = new System.Drawing.Size(90, 34);
+            this.btntimkiem.TabIndex = 30;
+            this.btntimkiem.Text = "Tìm kiếm";
+            this.btntimkiem.UseVisualStyleBackColor = true;
+            this.btntimkiem.Click += new System.EventHandler(this.button5_Click);
             // 
             // label8
             // 
@@ -213,14 +203,14 @@
             this.label8.TabIndex = 31;
             this.label8.Text = "Tìm kiếm sinh viên";
             // 
-            // textBox1
+            // txttimkiem
             // 
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(331, 94);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(400, 26);
-            this.textBox1.TabIndex = 25;
+            this.txttimkiem.ForeColor = System.Drawing.Color.Black;
+            this.txttimkiem.Location = new System.Drawing.Point(332, 94);
+            this.txttimkiem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txttimkiem.Name = "txttimkiem";
+            this.txttimkiem.Size = new System.Drawing.Size(400, 26);
+            this.txttimkiem.TabIndex = 25;
             // 
             // dataGridViewsinhvien
             // 
@@ -268,10 +258,9 @@
             this.Controls.Add(this.dataGridViewsinhvien);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btntimkiem);
+            this.Controls.Add(this.txttimkiem);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.btnxoa);
             this.Controls.Add(this.btnsua);
             this.Controls.Add(this.label5);
@@ -289,7 +278,6 @@
 
         #endregion
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnxoa;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
@@ -299,9 +287,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtTenSv;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btntimkiem;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txttimkiem;
         private System.Windows.Forms.DataGridView dataGridViewsinhvien;
         private System.Windows.Forms.ComboBox cbbLop;
         private System.Windows.Forms.Button btnsua;
