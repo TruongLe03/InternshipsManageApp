@@ -34,8 +34,12 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtmota = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtphone = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnAddCty = new System.Windows.Forms.Button();
+            this.btnAddCongty = new System.Windows.Forms.Button();
             this.txtLienhe = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtDiachi = new System.Windows.Forms.TextBox();
@@ -59,6 +63,7 @@
             this.btnDeleteCty.TabIndex = 23;
             this.btnDeleteCty.Text = "Xoá";
             this.btnDeleteCty.UseVisualStyleBackColor = true;
+            this.btnDeleteCty.Click += new System.EventHandler(this.btnDeleteCty_Click);
             // 
             // btnSave
             // 
@@ -108,8 +113,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.txtmota);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.txtphone);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.btnAddCty);
+            this.panel1.Controls.Add(this.btnAddCongty);
             this.panel1.Controls.Add(this.txtLienhe);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtDiachi);
@@ -126,10 +135,54 @@
             this.panel1.TabIndex = 24;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // txtmota
+            // 
+            this.txtmota.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmota.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtmota.Location = new System.Drawing.Point(25, 416);
+            this.txtmota.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtmota.Name = "txtmota";
+            this.txtmota.Size = new System.Drawing.Size(186, 30);
+            this.txtmota.TabIndex = 31;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label7.Location = new System.Drawing.Point(25, 389);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(56, 22);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "Mô tả";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label6.Location = new System.Drawing.Point(25, 324);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(114, 22);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "Số điện thoại";
+            // 
+            // txtphone
+            // 
+            this.txtphone.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtphone.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtphone.Location = new System.Drawing.Point(25, 351);
+            this.txtphone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtphone.Name = "txtphone";
+            this.txtphone.Size = new System.Drawing.Size(186, 30);
+            this.txtphone.TabIndex = 28;
+            // 
             // button1
             // 
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(110, 395);
+            this.button1.Location = new System.Drawing.Point(126, 491);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 35);
@@ -137,22 +190,23 @@
             this.button1.Text = "Tìm kiếm";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // btnAddCty
+            // btnAddCongty
             // 
-            this.btnAddCty.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAddCty.Location = new System.Drawing.Point(18, 395);
-            this.btnAddCty.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnAddCty.Name = "btnAddCty";
-            this.btnAddCty.Size = new System.Drawing.Size(75, 35);
-            this.btnAddCty.TabIndex = 26;
-            this.btnAddCty.Text = "Thêm";
-            this.btnAddCty.UseVisualStyleBackColor = true;
+            this.btnAddCongty.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnAddCongty.Location = new System.Drawing.Point(18, 491);
+            this.btnAddCongty.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAddCongty.Name = "btnAddCongty";
+            this.btnAddCongty.Size = new System.Drawing.Size(75, 35);
+            this.btnAddCongty.TabIndex = 26;
+            this.btnAddCongty.Text = "Thêm";
+            this.btnAddCongty.UseVisualStyleBackColor = true;
+            this.btnAddCongty.Click += new System.EventHandler(this.btnAddCongty_Click);
             // 
             // txtLienhe
             // 
             this.txtLienhe.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLienhe.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtLienhe.Location = new System.Drawing.Point(22, 352);
+            this.txtLienhe.Location = new System.Drawing.Point(29, 280);
             this.txtLienhe.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtLienhe.Name = "txtLienhe";
             this.txtLienhe.Size = new System.Drawing.Size(186, 30);
@@ -163,7 +217,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(21, 328);
+            this.label4.Location = new System.Drawing.Point(25, 253);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 22);
@@ -174,7 +228,7 @@
             // 
             this.txtDiachi.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiachi.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtDiachi.Location = new System.Drawing.Point(24, 229);
+            this.txtDiachi.Location = new System.Drawing.Point(29, 147);
             this.txtDiachi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDiachi.Name = "txtDiachi";
             this.txtDiachi.Size = new System.Drawing.Size(186, 30);
@@ -186,7 +240,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(21, 205);
+            this.label3.Location = new System.Drawing.Point(25, 120);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 22);
@@ -197,7 +251,7 @@
             // 
             this.txtNganhnghe.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNganhnghe.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtNganhnghe.Location = new System.Drawing.Point(22, 289);
+            this.txtNganhnghe.Location = new System.Drawing.Point(29, 218);
             this.txtNganhnghe.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtNganhnghe.Name = "txtNganhnghe";
             this.txtNganhnghe.Size = new System.Drawing.Size(186, 30);
@@ -208,7 +262,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(21, 265);
+            this.label2.Location = new System.Drawing.Point(25, 182);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 22);
@@ -219,7 +273,7 @@
             // 
             this.txtTencty.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTencty.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtTencty.Location = new System.Drawing.Point(22, 169);
+            this.txtTencty.Location = new System.Drawing.Point(29, 85);
             this.txtTencty.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTencty.Name = "txtTencty";
             this.txtTencty.Size = new System.Drawing.Size(186, 30);
@@ -230,7 +284,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(18, 145);
+            this.label1.Location = new System.Drawing.Point(25, 58);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 22);
@@ -283,7 +337,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnAddCty;
+        private System.Windows.Forms.Button btnAddCongty;
         private System.Windows.Forms.TextBox txtLienhe;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtDiachi;
@@ -294,5 +348,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridViewcongty;
+        private System.Windows.Forms.TextBox txtmota;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtphone;
     }
 }

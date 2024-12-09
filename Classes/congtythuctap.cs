@@ -15,6 +15,8 @@ namespace InternshipsManageApp.Classes
             public string address { get; set; }
             public string industry { get; set; }
             public string email { get; set; }
+            public string phone { get; set; }
+            public string description { get; set; }
 
         }
     }

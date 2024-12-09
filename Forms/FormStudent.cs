@@ -24,6 +24,7 @@ namespace InternshipsManageApp.Forms
     {
         // Khởi tạo HttpClient
         private static readonly HttpClient client = new HttpClient();
+      
 
         public FormStudent()
         {
@@ -254,7 +255,7 @@ namespace InternshipsManageApp.Forms
             }
         }
 
-        private async void button2_Click(object sender, EventArgs e)
+        private async void btnxoa_Click(object sender, EventArgs e)
         {
             if (dataGridViewsinhvien.SelectedRows.Count > 0)
             {
@@ -322,7 +323,7 @@ namespace InternshipsManageApp.Forms
 
         }
 
-        private async void button1_Click(object sender, EventArgs e)
+        private async void btnsua_Click(object sender, EventArgs e)
         {
             if (dataGridViewsinhvien.SelectedRows.Count > 0)
             {
@@ -460,6 +461,48 @@ namespace InternshipsManageApp.Forms
 
                 // Hiển thị thông tin lớp trong ComboBox (hoặc TextBox)
                 cbbLop.Text = $"{className} - {classNameDetail}";
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {     // Lấy mã sinh viên từ TextBox
+            var msvtk = txttimkiem.Text.Trim();
+
+            // Kiểm tra mã sinh viên có bị bỏ trống không
+            if (string.IsNullOrEmpty(msvtk))
+            {
+                MessageBox.Show("Vui lòng nhập mã sinh viên để tìm kiếm.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            bool found = false;
+
+            // Duyệt qua các dòng trong DataGridView để tìm sinh viên
+            foreach (DataGridViewRow row in dataGridViewsinhvien.Rows)
+            {
+                if (row.Cells["Họ tên"].Value != null &&
+                    row.Cells["Họ tên"].Value.ToString().Equals(msvtk, StringComparison.OrdinalIgnoreCase))
+                {
+                    // Nếu tìm thấy, thay đổi màu nền dòng
+                    row.DefaultCellStyle.BackColor = Color.Yellow; // Màu nền vàng
+                    row.DefaultCellStyle.ForeColor = Color.Black;  // Màu chữ đen
+                    found = true;
+
+                    // Đảm bảo dòng này được hiển thị trên cùng
+                    dataGridViewsinhvien.FirstDisplayedScrollingRowIndex = row.Index;
+                    break;
+                }
+                else
+                {
+                    // Reset màu nền của các dòng không liên quan
+                    row.DefaultCellStyle.BackColor = Color.White;
+                    row.DefaultCellStyle.ForeColor = Color.Black;
+                }
+            }
+
+            if (!found)
+            {
+                MessageBox.Show("Không tìm thấy sinh viên có mã này.", "Kết quả tìm kiếm", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

@@ -106,21 +106,20 @@ namespace InternshipsManageApp.Forms
             // Thêm cột STT, Họ tên, Email, Số điện thoại và Tên khoa vào DataTable
            
             gv.Columns.Add("STT", typeof(int));
-            gv.Columns.Add("id", typeof(string));
             gv.Columns.Add("Họ và tên", typeof(string));
             gv.Columns.Add("Email", typeof(string));
             gv.Columns.Add("Số điện thoại", typeof(string));
             gv.Columns.Add("Tên khoa", typeof(string));
            
             // Biến để tạo số thứ tự (STT)
-            int stt = 1;
+            
 
             foreach (var lecturer in lecturersList)
             {
                 string facultyName = lecturer.faculty?.name ?? "Không có lớp"; // Lấy tên khoa, kiểm tra null nếu không có khoa
 
                 // Thêm dòng mới vào DataTable
-                gv.Rows.Add(stt++, lecturer.id,$"{lecturer.first_name} {lecturer.last_name}", lecturer.email, lecturer.phone, facultyName);
+                gv.Rows.Add(lecturer.id,$"{lecturer.first_name} {lecturer.last_name}", lecturer.email, lecturer.phone, facultyName);
 
               
             }
@@ -310,6 +309,11 @@ namespace InternshipsManageApp.Forms
         {
             dataGridViewgiangvien.SelectionMode = DataGridViewSelectionMode.FullRowSelect; // Chọn cả dòng
             dataGridViewgiangvien.MultiSelect = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

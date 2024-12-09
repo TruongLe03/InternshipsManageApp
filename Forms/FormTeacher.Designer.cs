@@ -30,6 +30,8 @@
         {
             this.btnExit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBoxgiangvien = new System.Windows.Forms.ComboBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,8 +46,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridViewgiangvien = new System.Windows.Forms.DataGridView();
-            this.comboBoxgiangvien = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewgiangvien)).BeginInit();
             this.SuspendLayout();
@@ -79,6 +79,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(396, 531);
             this.panel1.TabIndex = 37;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(21, 308);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 22);
+            this.label1.TabIndex = 40;
+            this.label1.Text = "Số điện thoại";
+            // 
+            // comboBoxgiangvien
+            // 
+            this.comboBoxgiangvien.FormattingEnabled = true;
+            this.comboBoxgiangvien.Location = new System.Drawing.Point(25, 333);
+            this.comboBoxgiangvien.Name = "comboBoxgiangvien";
+            this.comboBoxgiangvien.Size = new System.Drawing.Size(184, 28);
+            this.comboBoxgiangvien.TabIndex = 39;
             // 
             // btnAdd
             // 
@@ -168,6 +188,7 @@
             this.button2.TabIndex = 42;
             this.button2.Text = "Tìm kiếm";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnDelete
             // 
@@ -235,26 +256,6 @@
             this.dataGridViewgiangvien.Size = new System.Drawing.Size(517, 150);
             this.dataGridViewgiangvien.TabIndex = 47;
             this.dataGridViewgiangvien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewgiangvien_CellContentClick);
-            // 
-            // comboBoxgiangvien
-            // 
-            this.comboBoxgiangvien.FormattingEnabled = true;
-            this.comboBoxgiangvien.Location = new System.Drawing.Point(25, 333);
-            this.comboBoxgiangvien.Name = "comboBoxgiangvien";
-            this.comboBoxgiangvien.Size = new System.Drawing.Size(184, 28);
-            this.comboBoxgiangvien.TabIndex = 39;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(21, 308);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 22);
-            this.label1.TabIndex = 40;
-            this.label1.Text = "Số điện thoại";
             // 
             // FormTeacher
             // 
