@@ -167,13 +167,13 @@ namespace InternshipsManageApp
 
             try
             {
+                
                 var res = await client.PostAsync("http://sso.nqbdev.software/api/auth/login", content);
                 var responseString = await res.Content.ReadAsStringAsync();
-                
-                if (res.IsSuccessStatusCode)
+                var jsonResponse = JsonConvert.DeserializeObject<dynamic>(responseString);        
+                if (jsonResponse.status == 200)
                 {
-                    MessageBox.Show("Đăng nhập thành công!");
-                    var jsonResponse = JsonConvert.DeserializeObject<dynamic>(responseString);
+                    MessageBox.Show("Đăng nhập thành công!"); 
                     string username = jsonResponse.data.username;
                     string userEmail = jsonResponse.data.email;
                     string role = jsonResponse.data.role;
@@ -207,7 +207,7 @@ namespace InternshipsManageApp
                 }
                 else
                 {
-                    MessageBox.Show("Đăng nhập thất bại: " + responseString);
+                    MessageBox.Show("Đăng nhập thất bại: " );
                 }
             }
             catch (Exception ex)

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.button4 = new System.Windows.Forms.Button();
             this.btnxoa = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -49,22 +48,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewsinhvien)).BeginInit();
             this.SuspendLayout();
             // 
-            // button4
-            // 
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(623, 452);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 35);
-            this.button4.TabIndex = 24;
-            this.button4.Text = "Thoát";
-            this.button4.UseVisualStyleBackColor = true;
-           
-            // 
             // btnxoa
             // 
             this.btnxoa.ForeColor = System.Drawing.Color.Black;
-            this.btnxoa.Location = new System.Drawing.Point(496, 452);
+            this.btnxoa.Location = new System.Drawing.Point(509, 452);
             this.btnxoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(75, 35);
@@ -241,7 +228,7 @@
             // btnsua
             // 
             this.btnsua.ForeColor = System.Drawing.Color.Black;
-            this.btnsua.Location = new System.Drawing.Point(351, 452);
+            this.btnsua.Location = new System.Drawing.Point(373, 452);
             this.btnsua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(75, 35);
@@ -260,7 +247,6 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btntimkiem);
             this.Controls.Add(this.txttimkiem);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.btnxoa);
             this.Controls.Add(this.btnsua);
             this.Controls.Add(this.label5);
@@ -277,7 +263,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnxoa;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;

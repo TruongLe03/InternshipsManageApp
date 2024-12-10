@@ -4,10 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using Newtonsoft.Json;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using static InternshipsManageApp.Classes.congtythuctap;
@@ -184,7 +186,7 @@ namespace InternshipsManageApp.Forms
             {
                 var selectedRow = dataGridViewcongty.SelectedRows[0];
                 var idcongty = selectedRow.Cells["STT"].Value?.ToString();
-                MessageBox.Show("idcongty" + idcongty);
+                //MessageBox.Show("idcongty" + idcongty);
                
 
                 if (!string.IsNullOrWhiteSpace(idcongty))
@@ -196,7 +198,7 @@ namespace InternshipsManageApp.Forms
                     {
                         // Gửi yêu cầu xóa tới API
                         string url = $"http://sso.nqbdev.software/api/company/{idcongty}";
-                        MessageBox.Show($"URL gửi đến API: {url}");
+                        //MessageBox.Show($"URL gửi đến API: {url}");
 
                         try
                         {
@@ -238,6 +240,180 @@ namespace InternshipsManageApp.Forms
             else
             {
                 MessageBox.Show("Vui lòng chọn một sinh viên để xóa.");
+            }
+        }
+
+        private async void btnUpdateCty_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewcongty.SelectedRows.Count > 0)
+            {
+                var selectedRow = dataGridViewcongty.SelectedRows[0];
+
+                // Lấy dữ liệu từ TextBox
+                var companyid = selectedRow.Cells["STT"].Value?.ToString().Trim(); // Lấy ID giảng viên từ cột STT
+                var fullName = txtTencty.Text?.Trim(); // Lấy tên đầy đủ từ ô nhập
+                var phone = txtphone.Text?.Trim(); // Lấy số điện thoại từ ô nhập
+                var Address = txtDiachi.Text?.Trim();
+                var profession = txtNganhnghe.Text?.Trim();
+                var email = txtLienhe.Text?.Trim();
+                var describe = txtmota.Text?.Trim();
+             
+
+                // Kiểm tra nếu tên đầy đủ hợp lệ
+                if (string.IsNullOrEmpty(fullName))
+                {
+                    MessageBox.Show("Họ tên không được để trống.");
+                    return;
+                }
+
+                if (string.IsNullOrEmpty(phone))
+                {
+                    MessageBox.Show("Số điện thoại không được để trống.");
+                    return;
+                }
+
+               
+
+               
+
+                // Tạo đối tượng lecturer để gửi lên server
+                var updatedLecturer = new
+                {
+                    name = fullName , // Họ tên đầy đủ
+                    phone = phone, // Số điện thoại
+                    address = Address,
+                    industry = profession,
+                    email = email ,
+                    description = describe
+
+                };
+
+                // Gửi yêu cầu PUT tới server
+                string url = $"http://sso.nqbdev.software/api/company/{companyid}";
+                MessageBox.Show($"URL: {url}"); // Hiển thị URL cho việc debug
+
+                try
+                {
+                    using (var client = new HttpClient())
+                    {
+                        // Gắn token từ Settings vào Header
+                        var token = Properties.Settings.Default.AuthToken;
+                        if (string.IsNullOrEmpty(token))
+                        {
+                            MessageBox.Show("Token không tồn tại. Vui lòng đăng nhập lại.");
+                            return;
+                        }
+
+                        client.DefaultRequestHeaders.Authorization =
+                            new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+                        // Tuần tự hóa đối tượng thành chuỗi JSON
+                        var jsonContent = JsonConvert.SerializeObject(updatedLecturer);
+
+                        // Tạo StringContent từ chuỗi JSON
+                        var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+                        // Gửi yêu cầu PUT với nội dung JSON
+                        var response = await client.PutAsync(url, content);
+
+                        var responseContent = await response.Content.ReadAsStringAsync();
+
+                        if (response.IsSuccessStatusCode)
+                        {
+                            MessageBox.Show("Cập nhật giảng viên thành công!");
+
+                            // Cập nhật trực tiếp dữ liệu trong DataGridView
+                            selectedRow.Cells["Tên đợt"].Value = fullName;
+                            selectedRow.Cells["Địa chỉ"].Value = Address;
+                            selectedRow.Cells["Ngành nghề"].Value = profession;
+                            selectedRow.Cells["Liên hệ"].Value = email;
+                            selectedRow.Cells["Số điện thoại"].Value = phone;
+                            selectedRow.Cells["mô tả"].Value = describe;
+
+                        }
+                        else
+                        {
+                            string errorResponse = await response.Content.ReadAsStringAsync();
+                            MessageBox.Show($"Lỗi khi cập nhật giảng viên: {response.StatusCode}, {errorResponse}");
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một giảng viên để sửa.");
+            }
+
+        }
+
+        private void data(object sender, DataGridViewCellEventArgs e)
+        {
+            // Kiểm tra nếu người dùng không click vào header (chỉ click vào các dòng dữ liệu)
+            if (e.RowIndex >= 0)
+            {
+                // Lấy dòng được click
+                var selectedRow = dataGridViewcongty.Rows[e.RowIndex];
+
+                // Hiển thị thông tin từ các cột vào các TextBox
+                txtTencty.Text = selectedRow.Cells["Tên đợt"].Value?.ToString();
+                txtDiachi.Text = selectedRow.Cells["Địa chỉ"].Value?.ToString();
+                txtNganhnghe.Text = selectedRow.Cells["Ngành nghề"]?.Value.ToString();
+                txtLienhe.Text = selectedRow.Cells["Liên hệ"]?.Value.ToString();
+                txtphone.Text = selectedRow.Cells["số điện thoại"]?.Value.ToString();
+                txtmota.Text = selectedRow.Cells["mô tả"]?.Value.ToString();
+
+
+            }
+        }
+
+        private void timkiemcongty_Click(object sender, EventArgs e)
+        {
+            var tiemkiemct = txttimkiemct.Text.Trim();
+        
+            if (string.IsNullOrEmpty(tiemkiemct))
+            {
+                MessageBox.Show("Vui lòng nhập từ khóa để tìm kiếm.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            bool found = false;
+
+            
+            foreach (DataGridViewRow row in dataGridViewcongty.Rows)
+            {
+                
+                if (row.Cells["Tên đợt"].Value != null)
+                {
+                    var cellValue = row.Cells["Tên đợt"].Value.ToString();
+                    if (cellValue.IndexOf(tiemkiemct, StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+                       
+                        row.DefaultCellStyle.BackColor = Color.Yellow;
+                        row.DefaultCellStyle.ForeColor = Color.Black;
+                        found = true;
+                    }
+                    else
+                    {
+                        
+                        row.DefaultCellStyle.BackColor = Color.White;
+                        row.DefaultCellStyle.ForeColor = Color.Black;
+                    }
+                }
+                else
+                {
+                    
+                    row.DefaultCellStyle.BackColor = Color.White;
+                    row.DefaultCellStyle.ForeColor = Color.Black;
+                }
+            }
+
+            
+            if (!found)
+            {
+                MessageBox.Show("Không tìm thấy công ty nào khớp với từ khóa.", "Kết quả tìm kiếm", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }
