@@ -53,7 +53,7 @@
             // btnExit
             // 
             this.btnExit.ForeColor = System.Drawing.Color.Black;
-            this.btnExit.Location = new System.Drawing.Point(573, 313);
+            this.btnExit.Location = new System.Drawing.Point(658, 315);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(55, 23);
             this.btnExit.TabIndex = 33;
@@ -83,19 +83,19 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(21, 297);
+            this.label1.Location = new System.Drawing.Point(16, 191);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 22);
+            this.label1.Size = new System.Drawing.Size(57, 15);
             this.label1.TabIndex = 40;
             this.label1.Text = "Tên khoa";
             // 
             // comboBoxgiangvien
             // 
             this.comboBoxgiangvien.FormattingEnabled = true;
-            this.comboBoxgiangvien.Location = new System.Drawing.Point(24, 322);
+            this.comboBoxgiangvien.Location = new System.Drawing.Point(17, 209);
             this.comboBoxgiangvien.Name = "comboBoxgiangvien";
-            this.comboBoxgiangvien.Size = new System.Drawing.Size(124, 21);
+            this.comboBoxgiangvien.Size = new System.Drawing.Size(148, 21);
             this.comboBoxgiangvien.TabIndex = 39;
             // 
             // btnAdd
@@ -172,10 +172,10 @@
             // txttimkiemgv
             // 
             this.txttimkiemgv.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txttimkiemgv.Location = new System.Drawing.Point(774, 56);
+            this.txttimkiemgv.Location = new System.Drawing.Point(609, 56);
             this.txttimkiemgv.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txttimkiemgv.Name = "txttimkiemgv";
-            this.txttimkiemgv.Size = new System.Drawing.Size(87, 31);
+            this.txttimkiemgv.Size = new System.Drawing.Size(60, 23);
             this.txttimkiemgv.TabIndex = 42;
             this.txttimkiemgv.Text = "Tìm kiếm";
             this.txttimkiemgv.UseVisualStyleBackColor = true;
@@ -216,10 +216,10 @@
             // 
             // txttimkiem
             // 
-            this.txttimkiem.Location = new System.Drawing.Point(458, 58);
+            this.txttimkiem.Location = new System.Drawing.Point(313, 59);
             this.txttimkiem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txttimkiem.Name = "txttimkiem";
-            this.txttimkiem.Size = new System.Drawing.Size(288, 26);
+            this.txttimkiem.Size = new System.Drawing.Size(288, 20);
             this.txttimkiem.TabIndex = 46;
             // 
             // label7
@@ -238,7 +238,7 @@
             this.dataGridViewgiangvien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewgiangvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewgiangvien.Location = new System.Drawing.Point(277, 122);
-            this.dataGridViewgiangvien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewgiangvien.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewgiangvien.Name = "dataGridViewgiangvien";
             this.dataGridViewgiangvien.RowHeadersWidth = 62;
             this.dataGridViewgiangvien.RowTemplate.Height = 28;
@@ -251,7 +251,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 345);
+            this.ClientSize = new System.Drawing.Size(718, 345);
             this.Controls.Add(this.dataGridViewgiangvien);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txttimkiem);
