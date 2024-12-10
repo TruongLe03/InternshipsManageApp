@@ -86,6 +86,7 @@
             this.btnUpdateCty.TabIndex = 22;
             this.btnUpdateCty.Text = "Sửa";
             this.btnUpdateCty.UseVisualStyleBackColor = true;
+            this.btnUpdateCty.Click += new System.EventHandler(this.btnUpdateCty_Click);
             // 
             // btnExit
             // 

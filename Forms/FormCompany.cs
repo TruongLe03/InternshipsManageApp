@@ -240,5 +240,10 @@ namespace InternshipsManageApp.Forms
                 MessageBox.Show("Vui lòng chọn một sinh viên để xóa.");
             }
         }
+
+        private void btnUpdateCty_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

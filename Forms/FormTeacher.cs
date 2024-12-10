@@ -167,11 +167,7 @@ namespace InternshipsManageApp.Forms
                     MessageBox.Show("Vui lòng nhập họ và tên.");
                     return;
                 }
-                if (!Regex.IsMatch(Email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
-                {
-                    MessageBox.Show("Vui lòng nhập địa chỉ email hợp lệ.");
-                    return;
-                }
+               
 
                 // Kiểm tra số điện thoại phải đúng 10 số
                 if (!Regex.IsMatch(Phone, @"^\d{10}$"))
@@ -219,7 +215,7 @@ namespace InternshipsManageApp.Forms
                 {
                     // Gửi yêu cầu POST
                     var response = await client.PostAsync(url, content);
-                    MessageBox.Show("test lỗi" + response);
+                    MessageBox.Show("test " + response);
                     if (response.IsSuccessStatusCode)
                     {
                         MessageBox.Show("giảng viên đã được thêm thành công!");
@@ -248,7 +244,7 @@ namespace InternshipsManageApp.Forms
             if (dataGridViewgiangvien.SelectedRows.Count > 0)
             {
                 var selectedRow = dataGridViewgiangvien.SelectedRows[0];
-                var lecturerId = selectedRow.Cells["id"].Value.ToString();
+                var lecturerId = selectedRow.Cells["STT"].Value.ToString();
                 MessageBox.Show($"Mã sinh viên được chọn: {lecturerId}");
 
                 if (!string.IsNullOrWhiteSpace(lecturerId))
@@ -311,9 +307,132 @@ namespace InternshipsManageApp.Forms
             dataGridViewgiangvien.MultiSelect = false;
         }
 
+
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private async void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewgiangvien.SelectedRows.Count > 0)
+            {
+                var selectedRow = dataGridViewgiangvien.SelectedRows[0];
+
+                // Lấy dữ liệu từ TextBox
+                var lecturerId = selectedRow.Cells["STT"].Value?.ToString().Trim(); // Lấy ID giảng viên từ cột STT
+                var fullName = txtName.Text?.Trim(); // Lấy tên đầy đủ từ ô nhập
+                var phone = txtSDT.Text?.Trim(); // Lấy số điện thoại từ ô nhập
+
+                // Kiểm tra nếu tên đầy đủ hợp lệ
+                if (string.IsNullOrEmpty(fullName))
+                {
+                    MessageBox.Show("Họ tên không được để trống.");
+                    return;
+                }
+
+                if (string.IsNullOrEmpty(phone))
+                {
+                    MessageBox.Show("Số điện thoại không được để trống.");
+                    return;
+                }
+
+                string firstName = string.Empty;
+                string lastName = string.Empty;
+
+                // Tách tên đầy đủ thành họ và tên
+                var nameParts = fullName.Split(' ');
+                if (nameParts.Length > 1)
+                {
+                    lastName = nameParts[0];
+                    firstName = string.Join(" ", nameParts.Skip(1));
+                }
+                else
+                {
+                    lastName = fullName; // Nếu chỉ có một tên, mặc định là họ
+                }
+
+                // Tạo đối tượng lecturer để gửi lên server
+                var updatedLecturer = new
+                {
+                    full_name = $"{lastName} {firstName}", // Họ tên đầy đủ
+                    phone = phone // Số điện thoại
+                };
+
+                // Gửi yêu cầu PUT tới server
+                string url = $"http://sso.nqbdev.software/api/lecturer/{lecturerId}";
+                //MessageBox.Show($"URL: {url}"); // Hiển thị URL cho việc debug
+
+                try
+                {
+                    using (var client = new HttpClient())
+                    {
+                        // Gắn token từ Settings vào Header
+                        var token = Properties.Settings.Default.AuthToken;
+                        if (string.IsNullOrEmpty(token))
+                        {
+                            MessageBox.Show("Token không tồn tại. Vui lòng đăng nhập lại.");
+                            return;
+                        }
+
+                        client.DefaultRequestHeaders.Authorization =
+                            new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+                        // Tuần tự hóa đối tượng thành chuỗi JSON
+                        var jsonContent = JsonConvert.SerializeObject(updatedLecturer);
+
+                        // Tạo StringContent từ chuỗi JSON
+                        var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+                        // Gửi yêu cầu PUT với nội dung JSON
+                        var response = await client.PutAsync(url, content);
+
+                        var responseContent = await response.Content.ReadAsStringAsync();
+
+                        if (response.IsSuccessStatusCode)
+                        {
+                            MessageBox.Show("Cập nhật giảng viên thành công!");
+
+                            // Cập nhật trực tiếp dữ liệu trong DataGridView
+                            selectedRow.Cells["Họ và tên"].Value = $"{lastName} {firstName}";
+                            selectedRow.Cells["Số điện thoại"].Value = phone;
+                        }
+                        else
+                        {
+                            string errorResponse = await response.Content.ReadAsStringAsync();
+                            MessageBox.Show($"Lỗi khi cập nhật giảng viên: {response.StatusCode}, {errorResponse}");
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một giảng viên để sửa.");
+            }
+
+        }
+        private void Data(object sender, DataGridViewCellEventArgs e)
+        {
+            // Kiểm tra nếu người dùng không click vào header (chỉ click vào các dòng dữ liệu)
+            if (e.RowIndex >= 0)
+            {
+                // Lấy dòng được click
+                var selectedRow = dataGridViewgiangvien.Rows[e.RowIndex];
+
+                // Hiển thị thông tin từ các cột vào các TextBox
+                txtName.Text = selectedRow.Cells["Họ và tên"].Value?.ToString();
+                txtEmail.Text = selectedRow.Cells["Email"].Value?.ToString();
+                txtSDT.Text = selectedRow.Cells["Số điện thoại"]?.Value.ToString();
+
+                
+
+                // Hiển thị thông tin lớp trong ComboBox (hoặc TextBox)
+                comboBoxgiangvien.Text = selectedRow.Cells["Tên khoa"].Value?.ToString();
+            }
         }
     }
 }

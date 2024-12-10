@@ -88,9 +88,9 @@
             this.label1.Location = new System.Drawing.Point(21, 308);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 22);
+            this.label1.Size = new System.Drawing.Size(82, 22);
             this.label1.TabIndex = 40;
-            this.label1.Text = "Số điện thoại";
+            this.label1.Text = "Tên khoa";
             // 
             // comboBoxgiangvien
             // 
@@ -212,6 +212,7 @@
             this.btnUpdate.TabIndex = 39;
             this.btnUpdate.Text = "Sửa";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // label6
             // 
@@ -255,6 +256,7 @@
             this.dataGridViewgiangvien.RowTemplate.Height = 28;
             this.dataGridViewgiangvien.Size = new System.Drawing.Size(517, 150);
             this.dataGridViewgiangvien.TabIndex = 47;
+            this.dataGridViewgiangvien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Data);
             this.dataGridViewgiangvien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewgiangvien_CellContentClick);
             // 
             // FormTeacher
