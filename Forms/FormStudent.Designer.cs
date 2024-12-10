@@ -59,7 +59,7 @@
             this.button4.TabIndex = 24;
             this.button4.Text = "Thoát";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+           
             // 
             // btnxoa
             // 
@@ -190,7 +190,7 @@
             this.btntimkiem.TabIndex = 30;
             this.btntimkiem.Text = "Tìm kiếm";
             this.btntimkiem.UseVisualStyleBackColor = true;
-            this.btntimkiem.Click += new System.EventHandler(this.button5_Click);
+           
             // 
             // label8
             // 

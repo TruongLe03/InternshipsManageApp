@@ -1,22 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InternshipsManageApp
+namespace InternshipsManageApp.Classes
 {
-    internal class home
+    internal class dashboard
     {
-        public class HomeData
+        public class DashboardData
         {
             public int CountStudents { get; set; }
-            public int CountLecturers { get; set; }
-            public int CountInternships { get; set; }
             public int CountCompanies { get; set; }
+            public int CountInternships { get; set; }
+            public int CountLecturers { get; set; }
         }
-       
-
     }
 }

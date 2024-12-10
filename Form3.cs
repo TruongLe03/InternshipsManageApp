@@ -48,7 +48,7 @@ namespace InternshipsManageApp
         {
             activeButton = btnFormHome;
             SetActiveButtonStyle(activeButton);
-            OpenChildForm(new FormHome(), btnFormHome);
+            OpenChildForm(new FormHome(Properties.Settings.Default.AuthToken), btnFormHome);
         }
 
        
@@ -128,7 +128,7 @@ namespace InternshipsManageApp
         private void btnFormHome_Click(object sender, EventArgs e)
         {
             Button_Click(sender, e);
-            OpenChildForm(new FormHome(), sender);
+            OpenChildForm(new FormHome(Properties.Settings.Default.AuthToken), sender);
         }
 
         private void btnFormStudent_Click(object sender, EventArgs e)

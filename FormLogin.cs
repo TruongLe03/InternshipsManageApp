@@ -25,6 +25,7 @@ namespace InternshipsManageApp
             InitializeComponent();
             closebtn.FlatAppearance.BorderSize = 0;
             btnSubmit.FlatAppearance.BorderSize = 0;
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
        
@@ -34,6 +35,12 @@ namespace InternshipsManageApp
             txtUsername.Text = "admin";
             SetEmailPlaceholder();
             SetPasswordPlaceholder();
+            // Tính toán vị trí để Form nằm ở giữa màn hình
+            this.StartPosition = FormStartPosition.Manual; // Cho phép đặt thủ công
+            this.Location = new Point(
+                (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2,
+                (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2
+            );
         }
         private void FormLogin_Paint(object sender, PaintEventArgs e)
         {
