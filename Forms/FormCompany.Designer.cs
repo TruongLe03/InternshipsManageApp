@@ -31,14 +31,13 @@
             this.btnDeleteCty = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnUpdateCty = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtmota = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtphone = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.timkiemcongty = new System.Windows.Forms.Button();
             this.btnAddCongty = new System.Windows.Forms.Button();
             this.txtLienhe = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,6 +48,8 @@
             this.txtTencty = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewcongty = new System.Windows.Forms.DataGridView();
+            this.txttimkiemct = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewcongty)).BeginInit();
             this.SuspendLayout();
@@ -88,23 +89,12 @@
             this.btnUpdateCty.UseVisualStyleBackColor = true;
             this.btnUpdateCty.Click += new System.EventHandler(this.btnUpdateCty_Click);
             // 
-            // btnExit
-            // 
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnExit.Location = new System.Drawing.Point(709, 519);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 32);
-            this.btnExit.TabIndex = 20;
-            this.btnExit.Text = "Thoát";
-            this.btnExit.UseVisualStyleBackColor = true;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(478, 103);
+            this.label5.Location = new System.Drawing.Point(454, 147);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(238, 32);
@@ -118,7 +108,6 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txtphone);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnAddCongty);
             this.panel1.Controls.Add(this.txtLienhe);
             this.panel1.Controls.Add(this.label4);
@@ -180,21 +169,22 @@
             this.txtphone.Size = new System.Drawing.Size(186, 30);
             this.txtphone.TabIndex = 28;
             // 
-            // button1
+            // timkiemcongty
             // 
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(126, 491);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 35);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Tìm kiếm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.timkiemcongty.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.timkiemcongty.Location = new System.Drawing.Point(674, 89);
+            this.timkiemcongty.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.timkiemcongty.Name = "timkiemcongty";
+            this.timkiemcongty.Size = new System.Drawing.Size(89, 35);
+            this.timkiemcongty.TabIndex = 27;
+            this.timkiemcongty.Text = "Tìm kiếm";
+            this.timkiemcongty.UseVisualStyleBackColor = true;
+            this.timkiemcongty.Click += new System.EventHandler(this.timkiemcongty_Click);
             // 
             // btnAddCongty
             // 
             this.btnAddCongty.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAddCongty.Location = new System.Drawing.Point(18, 491);
+            this.btnAddCongty.Location = new System.Drawing.Point(64, 474);
             this.btnAddCongty.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAddCongty.Name = "btnAddCongty";
             this.btnAddCongty.Size = new System.Drawing.Size(75, 35);
@@ -303,7 +293,28 @@
             this.dataGridViewcongty.RowTemplate.Height = 28;
             this.dataGridViewcongty.Size = new System.Drawing.Size(679, 193);
             this.dataGridViewcongty.TabIndex = 25;
+            this.dataGridViewcongty.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data);
             this.dataGridViewcongty.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewcongty_CellContentClick);
+            // 
+            // txttimkiemct
+            // 
+            this.txttimkiemct.Location = new System.Drawing.Point(295, 93);
+            this.txttimkiemct.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txttimkiemct.Name = "txttimkiemct";
+            this.txttimkiemct.Size = new System.Drawing.Size(321, 26);
+            this.txttimkiemct.TabIndex = 47;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label8.Location = new System.Drawing.Point(291, 58);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(151, 22);
+            this.label8.TabIndex = 48;
+            this.label8.Text = "Tìm kiếm theo tên";
             // 
             // FormCompany
             // 
@@ -311,12 +322,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(942, 602);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txttimkiemct);
             this.Controls.Add(this.dataGridViewcongty);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnDeleteCty);
+            this.Controls.Add(this.timkiemcongty);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnUpdateCty);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -335,7 +348,6 @@
         private System.Windows.Forms.Button btnDeleteCty;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnUpdateCty;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnAddCongty;
@@ -347,11 +359,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtTencty;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button timkiemcongty;
         private System.Windows.Forms.DataGridView dataGridViewcongty;
         private System.Windows.Forms.TextBox txtmota;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtphone;
+        private System.Windows.Forms.TextBox txttimkiemct;
+        private System.Windows.Forms.Label label8;
     }
 }

@@ -101,5 +101,86 @@ namespace InternshipsManageApp.Forms
             dataGridViewthuctap.SelectionMode = DataGridViewSelectionMode.FullRowSelect; // Chọn cả dòng
             dataGridViewthuctap.MultiSelect = false; // Chỉ chọn 1 dòng tại một thời điểm
         }
+
+        private async void btnAddthuctap_Click(object sender, EventArgs e)
+        {
+            string Name = txtTendot.Text;
+            string start = txtStarttime.Text;
+            string end = txtEndtime.Text;
+            if (string.IsNullOrEmpty(Name) || string.IsNullOrEmpty(start) || string.IsNullOrEmpty(end))
+            {
+                MessageBox.Show("Hãy điền đầy đủ các trường.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            var result = MessageBox.Show("Bạn có chắc chắn muốn thêm đợt thực tập này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+               
+                // Tạo đối tượng sinh viên, đúng với định dạng yêu cầu từ API
+               
+
+                var newStudent = new
+                {
+                    id = 1,
+                    name = Name,
+                    start_date =start,
+                    end_date =end,
+                };
+
+                string url = "http://sso.nqbdev.software/api/interns"; // URL của API
+                var json = JsonConvert.SerializeObject(newStudent);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                try
+                {
+                    // Gửi yêu cầu POST
+                    var response = await client.PostAsync(url, content);
+                    MessageBox.Show("kiểm tra respon" + response);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        MessageBox.Show("đợt thực tập này đã được thêm thành công!");
+                        Displayintern();
+                        
+                       
+                    }
+                    else
+                    {
+                        // In ra mã lỗi và nội dung lỗi nếu có
+                        string errorResponse = await response.Content.ReadAsStringAsync();
+                        MessageBox.Show($"Lỗi khi thêm công ty: {response.StatusCode}, Nội dung lỗi: {errorResponse}");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Bạn đã hủy ");
+            }
+        }
+
+        private void txtStarttime_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void txtStarttime_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Ngăn ký tự không hợp lệ
+            }
+        }
+
+        private void txtEndtime_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Ngăn ký tự không hợp lệ
+            }
+        }
     }
 }

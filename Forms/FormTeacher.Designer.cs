@@ -39,11 +39,11 @@
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txttimkiemgv = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txttimkiem = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridViewgiangvien = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
@@ -85,7 +85,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(21, 308);
+            this.label1.Location = new System.Drawing.Point(21, 297);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 22);
@@ -95,7 +95,7 @@
             // comboBoxgiangvien
             // 
             this.comboBoxgiangvien.FormattingEnabled = true;
-            this.comboBoxgiangvien.Location = new System.Drawing.Point(25, 333);
+            this.comboBoxgiangvien.Location = new System.Drawing.Point(24, 322);
             this.comboBoxgiangvien.Name = "comboBoxgiangvien";
             this.comboBoxgiangvien.Size = new System.Drawing.Size(184, 28);
             this.comboBoxgiangvien.TabIndex = 39;
@@ -178,17 +178,17 @@
             this.txtName.Size = new System.Drawing.Size(222, 30);
             this.txtName.TabIndex = 29;
             // 
-            // button2
+            // txttimkiemgv
             // 
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(774, 56);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 31);
-            this.button2.TabIndex = 42;
-            this.button2.Text = "Tìm kiếm";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.txttimkiemgv.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txttimkiemgv.Location = new System.Drawing.Point(774, 56);
+            this.txttimkiemgv.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txttimkiemgv.Name = "txttimkiemgv";
+            this.txttimkiemgv.Size = new System.Drawing.Size(87, 31);
+            this.txttimkiemgv.TabIndex = 42;
+            this.txttimkiemgv.Text = "Tìm kiếm";
+            this.txttimkiemgv.UseVisualStyleBackColor = true;
+            this.txttimkiemgv.Click += new System.EventHandler(this.txttimkiemgv_Click);
             // 
             // btnDelete
             // 
@@ -226,13 +226,13 @@
             this.label6.TabIndex = 45;
             this.label6.Text = "Danh sách giảng viên\r\n";
             // 
-            // textBox1
+            // txttimkiem
             // 
-            this.textBox1.Location = new System.Drawing.Point(458, 58);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(288, 26);
-            this.textBox1.TabIndex = 46;
+            this.txttimkiem.Location = new System.Drawing.Point(458, 58);
+            this.txttimkiem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txttimkiem.Name = "txttimkiem";
+            this.txttimkiem.Size = new System.Drawing.Size(288, 26);
+            this.txttimkiem.TabIndex = 46;
             // 
             // label7
             // 
@@ -266,9 +266,9 @@
             this.ClientSize = new System.Drawing.Size(960, 531);
             this.Controls.Add(this.dataGridViewgiangvien);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txttimkiem);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.txttimkiemgv);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
@@ -298,9 +298,9 @@
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button txttimkiemgv;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txttimkiem;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dataGridViewgiangvien;
         private System.Windows.Forms.Label label1;

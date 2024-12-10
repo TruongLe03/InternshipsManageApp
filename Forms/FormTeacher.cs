@@ -308,8 +308,53 @@ namespace InternshipsManageApp.Forms
         }
 
 
-        private void button2_Click(object sender, EventArgs e)
+        private void txttimkiemgv_Click(object sender, EventArgs e)
         {
+            // Lấy từ khóa tìm kiếm từ TextBox
+            var tiemkiemgv = txttimkiem.Text.Trim();
+
+            // Kiểm tra nếu từ khóa rỗng
+            if (string.IsNullOrEmpty(tiemkiemgv))
+            {
+                MessageBox.Show("Vui lòng nhập họ tên giảng viên để tìm kiếm.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            bool found = false; // Đánh dấu nếu tìm thấy kết quả
+
+            // Lặp qua tất cả các dòng trong DataGridView
+            foreach (DataGridViewRow row in dataGridViewgiangvien.Rows)
+            {
+                if (row.Cells["Họ và tên"].Value != null)
+                {
+                    var cellValue = row.Cells["Họ và tên"].Value.ToString();
+                    if (cellValue.IndexOf(tiemkiemgv, StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+
+                        row.DefaultCellStyle.BackColor = Color.Yellow;
+                        row.DefaultCellStyle.ForeColor = Color.Black;
+                        found = true;
+                    }
+                    else
+                    {
+
+                        row.DefaultCellStyle.BackColor = Color.White;
+                        row.DefaultCellStyle.ForeColor = Color.Black;
+                    }
+                }
+                else
+                {
+
+                    row.DefaultCellStyle.BackColor = Color.White;
+                    row.DefaultCellStyle.ForeColor = Color.Black;
+                }
+            }
+
+            // Hiển thị thông báo nếu không tìm thấy kết quả
+            if (!found)
+            {
+                MessageBox.Show("Không tìm thấy giảng viên khớp với từ khóa.", "Kết quả tìm kiếm", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
         }
 
